@@ -1,0 +1,14 @@
+{
+  "teams": [
+    { "abbrev": "BOS", "games": [
+      { "outcome": "W" },
+      { "outcome": "W" },
+      { "outcome": "W" }
+    ]},
+    { "abbrev": "NYY", "games": [
+      { "outcome": "W" },
+      { "outcome": "L" },
+      { "outcome": "W" }
+    ]}
+  ]
+}
