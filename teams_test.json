@@ -1,14 +1,54 @@
 {
   "teams": [
-    { "abbrev": "BOS", "games": [
-      { "outcome": "W" },
-      { "outcome": "W" },
-      { "outcome": "W" }
-    ]},
-    { "abbrev": "NYY", "games": [
-      { "outcome": "W" },
-      { "outcome": "L" },
-      { "outcome": "W" }
-    ]}
+    {
+      "abbrev": "BOS",
+      "games": [
+        {
+          "id": "2017/04/03/bosmlb-nyymlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2017/04/03/bosmlb-nyymlb-2",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2017/04/04/bosmlb-nyymlb-1",
+          "runs": 1,
+          "result": "W"
+        },
+        {
+          "id": "2017/04/05/pitmlb-bosmlb-1",
+          "runs": 3,
+          "result": "W"
+        }
+      ]
+    },
+    {
+      "abbrev": "NYY",
+      "games": [
+        {
+          "id": "2017/04/03/nyymlb-nyymlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2017/04/03/nyymlb-nyymlb-2",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2017/04/04/nyymlb-nyymlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2017/04/05/nyamlb-tbamlb-1",
+          "runs": 1,
+          "result": "L"
+        }
+      ]
+    }
   ]
 }
