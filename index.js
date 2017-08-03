@@ -1,40 +1,81 @@
+// TODO: add all teams to teams_test.json and change name to seasons.json and add season info attributes (first day: year, month, date)
+// TODO: create a log file of days checked. every time you start the server, get all the previous days of the season, until the last one logged
+
+
 var jsonfile = require('jsonfile')
 var Mlbgames = require('mlbgames');
-var options = {
-  path: 'year_2017/month_04/day_05/'
-};
 
-var mlbgames = new Mlbgames(options);
-var MASTER_DATA = "teams_test.json";
+var MASTER_DATA = "season.json";
 var teams;
 
-jsonfile.readFile(MASTER_DATA, function(err, obj) {
-  teams = obj.teams;
-  //console.log(teams);
-  mlbgames.get((err, games) => {
-    console.log(games.length + " games found");
-    var count_of_final_games = 0;
-    for(var i = 0; i < games.length; i++) {
-      if(games[i].status.status == "Final") {
-        //console.log(teams.length);
-        teams = insert_game_data(extract_game_data(games[i]), teams);
-        count_of_final_games++;
-      } else {
-        console.log("NON-FINAL GAME FOUND: " + games[i].status.status)
-      }
-    }
-    console.log(count_of_final_games + " games final");
-    obj.teams = teams;
-    jsonfile.writeFile(MASTER_DATA, obj, {spaces: 2}, function(err) {
-      if (err) {
-        console.error(err)
-      } else {
-        console.log("new team file saved");
-      }
-    })
-  });
-})
+function fixNum(n) {
+  if (n < 10) {
+    n = "0" + n;
+  } else {
+    n = n.toString();
+  }
+  return n;
+}
 
+function dateToPath(d) {
+  return "year_" + fixNum(d.getFullYear()) + "/month_" + fixNum(d.getMonth() + 1) + "/day_" + fixNum(d.getDate()) + "/";
+}
+
+function incrementPath(p) {
+  var d = new Date(p.slice(5, 9), (p.slice(16, 18)) - 1, p.slice(23, 25));
+  d.setDate(d.getDate() + 1);
+  return dateToPath(d);
+}
+
+function catchUpMaster() {
+  jsonfile.readFile(MASTER_DATA, function(err, obj) {
+    updateMasterData(obj.last_path_imported);
+  })
+}
+
+function updateMasterData(path) {
+  jsonfile.readFile(MASTER_DATA, function(err, obj) {
+    var options = {
+      path: path
+    }
+    var mlbgames = new Mlbgames(options);
+    teams = obj.teams;
+    console.log();
+    console.log("  ********");
+    console.log("  * ");
+    console.log("  * retreiving source file from: " + options.path);
+    console.log("  * ");
+    console.log("  ********");
+    console.log();
+    mlbgames.get((err, games) => {
+      console.log("    games found: " + games.length);
+      var count_of_final_games = 0;
+      for(var i = 0; i < games.length; i++) {
+        console.log("    " + games[i].status.status + ": " + games[i].id);
+        if(games[i].status.status == "Final") {
+          //console.log(teams.length);
+          teams = insert_game_data(extract_game_data(games[i]), teams);
+          count_of_final_games++;
+        }
+      }
+      obj.teams = teams;
+      var now = new Date();
+      obj.file_last_update = now.toJSON();
+      obj.last_path_imported = path;
+      jsonfile.writeFile(MASTER_DATA, obj, {spaces: 2}, function(err) {
+        if (err) {
+          console.error(err)
+        } else {
+          console.log("new team file saved");
+        }
+      })
+      var todaysPath = dateToPath(now);
+      if (incrementPath(path).localeCompare(todaysPath) <= 0) {
+        updateMasterData(incrementPath(path));
+      }
+    });  //mlbgames.get end
+  })
+}
 /**
 * Appends a game to a data structure of games
 * @param {Array} gameTeams //length-2 array of two teams playing in one game
@@ -44,13 +85,13 @@ function insert_game_data(gameTeams, teams) {
   for (var i = 0; i < gameTeams.length; i++) {
     //console.log("*** analyzing game ***");
     //console.log(gameTeams[i]);
+    var logMessage = "";
     var thisTeam = gameTeams[i].abbrev;
     var thisGame = {
       "id" : gameTeams[i].id,
       "runs" : gameTeams[i].runs,
       "result" : gameTeams[i].outcome
     };
-    console.log("analyzing " + thisTeam + " in " + thisGame.id);
     var foundTeam = false;
     for (var j = 0; j < teams.length; j++) {
       //console.log(thisTeam + " =? " + teams[j].abbrev)
@@ -62,12 +103,12 @@ function insert_game_data(gameTeams, teams) {
         for (var k = 0; k < teams[j].games.length; k++) {
           if (thisGame.id == teams[j].games[k].id) {
             foundGame = true;
-            console.log("  game found. not added.");
+            logMessage = "game already imported.";
             break;
           }
         }
         if (!foundGame) {
-          console.log("  this is a new game. extending games list for " + thisTeam);
+          logMessage = "new game. importing.";
           teams[j].games[teams[j].games.length] = thisGame;
         }
         //console.log("*** team info after adding a game ***");
@@ -75,16 +116,11 @@ function insert_game_data(gameTeams, teams) {
       }
     }
     if (!foundTeam) {
-      console.log("  can't find team " + thisTeam);
+      logMessage = "can't find team";
     }
+    console.log("      " + thisTeam + ": " + logMessage);
   }
   return teams;
-}
-
-
-function get_team_by_abbrev(abbrev) {
-
-
 }
 
 /**
@@ -118,23 +154,5 @@ function extract_game_data(game) {
   return output;
 }
 
-/**
-* Determines whether a team won a given game
-* @param {String} team_abbrev
-* @param {Date} given_date
-* @param {Number} game_number
-*/
-function game_won(team_abbrev, given_date, game_number) {
 
-}
-// function getCountryByCode(code) {
-//   return data.filter(
-//     function(data) {
-//       return data.code == code
-//     }
-//   );
-// }
-//
-// var found = getCountryByCode('DZ');
-//
-// document.getElementById('output').innerHTML = found[0].name;
+catchUpMaster();

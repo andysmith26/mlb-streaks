@@ -1,0 +1,182 @@
+{
+  "last_path_imported": "year_2017/month_08/day_02/",
+  "file_last_update": "2017-08-03T02:18:05.189Z",
+  "season": 2017,
+  "teams": [
+    {
+      "abbrev": "BOS",
+      "games": [
+        {
+          "id": "2017/04/03/bosmlb-nyymlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2017/04/03/bosmlb-nyymlb-2",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2017/04/04/bosmlb-nyymlb-1",
+          "runs": 1,
+          "result": "W"
+        },
+        {
+          "id": "2017/04/05/pitmlb-bosmlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/20/tormlb-bosmlb-1",
+          "runs": 6,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/21/bosmlb-anamlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/22/bosmlb-anamlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/23/bosmlb-anamlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/24/bosmlb-seamlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/25/bosmlb-seamlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/26/bosmlb-seamlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/28/kcamlb-bosmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/29/kcamlb-bosmlb-1",
+          "runs": 9,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/30/kcamlb-bosmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/31/clemlb-bosmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/01/clemlb-bosmlb-1",
+          "runs": 12,
+          "result": "W"
+        }
+      ]
+    },
+    {
+      "abbrev": "NYY",
+      "games": [
+        {
+          "id": "2017/04/03/nyymlb-nyymlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2017/04/03/nyymlb-nyymlb-2",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2017/04/04/nyymlb-nyymlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2017/04/05/nyamlb-tbamlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/20/nyamlb-seamlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/21/nyamlb-seamlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/22/nyamlb-seamlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/23/nyamlb-seamlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/25/cinmlb-nyamlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/26/cinmlb-nyamlb-1",
+          "runs": 9,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/27/tbamlb-nyamlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/28/tbamlb-nyamlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/29/tbamlb-nyamlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/30/tbamlb-nyamlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/31/detmlb-nyamlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/01/detmlb-nyamlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/02/detmlb-nyamlb-1",
+          "runs": 0,
+          "result": "L"
+        }
+      ]
+    }
+  ]
+}
