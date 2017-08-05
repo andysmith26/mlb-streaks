@@ -1,31 +1,236 @@
 {
   "last_path_imported": "year_2017/month_08/day_04/",
-  "file_last_update": "2017-08-05T00:48:08.622Z",
+  "file_last_update": "2017-08-05T01:02:31.990Z",
   "season": 2017,
   "teams": [
     {
-      "abbrev": "BOS",
+      "abbrev": "BAL",
       "games": [
         {
-          "id": "2017/04/03/bosmlb-nyymlb-1",
-          "runs": 4,
+          "id": "2017/07/30/balmlb-texmlb-1",
+          "runs": 10,
           "result": "W"
         },
         {
-          "id": "2017/04/03/bosmlb-nyymlb-2",
+          "id": "2017/07/31/kcamlb-balmlb-1",
           "runs": 2,
           "result": "W"
         },
         {
-          "id": "2017/04/04/bosmlb-nyymlb-1",
-          "runs": 1,
+          "id": "2017/08/01/kcamlb-balmlb-1",
+          "runs": 7,
           "result": "W"
         },
         {
-          "id": "2017/04/05/pitmlb-bosmlb-1",
+          "id": "2017/08/02/kcamlb-balmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/03/detmlb-balmlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/20/texmlb-balmlb-1",
+          "runs": 9,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/21/houmlb-balmlb-1",
+          "runs": 7,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/22/houmlb-balmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/23/houmlb-balmlb-1",
+          "runs": 9,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/24/balmlb-tbamlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/25/balmlb-tbamlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/26/balmlb-tbamlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/28/balmlb-texmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/29/balmlb-texmlb-1",
+          "runs": 4,
+          "result": "W"
+        }
+      ]
+    },
+    {
+      "abbrev": "TOR",
+      "games": [
+        {
+          "id": "2017/07/30/anamlb-tormlb-1",
+          "runs": 11,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/31/tormlb-chamlb-1",
+          "runs": 6,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/01/tormlb-chamlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/02/tormlb-chamlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/20/tormlb-bosmlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/21/tormlb-clemlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/22/tormlb-clemlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/23/tormlb-clemlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/24/oakmlb-tormlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/25/oakmlb-tormlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/26/oakmlb-tormlb-1",
           "runs": 3,
           "result": "W"
         },
+        {
+          "id": "2017/07/27/oakmlb-tormlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/28/anamlb-tormlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/29/anamlb-tormlb-1",
+          "runs": 5,
+          "result": "L"
+        }
+      ]
+    },
+    {
+      "abbrev": "TB",
+      "games": [
+        {
+          "id": "2017/07/30/tbamlb-nyamlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/31/tbamlb-houmlb-1",
+          "runs": 7,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/01/tbamlb-houmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/02/tbamlb-houmlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/03/tbamlb-houmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/21/texmlb-tbamlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/22/texmlb-tbamlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/23/texmlb-tbamlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/24/balmlb-tbamlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/25/balmlb-tbamlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/26/balmlb-tbamlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2017/07/27/tbamlb-nyamlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/28/tbamlb-nyamlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2017/07/29/tbamlb-nyamlb-1",
+          "runs": 4,
+          "result": "L"
+        }
+      ]
+    },
+    {
+      "abbrev": "BOS",
+      "games": [
         {
           "id": "2017/07/20/tormlb-bosmlb-1",
           "runs": 6,
@@ -96,26 +301,6 @@
     {
       "abbrev": "NYY",
       "games": [
-        {
-          "id": "2017/04/03/nyymlb-nyymlb-1",
-          "runs": 0,
-          "result": "L"
-        },
-        {
-          "id": "2017/04/03/nyymlb-nyymlb-2",
-          "runs": 1,
-          "result": "L"
-        },
-        {
-          "id": "2017/04/04/nyymlb-nyymlb-1",
-          "runs": 0,
-          "result": "L"
-        },
-        {
-          "id": "2017/04/05/nyamlb-tbamlb-1",
-          "runs": 1,
-          "result": "L"
-        },
         {
           "id": "2017/07/20/nyamlb-seamlb-1",
           "runs": 4,

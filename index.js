@@ -4,6 +4,7 @@
 
 var jsonfile = require('jsonfile')
 var Mlbgames = require('mlbgames');
+var fs = require('fs');
 
 var MASTER_DATA = "season.json";
 var BACKUP_DATA = "season_backup.json";
@@ -34,18 +35,24 @@ function catchUpMaster() {
   })
 }
 
-function saveDataFile(filename, obj) {
-  jsonfile.writeFile(filename, obj, {spaces: 2}, function(err) {
+function saveDataFile(obj) {
+  jsonfile.writeFile(MASTER_DATA, obj, {spaces: 2}, function(err) {
     if (err) {
       console.error("  error saving data file:" + err);
       console.log();
     } else {
-      console.log("  saved data file: " + filename);
+      console.log("  saved data file: " + MASTER_DATA);
+      console.log();
+      fs.createReadStream(MASTER_DATA).pipe(fs.createWriteStream(BACKUP_DATA));
+      console.log("  saved backup data file: " + BACKUP_DATA);
       console.log();
     }
   })
 }
 
+function createBackup() {
+
+}
 function updateMasterData(path) {
   jsonfile.readFile(MASTER_DATA, function(err, obj) {
     var options = {
@@ -77,8 +84,7 @@ function updateMasterData(path) {
       obj.file_last_update = now.toJSON();
       obj.last_path_imported = path;
       console.log();
-      saveDataFile(MASTER_DATA, obj);
-      saveDataFile(BACKUP_DATA, obj);
+      saveDataFile(obj);
       var todaysPath = dateToPath(now);
       if (incrementPath(path).localeCompare(todaysPath) <= 0) {
         updateMasterData(incrementPath(path));
