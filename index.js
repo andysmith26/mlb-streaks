@@ -50,16 +50,13 @@ function saveDataFile(obj) {
   })
 }
 
-function createBackup() {
-
-}
 function updateMasterData(path) {
   jsonfile.readFile(MASTER_DATA, function(err, obj) {
+    teams = obj.teams;
     var options = {
       path: path
     }
     var mlbgames = new Mlbgames(options);
-    teams = obj.teams;
     console.log();
     console.log("  ********");
     console.log("  * ");
@@ -88,6 +85,8 @@ function updateMasterData(path) {
       var todaysPath = dateToPath(now);
       if (incrementPath(path).localeCompare(todaysPath) <= 0) {
         updateMasterData(incrementPath(path));
+      } else {
+        updateTeamInfoInMasterData();
       }
     });  //mlbgames.get end
   })
@@ -170,5 +169,18 @@ function extract_game_data(game) {
   return output;
 }
 
+function updateTeamInfoInMasterData() {
+  jsonfile.readFile(MASTER_DATA, function(err, obj) {
+    console.log();
+    console.log("  updating team info");
+    for (var i = 0; i < obj.teams.length; i++) {
+      var gameCount = obj.teams[i].games.length;
+      console.log("    " + obj.teams[i].abbrev + " game count: " + gameCount);
+      obj.teams[i]["game_count"] = gameCount;
+    }
+    console.log();
+    saveDataFile(obj);
+  })
+}
 
 catchUpMaster();

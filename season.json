@@ -1,6 +1,6 @@
 {
   "last_path_imported": "year_2017/month_08/day_04/",
-  "file_last_update": "2017-08-05T01:02:31.990Z",
+  "file_last_update": "2017-08-05T01:22:15.775Z",
   "season": 2017,
   "teams": [
     {
@@ -76,7 +76,8 @@
           "runs": 4,
           "result": "W"
         }
-      ]
+      ],
+      "game_count": 14
     },
     {
       "abbrev": "TOR",
@@ -151,7 +152,8 @@
           "runs": 5,
           "result": "L"
         }
-      ]
+      ],
+      "game_count": 14
     },
     {
       "abbrev": "TB",
@@ -226,7 +228,8 @@
           "runs": 4,
           "result": "L"
         }
-      ]
+      ],
+      "game_count": 14
     },
     {
       "abbrev": "BOS",
@@ -296,7 +299,8 @@
           "runs": 9,
           "result": "W"
         }
-      ]
+      ],
+      "game_count": 13
     },
     {
       "abbrev": "NYY",
@@ -371,7 +375,8 @@
           "runs": 1,
           "result": "L"
         }
-      ]
+      ],
+      "game_count": 14
     }
   ]
 }
