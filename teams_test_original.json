@@ -1,0 +1,57 @@
+{
+  "file_last_update": "2017-08-02T12:54:06.787Z",
+  "season": 2017,
+  "first_game": "2017-04-04T00:00:00.000Z",
+  "teams": [
+    {
+      "abbrev": "BOS",
+      "games": [
+        {
+          "id": "2017/04/03/bosmlb-nyymlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2017/04/03/bosmlb-nyymlb-2",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2017/04/04/bosmlb-nyymlb-1",
+          "runs": 1,
+          "result": "W"
+        },
+        {
+          "id": "2017/04/05/pitmlb-bosmlb-1",
+          "runs": 3,
+          "result": "W"
+        }
+      ]
+    },
+    {
+      "abbrev": "NYY",
+      "games": [
+        {
+          "id": "2017/04/03/nyymlb-nyymlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2017/04/03/nyymlb-nyymlb-2",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2017/04/04/nyymlb-nyymlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2017/04/05/nyamlb-tbamlb-1",
+          "runs": 1,
+          "result": "L"
+        }
+      ]
+    }
+  ]
+}
