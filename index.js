@@ -169,16 +169,64 @@ function extract_game_data(game) {
   return output;
 }
 
+function getSortedGameList(gameList) {
+  var newList = gameList.sort(function(a, b) {
+    return (a.id < b.id) ? 1 : ((a.id > b.id) ? -1 : 0);
+  });
+  return newList;
+}
+
+function getCurrentStreak(gameList) {
+  var streak = 0;
+  for (var i = 0; i < gameList.length; i++) {
+    if (gameList[i].result == 'W') {
+      streak++;
+    } else {
+      break;
+    }
+  }
+  return streak;
+}
+
+function getLongestStreak(gameList) {
+  var workingStreak = 0;
+  var longestStreak = 0;
+  for (var i = 0; i < gameList.length; i++) {
+    if (gameList[i].result == 'W') {
+      workingStreak++;
+    } else {
+      if (workingStreak > longestStreak) {
+        longestStreak = workingStreak;
+      }
+        workingStreak = 0;
+    }
+  }
+  return longestStreak;
+}
+
 function updateTeamInfoInMasterData() {
   jsonfile.readFile(MASTER_DATA, function(err, obj) {
     console.log();
     console.log("  updating team info");
     for (var i = 0; i < obj.teams.length; i++) {
+      // get game count
       var gameCount = obj.teams[i].games.length;
-      console.log("    " + obj.teams[i].abbrev + " game count: " + gameCount);
+      var abbrev = obj.teams[i].abbrev;
       obj.teams[i]["game_count"] = gameCount;
+      console.log("    " + abbrev + " game count:      " + gameCount);
+
+      // get streak info
+      var gameList = getSortedGameList(obj.teams[i].games);
+      var currentStreak = getCurrentStreak(gameList);
+      var longestStreak = getLongestStreak(gameList);
+      obj.teams[i]["current_streak"] = currentStreak;
+      obj.teams[i]["longest_streak"] = longestStreak;
+      console.log("    " + abbrev + " current streak:  " + currentStreak);
+      console.log("    " + abbrev + " longest streak:  " + longestStreak);
+      console.log();
     }
     console.log();
+
     saveDataFile(obj);
   })
 }
