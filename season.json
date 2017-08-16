@@ -1,11 +1,56 @@
 {
-  "last_path_imported": "year_2017/month_08/day_06/",
-  "file_last_update": "2017-08-06T19:07:55.987Z",
+  "last_path_imported": "year_2017/month_08/day_15/",
+  "file_last_update": "2017-08-16T00:40:14.318Z",
   "season": 2017,
   "teams": [
     {
       "abbrev": "BAL",
       "games": [
+        {
+          "id": "2017/08/14/balmlb-seamlb-1",
+          "runs": 11,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/13/balmlb-oakmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/12/balmlb-oakmlb-1",
+          "runs": 12,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/11/balmlb-oakmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/10/balmlb-oakmlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/09/balmlb-anamlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/08/balmlb-anamlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/07/balmlb-anamlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/06/detmlb-balmlb-1",
+          "runs": 12,
+          "result": "W"
+        },
         {
           "id": "2017/08/05/detmlb-balmlb-1",
           "runs": 5,
@@ -87,13 +132,53 @@
           "result": "W"
         }
       ],
-      "game_count": 16,
+      "game_count": 25,
       "current_streak": 1,
       "longest_streak": 5
     },
     {
       "abbrev": "TOR",
       "games": [
+        {
+          "id": "2017/08/14/tbamlb-tormlb-1",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/13/pitmlb-tormlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/12/pitmlb-tormlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/11/pitmlb-tormlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/10/nyamlb-tormlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/09/nyamlb-tormlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/08/nyamlb-tormlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/06/tormlb-houmlb-1",
+          "runs": 6,
+          "result": "L"
+        },
         {
           "id": "2017/08/05/tormlb-houmlb-1",
           "runs": 4,
@@ -175,13 +260,53 @@
           "result": "W"
         }
       ],
-      "game_count": 16,
-      "current_streak": 1,
+      "game_count": 24,
+      "current_streak": 3,
       "longest_streak": 4
     },
     {
       "abbrev": "TB",
       "games": [
+        {
+          "id": "2017/08/14/tbamlb-tormlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/13/clemlb-tbamlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/12/clemlb-tbamlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/11/clemlb-tbamlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/10/clemlb-tbamlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/09/bosmlb-tbamlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/08/bosmlb-tbamlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/06/milmlb-tbamlb-1",
+          "runs": 2,
+          "result": "W"
+        },
         {
           "id": "2017/08/05/milmlb-tbamlb-1",
           "runs": 0,
@@ -263,13 +388,48 @@
           "result": "L"
         }
       ],
-      "game_count": 16,
+      "game_count": 24,
       "current_streak": 0,
       "longest_streak": 3
     },
     {
       "abbrev": "BOS",
       "games": [
+        {
+          "id": "2017/08/14/clemlb-bosmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/13/bosmlb-nyamlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/12/bosmlb-nyamlb-1",
+          "runs": 10,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/11/bosmlb-nyamlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/09/bosmlb-tbamlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/08/bosmlb-tbamlb-1",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/06/chamlb-bosmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
         {
           "id": "2017/08/05/chamlb-bosmlb-1",
           "runs": 4,
@@ -346,13 +506,53 @@
           "result": "L"
         }
       ],
-      "game_count": 15,
-      "current_streak": 5,
-      "longest_streak": 5
+      "game_count": 22,
+      "current_streak": 0,
+      "longest_streak": 8
     },
     {
       "abbrev": "NYY",
       "games": [
+        {
+          "id": "2017/08/14/nynmlb-nyamlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/13/bosmlb-nyamlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/12/bosmlb-nyamlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/11/bosmlb-nyamlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/10/nyamlb-tormlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/09/nyamlb-tormlb-1",
+          "runs": 11,
+          "result": "W"
+        },
+        {
+          "id": "2017/08/08/nyamlb-tormlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2017/08/06/nyamlb-clemlb-1",
+          "runs": 8,
+          "result": "W"
+        },
         {
           "id": "2017/08/05/nyamlb-clemlb-1",
           "runs": 2,
@@ -434,7 +634,7 @@
           "result": "W"
         }
       ],
-      "game_count": 16,
+      "game_count": 24,
       "current_streak": 1,
       "longest_streak": 6
     }
