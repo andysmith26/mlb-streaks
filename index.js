@@ -1,11 +1,6 @@
-// TODO: add all teams to teams_test.json and change name to seasons.json and add season info attributes (first day: year, month, date)
-// TODO: create a log file of days checked. every time you start the server, get all the previous days of the season, until the last one logged
-
-
 var jsonfile = require('jsonfile')
 var Mlbgames = require('mlbgames');
 var fs = require('fs');
-
 var MASTER_DATA = "season.json";
 var BACKUP_DATA = "season_backup.json";
 var teams;
@@ -30,13 +25,15 @@ function incrementPath(p) {
 }
 
 function catchUpMaster() {
-  jsonfile.readFile(MASTER_DATA, function(err, obj) {
+  jsonfile.readFile(MASTER_DATA, function (err, obj) {
     updateMasterData(obj.last_path_imported);
   })
 }
 
 function saveDataFile(obj) {
-  jsonfile.writeFile(MASTER_DATA, obj, {spaces: 2}, function(err) {
+  jsonfile.writeFile(MASTER_DATA, obj, {
+    spaces: 2
+  }, function (err) {
     if (err) {
       console.error("  error saving data file:" + err);
       console.log();
@@ -51,7 +48,7 @@ function saveDataFile(obj) {
 }
 
 function updateMasterData(path) {
-  jsonfile.readFile(MASTER_DATA, function(err, obj) {
+  jsonfile.readFile(MASTER_DATA, function (err, obj) {
     teams = obj.teams;
     var options = {
       path: path
@@ -68,9 +65,9 @@ function updateMasterData(path) {
       console.log("  games found: " + games.length);
       console.log();
       var count_of_final_games = 0;
-      for(var i = 0; i < games.length; i++) {
+      for (var i = 0; i < games.length; i++) {
         console.log("    " + games[i].status.status + ": " + games[i].id);
-        if(games[i].status.status == "Final") {
+        if (games[i].status.status == "Final") {
           //console.log(teams.length);
           teams = insert_game_data(extract_game_data(games[i]), teams);
           count_of_final_games++;
@@ -88,14 +85,14 @@ function updateMasterData(path) {
       } else {
         updateTeamInfoInMasterData();
       }
-    });  //mlbgames.get end
+    }); //mlbgames.get end
   })
 }
 /**
-* Appends a game to a data structure of games
-* @param {Array} gameTeams //length-2 array of two teams playing in one game
-* @param {Object} teams
-*/
+ * Appends a game to a data structure of games
+ * @param {Array} gameTeams //length-2 array of two teams playing in one game
+ * @param {Object} teams
+ */
 function insert_game_data(gameTeams, teams) {
   for (var i = 0; i < gameTeams.length; i++) {
     //console.log("*** analyzing game ***");
@@ -103,9 +100,9 @@ function insert_game_data(gameTeams, teams) {
     var logMessage = "";
     var thisTeam = gameTeams[i].abbrev;
     var thisGame = {
-      "id" : gameTeams[i].id,
-      "runs" : gameTeams[i].runs,
-      "result" : gameTeams[i].outcome
+      "id": gameTeams[i].id,
+      "runs": gameTeams[i].runs,
+      "result": gameTeams[i].outcome
     };
     var foundTeam = false;
     for (var j = 0; j < teams.length; j++) {
@@ -137,12 +134,11 @@ function insert_game_data(gameTeams, teams) {
   }
   return teams;
 }
-
 /**
-* Extracts relevant data from a game
-* @param {Object} game
-* @returns {Array} // length-two array with home team, away team
-*/
+ * Extracts relevant data from a game
+ * @param {Object} game
+ * @returns {Array} // length-two array with home team, away team
+ */
 function extract_game_data(game) {
   var output;
   var home_team = {
@@ -170,7 +166,7 @@ function extract_game_data(game) {
 }
 
 function getSortedGameList(gameList) {
-  var newList = gameList.sort(function(a, b) {
+  var newList = gameList.sort(function (a, b) {
     return (a.id < b.id) ? 1 : ((a.id > b.id) ? -1 : 0);
   });
   return newList;
@@ -198,14 +194,14 @@ function getLongestStreak(gameList) {
       if (workingStreak > longestStreak) {
         longestStreak = workingStreak;
       }
-        workingStreak = 0;
+      workingStreak = 0;
     }
   }
   return longestStreak;
 }
 
 function updateTeamInfoInMasterData() {
-  jsonfile.readFile(MASTER_DATA, function(err, obj) {
+  jsonfile.readFile(MASTER_DATA, function (err, obj) {
     console.log();
     console.log("  updating team info");
     for (var i = 0; i < obj.teams.length; i++) {
@@ -214,7 +210,6 @@ function updateTeamInfoInMasterData() {
       var abbrev = obj.teams[i].abbrev;
       obj.teams[i]["game_count"] = gameCount;
       console.log("    " + abbrev + " game count:      " + gameCount);
-
       // get streak info
       var gameList = getSortedGameList(obj.teams[i].games);
       var currentStreak = getCurrentStreak(gameList);
@@ -226,9 +221,7 @@ function updateTeamInfoInMasterData() {
       console.log();
     }
     console.log();
-
     saveDataFile(obj);
   })
 }
-
 catchUpMaster();
