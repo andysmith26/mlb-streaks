@@ -8,5 +8,8 @@
   },
   "scripts": {
     "test": "jshint index.js"
-  }
+  },
+    "jshintConfig": {
+        "esversion": 6
+    }
 }

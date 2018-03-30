@@ -1,4 +1,4 @@
-var jsonfile = require('jsonfile')
+var jsonfile = require('jsonfile');
 var Mlbgames = require('mlbgames');
 var fs = require('fs');
 var MASTER_DATA = "season.json";
@@ -27,7 +27,7 @@ function incrementPath(p) {
 function catchUpMaster() {
   jsonfile.readFile(MASTER_DATA, function (err, obj) {
     updateMasterData(obj.last_path_imported);
-  })
+  });
 }
 
 function saveDataFile(obj) {
@@ -44,7 +44,7 @@ function saveDataFile(obj) {
       console.log("  saved backup data file: " + BACKUP_DATA);
       console.log();
     }
-  })
+  });
 }
 
 function updateMasterData(path) {
@@ -52,7 +52,7 @@ function updateMasterData(path) {
     teams = obj.teams;
     var options = {
       path: path
-    }
+    };
     var mlbgames = new Mlbgames(options);
     console.log();
     console.log("  ********");
@@ -86,7 +86,7 @@ function updateMasterData(path) {
         updateTeamInfoInMasterData();
       }
     }); //mlbgames.get end
-  })
+  });
 }
 /**
  * Appends a game to a data structure of games
@@ -145,19 +145,19 @@ function extract_game_data(game) {
     "abbrev": game.home_name_abbrev,
     "id": game.id,
     "runs": parseInt(game.linescore.r.home)
-  }
+  };
   var away_team = {
     "abbrev": game.away_name_abbrev,
     "id": game.id,
     "runs": parseInt(game.linescore.r.away)
-  }
+  };
   if (game.status.status == "Final") {
     if (home_team.runs > away_team.runs) {
-      home_team["outcome"] = "W";
-      away_team["outcome"] = "L";
+      home_team.outcome = "W";
+      away_team.outcome = "L";
     } else {
-      home_team["outcome"] = "L";
-      away_team["outcome"] = "W";
+      home_team.outcome = "L";
+      away_team.outcome = "W";
     }
   }
   output = [home_team, away_team];
@@ -208,20 +208,20 @@ function updateTeamInfoInMasterData() {
       // get game count
       var gameCount = obj.teams[i].games.length;
       var abbrev = obj.teams[i].abbrev;
-      obj.teams[i]["game_count"] = gameCount;
+      obj.teams[i].game_count = gameCount;
       console.log("    " + abbrev + " game count:      " + gameCount);
       // get streak info
       var gameList = getSortedGameList(obj.teams[i].games);
       var currentStreak = getCurrentStreak(gameList);
       var longestStreak = getLongestStreak(gameList);
-      obj.teams[i]["current_streak"] = currentStreak;
-      obj.teams[i]["longest_streak"] = longestStreak;
+      obj.teams[i].current_streak = currentStreak;
+      obj.teams[i].longest_streak = longestStreak;
       console.log("    " + abbrev + " current streak:  " + currentStreak);
       console.log("    " + abbrev + " longest streak:  " + longestStreak);
       console.log();
     }
     console.log();
     saveDataFile(obj);
-  })
+  });
 }
 //catchUpMaster();
