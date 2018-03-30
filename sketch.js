@@ -77,11 +77,12 @@ function drawStreak(type, n, x, y) {
   while (i < n) {
     var xPos = x + ((rectSize + gapX) * i);
     var yPos = y;
-    rect(xPos + (textWidth(n) / 2) - (rectSize / 2), yPos - ((textAscent(n) - 2) / 2) - (rectSize / 2), rectSize, rectSize);
+    rect(xPos - (rectSize / 2), yPos - ((textAscent(n) - 2) / 2) - (rectSize / 2), rectSize, rectSize);
+    //    rect(xPos + (textWidth(n) / 2) - (rectSize / 2), yPos - ((textAscent(n) - 2) / 2) - (rectSize / 2), rectSize, rectSize);
     if (i + 1 == n) {
       noStroke();
       fill(labelColor);
-      text(n, xPos, yPos);
+      text(n, xPos - (textWidth(n) / 2), yPos);
     }
     i++;
   }
