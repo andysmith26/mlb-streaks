@@ -58,6 +58,7 @@ function drawData(data) {
       teamsUnderMin++;
     }
   }
+    fill(labelColorMain);
   var minLabel = teamsUnderMin + " teams";
   text(minLabel, nameX - textWidth(minLabel), currentY);
   stroke(shapeStroke);

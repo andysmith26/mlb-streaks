@@ -1,25 +1,28 @@
 var jsonfile = require('jsonfile');
 var Mlbgames = require('mlbgames');
 var fs = require('fs');
-var MASTER_DATA = "season.json";
-var BACKUP_DATA = "season_backup.json";
+var MASTER_DATA = "public/season.json";
+var BACKUP_DATA = "public/season_backup.json";
 var teams;
 
-console.log("starting server.js");
+
+console.log("starting index.js");
 var express = require('express');
 var http = require('http');
 var app = express();
 var server = http.createServer(app);
-var server_port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
-var server_ip_address = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+var server_port = process.env.PORT || 8080;
+var server_ip_address = process.env.IP || '0.0.0.0';
 
 server.listen(server_port, server_ip_address, function () {
  console.log( "Listening on " + server_ip_address + ", port " + server_port )
 });
 
 app.use(express.static('public'));
-console.log("my server is running");
+console.log("server is running");
 
+setTimeout(catchUpMaster, 60 * 1000);
+           
 function fixNum(n) {
   if (n < 10) {
     n = "0" + n;
@@ -77,29 +80,35 @@ function updateMasterData(path) {
     console.log("  ********");
     console.log();
     mlbgames.get((err, games) => {
-      console.log("  games found: " + games.length);
-      console.log();
-      var count_of_final_games = 0;
-      for (var i = 0; i < games.length; i++) {
-        console.log("    " + games[i].status.status + ": " + games[i].id);
-        if (games[i].status.status == "Final") {
-          //console.log(teams.length);
-          teams = insert_game_data(extract_game_data(games[i]), teams);
-          count_of_final_games++;
+        if (games) {
+            console.log("  games found: " + games.length);
+            console.log();
+            var count_of_final_games = 0;
+            for (var i = 0; i < games.length; i++) {
+                console.log("    " + games[i].status.status + ": " + games[i].id);
+                if (games[i].status.status == "Final") {
+                    //console.log(teams.length);
+                    teams = insert_game_data(extract_game_data(games[i]), teams);
+                    count_of_final_games++;
+                }
+            }
+            obj.teams = teams;
+            var now = new Date();
+            obj.file_last_update = now.toJSON();
+            obj.last_path_imported = path;
+            console.log();
+            saveDataFile(obj);
+        } else {
+            console.log("  no games found\n");
+            console.log("  error: " + err);
         }
-      }
-      obj.teams = teams;
-      var now = new Date();
-      obj.file_last_update = now.toJSON();
-      obj.last_path_imported = path;
-      console.log();
-      saveDataFile(obj);
-      var todaysPath = dateToPath(now);
-      if (incrementPath(path).localeCompare(todaysPath) <= 0) {
-        updateMasterData(incrementPath(path));
-      } else {
-        updateTeamInfoInMasterData();
-      }
+        var todaysPath = dateToPath(now);
+            if (incrementPath(path).localeCompare(todaysPath) <= 0) {
+                updateMasterData(incrementPath(path));
+            } else {
+                updateTeamInfoInMasterData();
+            }
+
     }); //mlbgames.get end
   });
 }
