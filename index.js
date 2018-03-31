@@ -17,6 +17,9 @@ server.listen(server_port, server_ip_address, function () {
  console.log( "Listening on " + server_ip_address + ", port " + server_port )
 });
 
+app.use(express.static('public'));
+console.log("my server is running");
+
 function fixNum(n) {
   if (n < 10) {
     n = "0" + n;
