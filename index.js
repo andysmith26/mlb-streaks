@@ -5,6 +5,13 @@ var MASTER_DATA = "public/season.json";
 var BACKUP_DATA = "public/season_backup.json";
 var teams;
 
+/* sample URL = https://gd2.mlb.com/components/game/mlb/year_2018/month_03/day_31/gid_2018_03_31_slnmlb_nynmlb_1/linescore.json
+
+OR
+
+https://gd2.mlb.com/components/game/mlb/year_2018/month_03/day_31
+NOTE NO TRAILING SLASH
+*/
 
 console.log("starting index.js");
 var express = require('express');
@@ -21,6 +28,7 @@ server.listen(server_port, server_ip_address, function () {
 app.use(express.static('public'));
 console.log("server is running");
 
+setTimeout(catchUpMaster, 1000);
 setInterval(catchUpMaster, 10 * 60 * 1000);
            
 function fixNum(n) {

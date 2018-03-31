@@ -73,7 +73,7 @@ function drawData(data) {
     fill(labelColorMain);
     textStyle(NORMAL);
     textSize(labelSize * 3);
-    text("Current Win Streaks in MLB", 40, 500);
+    text("Current Win Streaks in MLB", 40, 515);
 }
 
 function drawStreak(type, s, n, x, y) {
