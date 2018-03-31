@@ -1,6 +1,6 @@
 {
   "last_path_imported": "year_2018/month_03/day_31/",
-  "file_last_update": "2018-03-31T19:49:27.091Z",
+  "file_last_update": "2018-03-31T21:15:42.715Z",
   "season": 2018,
   "teams": [
     {
@@ -61,8 +61,8 @@
           "result": "W"
         }
       ],
-      "game_count": 1,
-      "current_streak": 1,
+      "game_count": 2,
+      "current_streak": 0,
       "longest_streak": 0
     },
     {
@@ -110,7 +110,7 @@
           "result": "L"
         }
       ],
-      "game_count": 1,
+      "game_count": 2,
       "current_streak": 0,
       "longest_streak": 0
     },

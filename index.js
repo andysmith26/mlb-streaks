@@ -87,7 +87,7 @@ function updateMasterData(path) {
             var count_of_final_games = 0;
             for (var i = 0; i < games.length; i++) {
                 console.log("    " + games[i].status.status + ": " + games[i].id);
-                if (games[i].status.status == "Final" || games[i].status.status == "Game Over") {
+                if (games[i].status.status == "Final") {  //include status = "Game Over" causes W/L to not be reported
                     //console.log(teams.length);
                     teams = insert_game_data(extract_game_data(games[i]), teams);
                     count_of_final_games++;
