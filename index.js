@@ -5,6 +5,18 @@ var MASTER_DATA = "season.json";
 var BACKUP_DATA = "season_backup.json";
 var teams;
 
+console.log("starting server.js");
+var express = require('express');
+var http = require('http');
+var app = express();
+var server = http.createServer(app);
+var server_port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
+var server_ip_address = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+
+server.listen(server_port, server_ip_address, function () {
+ console.log( "Listening on " + server_ip_address + ", port " + server_port )
+});
+
 function fixNum(n) {
   if (n < 10) {
     n = "0" + n;

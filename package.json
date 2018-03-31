@@ -1,15 +1,21 @@
 {
-  "name": "BaseballStreaks",
-  "description": "...",
-  "author": "Andrew Smith",
-  "version": "0.0.1",
-  "devDependencies": {
-    "jshint": "^2.6.0"
-  },
-  "scripts": {
-    "test": "jshint index.js"
-  },
+    "name": "BaseballStreaks",
+    "description": "...",
+    "author": "Andrew Smith",
+    "version": "0.0.1",
+    "devDependencies": {
+        "jshint": "^2.6.0"
+    },
+    "scripts": {
+        "test": "jshint index.js",
+        "start": "node index.js"
+    },
     "jshintConfig": {
         "esversion": 6
+    },
+    "dependencies": {
+        "express": "^4.16.3",
+        "jsonfile": "^4.0.0",
+        "mlbgames": "^1.0.5"
     }
 }
