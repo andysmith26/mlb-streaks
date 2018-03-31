@@ -66,7 +66,10 @@ function drawData(data) {
   rect(nameX + (nameBarGap / 2) + 1, currentY - 16, 1, rectSize); // FIXME: this is a hack!!
   textStyle(ITALIC);
   noStroke();
-  text("no current streak", nameX + nameBarGap, currentY);
+    text("no current streak", nameX + nameBarGap, currentY);
+    fill(labelColorInverse);
+    textSize(labelSize - 3);
+    text(data.file_last_update, 10, 590);
 }
 
 function drawStreak(type, s, n, x, y) {
