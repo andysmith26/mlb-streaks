@@ -21,7 +21,7 @@ server.listen(server_port, server_ip_address, function () {
 app.use(express.static('public'));
 console.log("server is running");
 
-setTimeout(catchUpMaster, 60 * 1000);
+setTimeout(catchUpMaster, 10 * 1000);
            
 function fixNum(n) {
   if (n < 10) {

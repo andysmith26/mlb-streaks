@@ -67,9 +67,13 @@ function drawData(data) {
   textStyle(ITALIC);
   noStroke();
     text("no current streak", nameX + nameBarGap, currentY);
-    fill(labelColorInverse);
+    fill(labelColorMain);
     textSize(labelSize - 3);
-    text(data.file_last_update, 10, 590);
+    text("last updated " + data.file_last_update, 10, 590);
+    fill(labelColorMain);
+    textStyle(NORMAL);
+    textSize(labelSize * 3);
+    text("Current Win Streaks in MLB", 40, 500);
 }
 
 function drawStreak(type, s, n, x, y) {
