@@ -5,7 +5,8 @@ var startY = 30;
 var stepY = 26;
 var rectSize = 20;
 var rectOutlineSize = 1;
-var shapeFill;
+var shapeFillDark;
+var shapeFillLight;
 var shapeStroke;
 var labelSize = 14; // should be an even int
 var minStreakToDraw = 1;
@@ -16,7 +17,8 @@ function setup() {
   createCanvas(600, 600);
   background(220);
   loadJSON("season.json", drawData);
-  shapeFill = color(0, 75, 150);
+    shapeFillDark = color(0, 75, 150);
+    shapeFillLight = color(200, 200, 200);
   shapeStroke = color(100, 100, 100);
   labelColorMain = color(30, 30, 30);
   labelColorInverse = color(200, 200, 200);
@@ -43,9 +45,14 @@ function drawData(data) {
       textSize(labelSize);
       fill(labelColorMain);
       noStroke();
-      text(abbrev, nameX - textWidth(abbrev), currentY);
-      drawStreak("current", currentStreak, nameX + nameBarGap, currentY);
-      drawStreak("longest", longestStreak, nameX + nameBarGap, currentY);
+        text(abbrev, nameX - textWidth(abbrev), currentY);
+        if (currentStreak === longestStreak) {
+            drawStreak("currentAndLongest", 0, currentStreak, nameX + nameBarGap, currentY);
+        }
+        else {
+            drawStreak("current", 0, currentStreak, nameX + nameBarGap, currentY);
+            drawStreak("longest", currentStreak, longestStreak, nameX + nameBarGap, currentY);
+        }
       rowsDrawn++;
     } else {
       teamsUnderMin++;
@@ -61,19 +68,18 @@ function drawData(data) {
   text("no current streak", nameX + nameBarGap, currentY);
 }
 
-function drawStreak(type, n, x, y) {
+function drawStreak(type, s, n, x, y) {
   var labelColor;
   if (type == "longest") {
-    stroke(shapeStroke);
-    strokeWeight(rectOutlineSize);
-    noFill();
+      noStroke();
+      fill(shapeFillLight);
     labelColor = labelColorMain;
   } else {
     noStroke();
-    fill(shapeFill);
+    fill(shapeFillDark);
     labelColor = labelColorInverse;
   }
-  var i = 0;
+  var i = s;
   while (i < n) {
     var xPos = x + ((rectSize + gapX) * i);
     var yPos = y;
