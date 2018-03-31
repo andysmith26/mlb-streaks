@@ -15,7 +15,7 @@ var server_port = process.env.PORT || 8080;
 var server_ip_address = process.env.IP || '0.0.0.0';
 
 server.listen(server_port, server_ip_address, function () {
- console.log( "Listening on " + server_ip_address + ", port " + server_port )
+    console.log( "Listening on " + server_ip_address + ", port " + server_port );
 });
 
 app.use(express.static('public'));
@@ -78,7 +78,8 @@ function updateMasterData(path) {
     console.log("  * retreiving source file from: " + options.path);
     console.log("  * ");
     console.log("  ********");
-    console.log();
+      console.log();
+                  var now = new Date();
     mlbgames.get((err, games) => {
         if (games) {
             console.log("  games found: " + games.length);
@@ -93,7 +94,6 @@ function updateMasterData(path) {
                 }
             }
             obj.teams = teams;
-            var now = new Date();
             obj.file_last_update = now.toJSON();
             obj.last_path_imported = path;
             console.log();
