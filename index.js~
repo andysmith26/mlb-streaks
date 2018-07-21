@@ -51,14 +51,15 @@ function incrementPath(p) {
 }
 
 function catchUpMaster() {
-    var obj = jsonfile.readFileSync(MASTER_DATA);
+  jsonfile.readFile(MASTER_DATA, function (err, obj) {
     updateMasterData(obj.last_path_imported);
+  });
 }
 
 function saveDataFile(obj) {
-    jsonfile.writeFileSync(MASTER_DATA, obj);
-    /*
-      function (err) {
+  jsonfile.writeFile(MASTER_DATA, obj, {
+    spaces: 2
+  }, function (err) {
     if (err) {
       console.error("  error saving data file:" + err);
       console.log();
@@ -69,11 +70,11 @@ function saveDataFile(obj) {
       console.log("  saved backup data file: " + BACKUP_DATA);
       console.log();
     }
-    */
+  });
 }
 
 function updateMasterData(path) {
-    var obj = jsonfile.readFileSync(MASTER_DATA);
+  jsonfile.readFile(MASTER_DATA, function (err, obj) {
     teams = obj.teams;
     var options = {
       path: path
@@ -117,6 +118,7 @@ function updateMasterData(path) {
             }
 
     }); //mlbgames.get end
+  });
 }
 /**
  * Appends a game to a data structure of games
@@ -231,7 +233,7 @@ function getLongestStreak(gameList) {
 }
 
 function updateTeamInfoInMasterData() {
-    var obj = jsonfile.readFile(MASTER_DATA);
+  jsonfile.readFile(MASTER_DATA, function (err, obj) {
     console.log();
     console.log("  updating team info");
     for (var i = 0; i < obj.teams.length; i++) {
@@ -252,5 +254,6 @@ function updateTeamInfoInMasterData() {
     }
     console.log();
     saveDataFile(obj);
+  });
 }
 //catchUpMaster();

@@ -1,6 +1,6 @@
 {
-  "last_path_imported": "year_2018/month_03/day_31/",
-  "file_last_update": "2018-03-31T22:34:08.895Z",
+  "last_path_imported": "year_2018/month_04/day_14/",
+  "file_last_update": "2018-07-21T12:18:18.797Z",
   "season": 2018,
   "teams": [
     {
@@ -14,6 +14,71 @@
         {
           "id": "2018/03/30/wasmlb-cinmlb-1",
           "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/01/wasmlb-cinmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/02/wasmlb-atlmlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/03/wasmlb-atlmlb-1",
+          "runs": 6,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/04/wasmlb-atlmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/05/nynmlb-wasmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/07/nynmlb-wasmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/08/nynmlb-wasmlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/09/atlmlb-wasmlb-1",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/10/atlmlb-wasmlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/11/atlmlb-wasmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/12/colmlb-wasmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/13/colmlb-wasmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/14/colmlb-wasmlb-1",
+          "runs": 6,
           "result": "W"
         }
       ],
@@ -33,6 +98,66 @@
           "id": "2018/03/29/chnmlb-miamlb-1",
           "runs": 4,
           "result": "L"
+        },
+        {
+          "id": "2018/03/31/chnmlb-miamlb-1",
+          "runs": 6,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/01/chnmlb-miamlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/02/bosmlb-miamlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/03/bosmlb-miamlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/05/miamlb-phimlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/07/miamlb-phimlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/08/miamlb-phimlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/09/nynmlb-miamlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/10/nynmlb-miamlb-1",
+          "runs": 6,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/11/nynmlb-miamlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/13/pitmlb-miamlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/14/pitmlb-miamlb-1",
+          "runs": 0,
+          "result": "L"
         }
       ],
       "game_count": 2,
@@ -51,6 +176,66 @@
           "id": "2018/03/29/phimlb-atlmlb-1",
           "runs": 8,
           "result": "W"
+        },
+        {
+          "id": "2018/03/31/phimlb-atlmlb-1",
+          "runs": 15,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/02/wasmlb-atlmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/03/wasmlb-atlmlb-1",
+          "runs": 13,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/04/wasmlb-atlmlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/06/atlmlb-colmlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/07/atlmlb-colmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/08/atlmlb-colmlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/09/atlmlb-wasmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/10/atlmlb-wasmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/11/atlmlb-wasmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/13/atlmlb-chnmlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/14/atlmlb-chnmlb-1",
+          "runs": 10,
+          "result": "L"
         }
       ],
       "game_count": 2,
@@ -69,6 +254,61 @@
           "id": "2018/03/29/slnmlb-nynmlb-1",
           "runs": 9,
           "result": "W"
+        },
+        {
+          "id": "2018/04/01/slnmlb-nynmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/03/phimlb-nynmlb-1",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/04/phimlb-nynmlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/05/nynmlb-wasmlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/07/nynmlb-wasmlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/08/nynmlb-wasmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/09/nynmlb-miamlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/10/nynmlb-miamlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/11/nynmlb-miamlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/13/milmlb-nynmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/14/milmlb-nynmlb-1",
+          "runs": 1,
+          "result": "L"
         }
       ],
       "game_count": 2,
@@ -87,6 +327,61 @@
           "id": "2018/03/29/phimlb-atlmlb-1",
           "runs": 5,
           "result": "L"
+        },
+        {
+          "id": "2018/03/31/phimlb-atlmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/03/phimlb-nynmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/04/phimlb-nynmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/05/miamlb-phimlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/07/miamlb-phimlb-1",
+          "runs": 20,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/08/miamlb-phimlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/09/cinmlb-phimlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/10/cinmlb-phimlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/11/cinmlb-phimlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/13/phimlb-tbamlb-1",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/14/phimlb-tbamlb-1",
+          "runs": 9,
+          "result": "W"
         }
       ],
       "game_count": 2,
@@ -104,6 +399,66 @@
         {
           "id": "2018/03/29/chnmlb-miamlb-1",
           "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/03/31/chnmlb-miamlb-1",
+          "runs": 10,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/01/chnmlb-miamlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/02/chnmlb-cinmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/05/chnmlb-milmlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/06/chnmlb-milmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/07/chnmlb-milmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/08/chnmlb-milmlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/10/pitmlb-chnmlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/11/pitmlb-chnmlb-1",
+          "runs": 13,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/12/pitmlb-chnmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/13/atlmlb-chnmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/14/atlmlb-chnmlb-1",
+          "runs": 14,
           "result": "W"
         }
       ],
@@ -123,6 +478,71 @@
           "id": "2018/03/29/slnmlb-nynmlb-1",
           "runs": 4,
           "result": "L"
+        },
+        {
+          "id": "2018/04/01/slnmlb-nynmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/02/slnmlb-milmlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/03/slnmlb-milmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/04/slnmlb-milmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/05/arimlb-slnmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/07/arimlb-slnmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/08/arimlb-slnmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/09/milmlb-slnmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/10/milmlb-slnmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/11/milmlb-slnmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/12/slnmlb-cinmlb-1",
+          "runs": 13,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/13/slnmlb-cinmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/14/slnmlb-cinmlb-1",
+          "runs": 6,
+          "result": "W"
         }
       ],
       "game_count": 2,
@@ -141,6 +561,71 @@
           "id": "2018/03/29/milmlb-sdnmlb-1",
           "runs": 2,
           "result": "W"
+        },
+        {
+          "id": "2018/03/31/milmlb-sdnmlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/02/slnmlb-milmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/03/slnmlb-milmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/04/slnmlb-milmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/05/chnmlb-milmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/06/chnmlb-milmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/07/chnmlb-milmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/08/chnmlb-milmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/09/milmlb-slnmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/10/milmlb-slnmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/11/milmlb-slnmlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/13/milmlb-nynmlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/14/milmlb-nynmlb-1",
+          "runs": 5,
+          "result": "W"
         }
       ],
       "game_count": 2,
@@ -153,6 +638,71 @@
         {
           "id": "2018/03/30/pitmlb-detmlb-1",
           "runs": 13,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/01/pitmlb-detmlb-1",
+          "runs": 1,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/01/pitmlb-detmlb-2",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/02/minmlb-pitmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/04/minmlb-pitmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/05/cinmlb-pitmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/06/cinmlb-pitmlb-1",
+          "runs": 14,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/07/cinmlb-pitmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/08/cinmlb-pitmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/10/pitmlb-chnmlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/11/pitmlb-chnmlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/12/pitmlb-chnmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/13/pitmlb-miamlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/14/pitmlb-miamlb-1",
+          "runs": 1,
           "result": "W"
         }
       ],
@@ -172,6 +722,66 @@
           "id": "2018/03/30/wasmlb-cinmlb-1",
           "runs": 0,
           "result": "L"
+        },
+        {
+          "id": "2018/04/01/wasmlb-cinmlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/02/chnmlb-cinmlb-1",
+          "runs": 1,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/05/cinmlb-pitmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/06/cinmlb-pitmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/07/cinmlb-pitmlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/08/cinmlb-pitmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/09/cinmlb-phimlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/10/cinmlb-phimlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/11/cinmlb-phimlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/12/slnmlb-cinmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/13/slnmlb-cinmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/14/slnmlb-cinmlb-1",
+          "runs": 1,
+          "result": "L"
         }
       ],
       "game_count": 2,
@@ -190,6 +800,61 @@
           "id": "2018/03/29/sfnmlb-lanmlb-1",
           "runs": 0,
           "result": "L"
+        },
+        {
+          "id": "2018/03/31/sfnmlb-lanmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/01/sfnmlb-lanmlb-1",
+          "runs": 9,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/02/lanmlb-arimlb-1",
+          "runs": 7,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/03/lanmlb-arimlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/04/lanmlb-arimlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/07/lanmlb-sfnmlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/08/lanmlb-sfnmlb-1",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/10/oakmlb-lanmlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/11/oakmlb-lanmlb-1",
+          "runs": 6,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/13/arimlb-lanmlb-1",
+          "runs": 7,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/14/arimlb-lanmlb-1",
+          "runs": 1,
+          "result": "L"
         }
       ],
       "game_count": 2,
@@ -206,6 +871,76 @@
         },
         {
           "id": "2018/03/29/colmlb-arimlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/03/31/colmlb-arimlb-1",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/02/colmlb-sdnmlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/03/colmlb-sdnmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/04/colmlb-sdnmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/05/colmlb-sdnmlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/06/atlmlb-colmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/07/atlmlb-colmlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/08/atlmlb-colmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/09/sdnmlb-colmlb-1",
+          "runs": 6,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/10/sdnmlb-colmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/11/sdnmlb-colmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/12/colmlb-wasmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/13/colmlb-wasmlb-1",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/14/colmlb-wasmlb-1",
           "runs": 2,
           "result": "L"
         }
@@ -226,6 +961,66 @@
           "id": "2018/03/29/colmlb-arimlb-1",
           "runs": 8,
           "result": "W"
+        },
+        {
+          "id": "2018/03/31/colmlb-arimlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/02/lanmlb-arimlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/03/lanmlb-arimlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/04/lanmlb-arimlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/05/arimlb-slnmlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/07/arimlb-slnmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/08/arimlb-slnmlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/09/arimlb-sfnmlb-1",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/10/arimlb-sfnmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/11/arimlb-sfnmlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/13/arimlb-lanmlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/14/arimlb-lanmlb-1",
+          "runs": 9,
+          "result": "W"
         }
       ],
       "game_count": 2,
@@ -244,6 +1039,76 @@
           "id": "2018/03/29/milmlb-sdnmlb-1",
           "runs": 1,
           "result": "L"
+        },
+        {
+          "id": "2018/03/31/milmlb-sdnmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/02/colmlb-sdnmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/03/colmlb-sdnmlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/04/colmlb-sdnmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/05/colmlb-sdnmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/06/sdnmlb-houmlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/07/sdnmlb-houmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/08/sdnmlb-houmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/09/sdnmlb-colmlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/10/sdnmlb-colmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/11/sdnmlb-colmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/12/sfnmlb-sdnmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/13/sfnmlb-sdnmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/14/sfnmlb-sdnmlb-1",
+          "runs": 5,
+          "result": "W"
         }
       ],
       "game_count": 2,
@@ -262,6 +1127,66 @@
           "id": "2018/03/29/sfnmlb-lanmlb-1",
           "runs": 1,
           "result": "W"
+        },
+        {
+          "id": "2018/03/31/sfnmlb-lanmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/01/sfnmlb-lanmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/03/seamlb-sfnmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/04/seamlb-sfnmlb-1",
+          "runs": 10,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/07/lanmlb-sfnmlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/08/lanmlb-sfnmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/09/arimlb-sfnmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/10/arimlb-sfnmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/11/arimlb-sfnmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/12/sfnmlb-sdnmlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/13/sfnmlb-sdnmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/14/sfnmlb-sdnmlb-1",
+          "runs": 4,
+          "result": "L"
         }
       ],
       "game_count": 2,
@@ -280,6 +1205,71 @@
           "id": "2018/03/29/houmlb-texmlb-1",
           "runs": 4,
           "result": "W"
+        },
+        {
+          "id": "2018/03/31/houmlb-texmlb-1",
+          "runs": 9,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/01/houmlb-texmlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/02/balmlb-houmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/03/balmlb-houmlb-1",
+          "runs": 10,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/04/balmlb-houmlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/06/sdnmlb-houmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/07/sdnmlb-houmlb-1",
+          "runs": 1,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/08/sdnmlb-houmlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/09/houmlb-minmlb-1",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/10/houmlb-minmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/11/houmlb-minmlb-1",
+          "runs": 8,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/13/texmlb-houmlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/14/texmlb-houmlb-1",
+          "runs": 5,
+          "result": "L"
         }
       ],
       "game_count": 2,
@@ -298,6 +1288,76 @@
           "id": "2018/03/29/anamlb-oakmlb-1",
           "runs": 5,
           "result": "L"
+        },
+        {
+          "id": "2018/03/31/anamlb-oakmlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/01/anamlb-oakmlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/02/clemlb-anamlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/03/clemlb-anamlb-1",
+          "runs": 13,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/04/clemlb-anamlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/06/oakmlb-anamlb-1",
+          "runs": 13,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/07/oakmlb-anamlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/08/oakmlb-anamlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/09/anamlb-texmlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/10/anamlb-texmlb-1",
+          "runs": 11,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/11/anamlb-texmlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/12/anamlb-kcamlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/13/anamlb-kcamlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/14/anamlb-kcamlb-1",
+          "runs": 5,
+          "result": "W"
         }
       ],
       "game_count": 2,
@@ -310,6 +1370,61 @@
         {
           "id": "2018/03/29/clemlb-seamlb-1",
           "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2018/03/31/clemlb-seamlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/01/clemlb-seamlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/03/seamlb-sfnmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/04/seamlb-sfnmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/05/seamlb-minmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/07/seamlb-minmlb-1",
+          "runs": 11,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/09/seamlb-kcamlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/10/seamlb-kcamlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/11/seamlb-kcamlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/13/oakmlb-seamlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/14/oakmlb-seamlb-1",
+          "runs": 10,
           "result": "W"
         }
       ],
@@ -329,6 +1444,76 @@
           "id": "2018/03/29/houmlb-texmlb-1",
           "runs": 1,
           "result": "L"
+        },
+        {
+          "id": "2018/03/31/houmlb-texmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/01/houmlb-texmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/02/texmlb-oakmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/03/texmlb-oakmlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/04/texmlb-oakmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/05/texmlb-oakmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/06/tormlb-texmlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/07/tormlb-texmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/08/tormlb-texmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/09/anamlb-texmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/10/anamlb-texmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/11/anamlb-texmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/13/texmlb-houmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/14/texmlb-houmlb-1",
+          "runs": 6,
+          "result": "W"
         }
       ],
       "game_count": 2,
@@ -347,6 +1532,71 @@
           "id": "2018/03/29/anamlb-oakmlb-1",
           "runs": 6,
           "result": "W"
+        },
+        {
+          "id": "2018/03/31/anamlb-oakmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/01/anamlb-oakmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/02/texmlb-oakmlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/03/texmlb-oakmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/04/texmlb-oakmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/05/texmlb-oakmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/06/oakmlb-anamlb-1",
+          "runs": 9,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/07/oakmlb-anamlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/08/oakmlb-anamlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/10/oakmlb-lanmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/11/oakmlb-lanmlb-1",
+          "runs": 16,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/13/oakmlb-seamlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/14/oakmlb-seamlb-1",
+          "runs": 8,
+          "result": "L"
         }
       ],
       "game_count": 2,
@@ -360,6 +1610,61 @@
           "id": "2018/03/29/chamlb-kcamlb-1",
           "runs": 14,
           "result": "W"
+        },
+        {
+          "id": "2018/03/31/chamlb-kcamlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/02/chamlb-tormlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/03/chamlb-tormlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/04/chamlb-tormlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/05/detmlb-chamlb-1",
+          "runs": 7,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/07/detmlb-chamlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/08/detmlb-chamlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/09/tbamlb-chamlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/10/tbamlb-chamlb-1",
+          "runs": 5,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/11/tbamlb-chamlb-1",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/12/chamlb-minmlb-1",
+          "runs": 0,
+          "result": "L"
         }
       ],
       "game_count": 1,
@@ -372,6 +1677,71 @@
         {
           "id": "2018/03/29/clemlb-seamlb-1",
           "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/03/31/clemlb-seamlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/01/clemlb-seamlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/02/clemlb-anamlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/03/clemlb-anamlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/04/clemlb-anamlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/06/kcamlb-clemlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/07/kcamlb-clemlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/08/kcamlb-clemlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/09/detmlb-clemlb-1",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/10/detmlb-clemlb-1",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/11/detmlb-clemlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/12/detmlb-clemlb-1",
+          "runs": 9,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/13/tormlb-clemlb-1",
+          "runs": 4,
           "result": "L"
         }
       ],
@@ -386,6 +1756,66 @@
           "id": "2018/03/30/pitmlb-detmlb-1",
           "runs": 10,
           "result": "L"
+        },
+        {
+          "id": "2018/04/01/pitmlb-detmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/01/pitmlb-detmlb-2",
+          "runs": 6,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/02/kcamlb-detmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/03/kcamlb-detmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/05/detmlb-chamlb-1",
+          "runs": 9,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/07/detmlb-chamlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/08/detmlb-chamlb-1",
+          "runs": 1,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/09/detmlb-clemlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/10/detmlb-clemlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/11/detmlb-clemlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/12/detmlb-clemlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/13/nyamlb-detmlb-1",
+          "runs": 6,
+          "result": "L"
         }
       ],
       "game_count": 1,
@@ -398,6 +1828,66 @@
         {
           "id": "2018/03/29/chamlb-kcamlb-1",
           "runs": 7,
+          "result": "L"
+        },
+        {
+          "id": "2018/03/31/chamlb-kcamlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/02/kcamlb-detmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/03/kcamlb-detmlb-1",
+          "runs": 1,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/06/kcamlb-clemlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/07/kcamlb-clemlb-1",
+          "runs": 1,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/08/kcamlb-clemlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/09/seamlb-kcamlb-1",
+          "runs": 10,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/10/seamlb-kcamlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/11/seamlb-kcamlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/12/anamlb-kcamlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/13/anamlb-kcamlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/14/anamlb-kcamlb-1",
+          "runs": 3,
           "result": "L"
         }
       ],
@@ -412,6 +1902,56 @@
           "id": "2018/03/29/minmlb-balmlb-1",
           "runs": 2,
           "result": "L"
+        },
+        {
+          "id": "2018/03/31/minmlb-balmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/01/minmlb-balmlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/02/minmlb-pitmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/04/minmlb-pitmlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/05/seamlb-minmlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/07/seamlb-minmlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/09/houmlb-minmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/10/houmlb-minmlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/11/houmlb-minmlb-1",
+          "runs": 9,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/12/chamlb-minmlb-1",
+          "runs": 4,
+          "result": "W"
         }
       ],
       "game_count": 1,
@@ -425,6 +1965,76 @@
           "id": "2018/03/29/minmlb-balmlb-1",
           "runs": 3,
           "result": "W"
+        },
+        {
+          "id": "2018/03/31/minmlb-balmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/01/minmlb-balmlb-1",
+          "runs": 0,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/02/balmlb-houmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/03/balmlb-houmlb-1",
+          "runs": 6,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/04/balmlb-houmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/05/balmlb-nyamlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/06/balmlb-nyamlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/07/balmlb-nyamlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/08/balmlb-nyamlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/09/tormlb-balmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/10/tormlb-balmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/11/tormlb-balmlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/13/balmlb-bosmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/14/balmlb-bosmlb-1",
+          "runs": 3,
+          "result": "L"
         }
       ],
       "game_count": 1,
@@ -443,6 +2053,66 @@
           "id": "2018/03/29/bosmlb-tbamlb-1",
           "runs": 4,
           "result": "L"
+        },
+        {
+          "id": "2018/03/31/bosmlb-tbamlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/01/bosmlb-tbamlb-1",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/02/bosmlb-miamlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/03/bosmlb-miamlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/05/tbamlb-bosmlb-1",
+          "runs": 3,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/07/tbamlb-bosmlb-1",
+          "runs": 10,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/08/tbamlb-bosmlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/10/nyamlb-bosmlb-1",
+          "runs": 14,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/11/nyamlb-bosmlb-1",
+          "runs": 7,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/12/nyamlb-bosmlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/13/balmlb-bosmlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/14/balmlb-bosmlb-1",
+          "runs": 10,
+          "result": "W"
         }
       ],
       "game_count": 2,
@@ -460,6 +2130,66 @@
         {
           "id": "2018/03/29/nyamlb-tormlb-1",
           "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/03/31/nyamlb-tormlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/01/nyamlb-tormlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/03/tbamlb-nyamlb-1",
+          "runs": 11,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/04/tbamlb-nyamlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/05/balmlb-nyamlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/06/balmlb-nyamlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/07/balmlb-nyamlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/08/balmlb-nyamlb-1",
+          "runs": 7,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/10/nyamlb-bosmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/11/nyamlb-bosmlb-1",
+          "runs": 10,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/12/nyamlb-bosmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/13/nyamlb-detmlb-1",
+          "runs": 8,
           "result": "W"
         }
       ],
@@ -479,6 +2209,66 @@
           "id": "2018/03/29/bosmlb-tbamlb-1",
           "runs": 6,
           "result": "W"
+        },
+        {
+          "id": "2018/03/31/bosmlb-tbamlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/01/bosmlb-tbamlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/03/tbamlb-nyamlb-1",
+          "runs": 4,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/04/tbamlb-nyamlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/05/tbamlb-bosmlb-1",
+          "runs": 2,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/07/tbamlb-bosmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/08/tbamlb-bosmlb-1",
+          "runs": 7,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/09/tbamlb-chamlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/10/tbamlb-chamlb-1",
+          "runs": 6,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/11/tbamlb-chamlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/13/phimlb-tbamlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/14/phimlb-tbamlb-1",
+          "runs": 4,
+          "result": "L"
         }
       ],
       "game_count": 2,
@@ -497,6 +2287,66 @@
           "id": "2018/03/29/nyamlb-tormlb-1",
           "runs": 1,
           "result": "L"
+        },
+        {
+          "id": "2018/03/31/nyamlb-tormlb-1",
+          "runs": 5,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/01/nyamlb-tormlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/02/chamlb-tormlb-1",
+          "runs": 4,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/03/chamlb-tormlb-1",
+          "runs": 14,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/04/chamlb-tormlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/06/tormlb-texmlb-1",
+          "runs": 8,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/07/tormlb-texmlb-1",
+          "runs": 1,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/08/tormlb-texmlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/09/tormlb-balmlb-1",
+          "runs": 7,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/10/tormlb-balmlb-1",
+          "runs": 2,
+          "result": "W"
+        },
+        {
+          "id": "2018/04/11/tormlb-balmlb-1",
+          "runs": 3,
+          "result": "L"
+        },
+        {
+          "id": "2018/04/13/tormlb-clemlb-1",
+          "runs": 8,
+          "result": "W"
         }
       ],
       "game_count": 2,
