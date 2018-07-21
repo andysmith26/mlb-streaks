@@ -231,7 +231,7 @@ function getLongestStreak(gameList) {
 }
 
 function updateTeamInfoInMasterData() {
-    var obj = jsonfile.readFile(MASTER_DATA);
+    var obj = jsonfile.readFileSync(MASTER_DATA);
     console.log();
     console.log("  updating team info");
     for (var i = 0; i < obj.teams.length; i++) {
