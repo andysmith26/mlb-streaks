@@ -22,7 +22,7 @@ function setup() {
   shapeStroke = color(100, 100, 100);
   labelColorMain = color(30, 30, 30);
     labelColorInverse = color(200, 200, 200);
-    console.log("starting from heroku");
+    console.log("starting from heroku v2");
 }
 
 function drawData(data) {
