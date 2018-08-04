@@ -1,4 +1,4 @@
 node_modules
 *~
-public/season.json
-public/season_backup.json
+season.json
+season_backup.json
