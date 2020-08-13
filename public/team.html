@@ -1,18 +1,29 @@
 <html>
   <body>
-    <div id="demo"></div>
+    <div id="txt">see console</div>
   </body>
   <script>
 
+    var data;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            var myObj = JSON.parse(this.responseText);
-            document.getElementById("demo").innerHTML = myObj.file_last_update;
+            data = JSON.parse(this.responseText);
+            run();
+
         }
     };
     xmlhttp.open("GET", "season.json", true);
     xmlhttp.send();
+
+    function run() {
+        console.log("last update: " + data.file_last_update);
+        var teams = data.teams;
+        console.log("teams: " + teams.length)
+    }
+
+
+
 
   </script>
 </html>
