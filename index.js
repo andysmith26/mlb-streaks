@@ -1,7 +1,7 @@
 var jsonfile = require('jsonfile');
 var Mlbgames = require('mlbgames');
 var fs = require('fs');
-var MASTER_DATA = "public/season.json";
+var MASTER_DATA = "public/season-2020.json";
 var BACKUP_DATA = "public/season_backup.json";
 var teams;
 
@@ -28,9 +28,9 @@ server.listen(server_port, server_ip_address, function () {
 app.use(express.static('public'));
 console.log("server is running");
 
-setTimeout(catchUpMaster, 1000);
-setInterval(catchUpMaster, 10 * 60 * 1000);
-           
+setTimeout(catchUpMaster, 1000); // wait a second before doing initial run
+setInterval(catchUpMaster, 10 * 60 * 1000); // then update every ten minutes
+
 function fixNum(n) {
   if (n < 10) {
     n = "0" + n;
@@ -85,8 +85,8 @@ function updateMasterData(path) {
     console.log("  * retreiving source file from: " + options.path);
     console.log("  * ");
     console.log("  ********");
-      console.log();
-                  var now = new Date();
+    console.log();
+    var now = new Date();
     mlbgames.get((err, games) => {
         if (games) {
             console.log("  games found: " + games.length);

@@ -16,7 +16,7 @@ var labelColorInverse;
 function setup() {
   createCanvas(600, 600);
   background(220);
-  loadJSON("season.json", drawData);
+  loadJSON("season-2020.json", drawData);
     shapeFillDark = color(0, 75, 150);
     shapeFillLight = color(200, 200, 200);
   shapeStroke = color(100, 100, 100);
