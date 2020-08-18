@@ -2,19 +2,20 @@ var nameX = 100;
 var nameBarGap = 15;
 var gapX = 4;
 var startY = 30;
-var stepY = 26;
-var rectSize = 20;
+var stepY = 20;
+var rectSize = 14;
 var rectOutlineSize = 1;
 var shapeFillDark;
 var shapeFillLight;
 var shapeStroke;
-var labelSize = 14; // should be an even int
-var minStreakToDraw = 1;
+var labelSize = 12; // should be an even int
+var minStreakToDraw = 0;
+var teams = 30;
 var labelColorMain;
 var labelColorInverse;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(400, startY*2 + stepY*(teams-2) + rectSize);
   background(220);
   loadJSON("season-2020.json", drawData);
     shapeFillDark = color(0, 75, 150);
@@ -59,22 +60,19 @@ function drawData(data) {
       teamsUnderMin++;
     }
   }
-    fill(labelColorMain);
-  var minLabel = teamsUnderMin + " teams";
-  text(minLabel, nameX - textWidth(minLabel), currentY);
-  stroke(shapeStroke);
-  strokeWeight(rectOutlineSize);
-  rect(nameX + (nameBarGap / 2) + 1, currentY - 16, 1, rectSize); // FIXME: this is a hack!!
-  textStyle(ITALIC);
-  noStroke();
-    text("no current streak", nameX + nameBarGap, currentY);
+  //fill(labelColorMain);
+  //var minLabel = teamsUnderMin + " teams";
+  //text(minLabel, nameX - textWidth(minLabel), currentY);
+  //stroke(shapeStroke);
+  //strokeWeight(rectOutlineSize);
+  //rect(nameX + (nameBarGap / 2) + 1, currentY - 16, 1, rectSize); // FIXME: this is a hack!!
+  //textStyle(ITALIC);
+  //noStroke();
+  //text("no current streak", nameX + nameBarGap, currentY);
     fill(labelColorMain);
     textSize(labelSize - 3);
-    text("last updated " + data.file_last_update, 10, 590);
-    fill(labelColorMain);
-    textStyle(NORMAL);
-    textSize(labelSize * 3);
-    text("Current Win Streaks in MLB", 40, 515);
+    textAlign(RIGHT);
+    text("last updated " + data.file_last_update, width-10, height-10);
 }
 
 function drawStreak(type, s, n, x, y) {
