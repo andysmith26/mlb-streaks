@@ -1,7 +1,7 @@
 var jsonfile = require('jsonfile');
 var Mlbgames = require('mlbgames');
 var fs = require('fs');
-var MASTER_DATA = "public/season-2020.json";
+var MASTER_DATA = "public/season-current.json";
 var BACKUP_DATA = "public/season_backup.json";
 var teams;
 
