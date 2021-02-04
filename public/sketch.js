@@ -10,24 +10,33 @@ var shapeFillLight;
 var shapeStroke;
 var labelSize = 12; // should be an even int
 var minStreakToDraw = 0;
-var teams = 30;
+var teams = [];
 var labelColorMain;
 var labelColorInverse;
+var lastUpdated;
+var mouseRow = -1;
 
 function setup() {
-  createCanvas(400, startY*2 + stepY*(teams-2) + rectSize);
+  createCanvas(400, startY*2 + stepY*(28) + rectSize);
   background(220);
-  loadJSON("season-current.json", drawData);
+  loadJSON("season-current.json", loadData);
     shapeFillDark = color(0, 75, 150);
     shapeFillLight = color(200, 200, 200);
   shapeStroke = color(100, 100, 100);
-  labelColorMain = color(30, 30, 30);
+  labelColorMain = color(70, 70, 70);
+  labelColorDark = color(20, 20, 20)
     labelColorInverse = color(200, 200, 200);
     console.log("starting from heroku v2");
 }
 
-function drawData(data) {
-  var teams = data.teams;
+function draw() {
+  background(220)
+  drawData()
+  setMouseGridLocation()
+}
+function loadData(data) {
+  lastUpdated = data.file_last_update
+  teams = data.teams
   teams.sort(function (a, b) {
     if (a.current_streak != b.current_streak) {
       return parseFloat(b.current_streak) - parseFloat(a.current_streak);
@@ -35,6 +44,9 @@ function drawData(data) {
       return parseFloat(b.longest_streak) - parseFloat(a.longest_streak);
     }
   });
+}
+function drawData() {
+  textAlign(LEFT)
   var rowsDrawn = 0;
   var teamsUnderMin = 0;
   var currentY = 0;
@@ -45,8 +57,15 @@ function drawData(data) {
     currentY = startY + stepY * rowsDrawn;
     if (currentStreak >= minStreakToDraw) {
       textSize(labelSize);
-      fill(labelColorMain);
+
+      if (mouseRow == i) {
+        fill(labelColorDark)
+        strokeWeight(1)
+        stroke(200, 200, 0)
+      } else {
+            fill(labelColorMain);
       noStroke();
+          }
         text(abbrev, nameX - textWidth(abbrev), currentY);
         if (currentStreak === longestStreak) {
             drawStreak("currentAndLongest", 0, currentStreak, nameX + nameBarGap, currentY);
@@ -72,7 +91,7 @@ function drawData(data) {
     fill(labelColorMain);
     textSize(labelSize - 3);
     textAlign(RIGHT);
-    text("last updated " + data.file_last_update, width-10, height-10);
+    text("last updated " + lastUpdated, width-10, height-10);
 }
 
 function drawStreak(type, s, n, x, y) {
@@ -90,7 +109,11 @@ function drawStreak(type, s, n, x, y) {
   while (i < n) {
     var xPos = x + ((rectSize + gapX) * i);
     var yPos = y;
-    rect(xPos - (rectSize / 2), yPos - ((textAscent(n) - 2) / 2) - (rectSize / 2), rectSize, rectSize);
+    var rectX = xPos - (rectSize / 2);
+    var rectY = yPos - ((textAscent(n) - 2) / 2) - (rectSize / 2);
+    var rectW = rectSize
+    var rectH = rectSize
+    rect(rectX, rectY, rectH, rectW);
     //    rect(xPos + (textWidth(n) / 2) - (rectSize / 2), yPos - ((textAscent(n) - 2) / 2) - (rectSize / 2), rectSize, rectSize);
     if (i + 1 == n) {
       noStroke();
@@ -99,4 +122,12 @@ function drawStreak(type, s, n, x, y) {
     }
     i++;
   }
+}
+
+function setMouseGridLocation() {
+  let gridYStart = 17
+  let gridYGap = 20
+  let rectH = rectSize
+  let row = floor((mouseY - gridYStart) / gridYGap)
+  mouseRow = row
 }
