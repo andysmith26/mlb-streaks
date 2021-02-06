@@ -15,6 +15,7 @@ var labelColorMain;
 var labelColorInverse;
 var lastUpdated;
 var mouseRow = -1;
+var mouseCol = -1;
 
 function setup() {
   createCanvas(400, startY*2 + stepY*(28) + rectSize);
@@ -49,12 +50,10 @@ function drawData() {
   textAlign(LEFT)
   var rowsDrawn = 0;
   var teamsUnderMin = 0;
-  var currentY = 0;
   for (var i = 0; i < teams.length; i++) {
     var abbrev = teams[i].abbrev;
     var currentStreak = teams[i].current_streak;
     var longestStreak = teams[i].longest_streak;
-    currentY = startY + stepY * rowsDrawn;
     if (currentStreak >= minStreakToDraw) {
       textSize(labelSize);
 
@@ -66,13 +65,14 @@ function drawData() {
             fill(labelColorMain);
       noStroke();
           }
-        text(abbrev, nameX - textWidth(abbrev), currentY);
+
+        text(abbrev, nameX - textWidth(abbrev), getYCoordFromRowNum(rowsDrawn));
         if (currentStreak === longestStreak) {
-            drawStreak("currentAndLongest", 0, currentStreak, nameX + nameBarGap, currentY);
+            drawStreak("currentAndLongest", 0, currentStreak, nameX + nameBarGap, rowsDrawn);
         }
         else {
-            drawStreak("current", 0, currentStreak, nameX + nameBarGap, currentY);
-            drawStreak("longest", currentStreak, longestStreak, nameX + nameBarGap, currentY);
+            drawStreak("current", 0, currentStreak, nameX + nameBarGap, rowsDrawn);
+            drawStreak("longest", currentStreak, longestStreak, nameX + nameBarGap, rowsDrawn);
         }
       rowsDrawn++;
     } else {
@@ -94,40 +94,57 @@ function drawData() {
     text("last updated " + lastUpdated, width-10, height-10);
 }
 
-function drawStreak(type, s, n, x, y) {
+function drawStreak(type, s, n, x, thisRow) {
   var labelColor;
+
+  // set fill based on streak type
   if (type == "longest") {
-      noStroke();
       fill(shapeFillLight);
     labelColor = labelColorMain;
   } else {
-    noStroke();
     fill(shapeFillDark);
     labelColor = labelColorInverse;
   }
-  var i = s;
-  while (i < n) {
-    var xPos = x + ((rectSize + gapX) * i);
-    var yPos = y;
+
+  var thisCol = s;
+  while (thisCol < n) {
+    var xPos = x + ((rectSize + gapX) * thisCol);
+    var yPos = getYCoordFromRowNum(thisRow)
     var rectX = xPos - (rectSize / 2);
     var rectY = yPos - ((textAscent(n) - 2) / 2) - (rectSize / 2);
     var rectW = rectSize
     var rectH = rectSize
+
+    // set stroke based on mouse location
+    if (mouseRow == thisRow && mouseCol == thisCol) {
+      strokeWeight(1)
+      stroke(220, 220, 0)
+    } else {
+      noStroke()
+    }
     rect(rectX, rectY, rectH, rectW);
     //    rect(xPos + (textWidth(n) / 2) - (rectSize / 2), yPos - ((textAscent(n) - 2) / 2) - (rectSize / 2), rectSize, rectSize);
-    if (i + 1 == n) {
+    if (thisCol + 1 == n) {
       noStroke();
       fill(labelColor);
       text(n, xPos - (textWidth(n) / 2), yPos);
     }
-    i++;
+    thisCol++;
   }
+}
+
+function getYCoordFromRowNum(rowNum) {
+  yCoord = startY + stepY * rowNum
+  return yCoord
 }
 
 function setMouseGridLocation() {
   let gridYStart = 17
   let gridYGap = 20
-  let rectH = rectSize
   let row = floor((mouseY - gridYStart) / gridYGap)
   mouseRow = row
+  let gridXStart = nameX + nameBarGap
+  let gridXGap = 20
+  let col = floor((mouseX - gridXStart + gridXGap) / gridXGap)
+  mouseCol = col
 }
