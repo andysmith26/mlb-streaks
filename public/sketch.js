@@ -46,6 +46,11 @@ function loadData(data) {
     }
   });
 }
+
+function showTooltip(str, x, y) {
+  text(str, x, y)
+}
+
 function drawData() {
   textAlign(LEFT)
   var rowsDrawn = 0;
@@ -61,6 +66,7 @@ function drawData() {
         fill(labelColorDark)
         strokeWeight(1)
         stroke(200, 200, 0)
+        showTooltip(teams[i].games.length, 300, getYCoordFromRowNum(i))
       } else {
             fill(labelColorMain);
       noStroke();
