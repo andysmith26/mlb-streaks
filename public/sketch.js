@@ -66,11 +66,10 @@ function drawData() {
         fill(labelColorDark)
         strokeWeight(1)
         stroke(200, 200, 0)
-        showTooltip(teams[i].games.length, 300, getYCoordFromRowNum(i))
       } else {
-            fill(labelColorMain);
-      noStroke();
-          }
+        fill(labelColorMain);
+        noStroke();
+      }
 
         text(abbrev, nameX - textWidth(abbrev), getYCoordFromRowNum(rowsDrawn));
         if (currentStreak === longestStreak) {
@@ -105,7 +104,7 @@ function drawStreak(type, s, n, x, thisRow) {
 
   // set fill based on streak type
   if (type == "longest") {
-      fill(shapeFillLight);
+    fill(shapeFillLight);
     labelColor = labelColorMain;
   } else {
     fill(shapeFillDark);
@@ -123,8 +122,11 @@ function drawStreak(type, s, n, x, thisRow) {
 
     // set stroke based on mouse location
     if (mouseRow == thisRow && mouseCol == thisCol) {
-      strokeWeight(1)
-      stroke(220, 220, 0)
+      if (type != "longest") {
+        strokeWeight(1)
+        stroke(220, 220, 0)
+        showTooltip(getGameShortText(thisRow, n - 1 - thisCol), 30, 10)//getYCoordFromRowNum(thisRow))
+      }
     } else {
       noStroke()
     }
@@ -137,6 +139,10 @@ function drawStreak(type, s, n, x, thisRow) {
     }
     thisCol++;
   }
+}
+
+function getGameShortText(team, gamesBeforeLastGame) {
+  return teams[team].games[gamesBeforeLastGame].id
 }
 
 function getYCoordFromRowNum(rowNum) {
