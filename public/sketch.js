@@ -2,7 +2,7 @@ var nameX = 50;
 var nameBarGap = 30;
 var gapX = 4;
 var startY = 30;
-var rectSize = 32;
+var rectSize = 50;
 var gapY = 4
 var stepY = rectSize + gapY;
 var rectOutlineSize = 1;
@@ -71,8 +71,8 @@ function drawData() {
         fill(labelColorMain);
         noStroke();
       }
-
-        text(abbrev, nameX - textWidth(abbrev), getYCoordFromRowNum(rowsDrawn));
+        textAlign(RIGHT)
+        text(abbrev, nameX, getYCoordFromRowNum(rowsDrawn));
         if (currentStreak === longestStreak) {
             drawStreak("currentAndLongest", 0, currentStreak, nameX + nameBarGap, rowsDrawn);
         }
@@ -114,45 +114,69 @@ function drawStreak(type, s, n, x, thisRow) {
     fill(255, 0, 0)
     rect(rectX, rectY, rectW, rectH)
 
-    fill(shapeFillLight);
-    labelColor = labelColorMain;
   } else {
-    fill(shapeFillDark);
-    labelColor = labelColorInverse;
-  }
 
-  var thisCol = s;
-  while (thisCol < n) {
-    var xPos = x + ((rectSize + gapX) * thisCol);
-    var yPos = getYCoordFromRowNum(thisRow)
-    var rectX = xPos - (rectSize / 2);
-    var rectY = yPos - ((textAscent(n) - 2) / 2) - (rectSize / 2);
-    var rectW = rectSize
-    var rectH = rectSize
 
-    // set stroke based on mouse location
-    if (mouseRow == thisRow && mouseCol == thisCol) {
-      if (type != "longest") {
-        strokeWeight(1)
-        stroke(220, 220, 0)
-        showTooltip(getGameShortText(thisRow, n - 1 - thisCol), 30, 10)//getYCoordFromRowNum(thisRow))
+    var thisCol = s;
+    while (thisCol < n) {
+      var xPos = x + ((rectSize + gapX) * thisCol);
+      var yPos = getYCoordFromRowNum(thisRow)
+      var rectX = xPos - (rectSize / 2);
+      var rectY = yPos - ((textAscent(n) - 2) / 2) - (rectSize / 2);
+      var rectW = rectSize
+      var rectH = rectSize
+
+      // set stroke based on mouse location
+      if (mouseRow == thisRow && mouseCol == thisCol) {
+        if (type != "longest") {
+          strokeWeight(1)
+          stroke(220, 220, 0)
+          showTooltip(getGameShortText(thisRow, n - 1 - thisCol), 30, 10)//getYCoordFromRowNum(thisRow))
+        }
+      } else {
+        noStroke()
       }
-    } else {
+      fill(shapeFillDark);
+      labelColor = labelColorInverse;
+      rect(rectX, rectY, rectH, rectW);
+      //    rect(xPos + (textWidth(n) / 2) - (rectSize / 2), yPos - ((textAscent(n) - 2) / 2) - (rectSize / 2), rectSize, rectSize);
+
+      // // write length of streak inside the box
+      // if (thisCol + 1 == n) {
+      //   noStroke();
+      //   fill(labelColor);
+      //   text(n, xPos - (textWidth(n) / 2), yPos);
+      // }
+
+      // write game info inside the box
       noStroke()
+      fill(labelColor)
+      var txt = getGameShortText(thisRow, n - 1 - thisCol)
+      textAlign(CENTER, CENTER)
+      text(txt, xPos, yPos)
+
+      thisCol++;
     }
-    rect(rectX, rectY, rectH, rectW);
-    //    rect(xPos + (textWidth(n) / 2) - (rectSize / 2), yPos - ((textAscent(n) - 2) / 2) - (rectSize / 2), rectSize, rectSize);
-    if (thisCol + 1 == n) {
-      noStroke();
-      fill(labelColor);
-      text(n, xPos - (textWidth(n) / 2), yPos);
-    }
-    thisCol++;
   }
 }
 
 function getGameShortText(team, gamesBeforeLastGame) {
-  return teams[team].games[gamesBeforeLastGame].id
+  var theTeam = teams[team].abbrev.toUpperCase()
+  var game = teams[team].games[gamesBeforeLastGame]
+  var score = game.runs + "-?"
+  var id = game.id
+  var homeTeam = id.substring(11,14).toUpperCase()
+  var awayTeam = id.substring(18,21).toUpperCase()
+  var opponentString
+  if (theTeam === homeTeam) {
+    opponentString = "v" + awayTeam
+  } else {
+    opponentString = "@" + homeTeam
+  }
+  var mm = id.substring(5, 7)
+  var dd = id.substring(8, 10)
+  var date = mm + "/" + dd
+  return score + "\n" + opponentString + "\n" + date
 }
 
 function getYCoordFromRowNum(rowNum) {
