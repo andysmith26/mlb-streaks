@@ -1,4 +1,5 @@
 node_modules
 *~
 season.json
+season-current.json
 season_backup.json

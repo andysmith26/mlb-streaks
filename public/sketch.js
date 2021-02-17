@@ -1,15 +1,16 @@
-var nameX = 100;
-var nameBarGap = 15;
+var nameX = 50;
+var nameBarGap = 30;
 var gapX = 4;
 var startY = 30;
-var stepY = 20;
-var rectSize = 14;
+var rectSize = 32;
+var gapY = 4
+var stepY = rectSize + gapY;
 var rectOutlineSize = 1;
 var shapeFillDark;
 var shapeFillLight;
 var shapeStroke;
 var labelSize = 12; // should be an even int
-var minStreakToDraw = 0;
+var minStreakToDraw = 2;
 var teams = [];
 var labelColorMain;
 var labelColorInverse;
@@ -18,7 +19,7 @@ var mouseRow = -1;
 var mouseCol = -1;
 
 function setup() {
-  createCanvas(400, startY*2 + stepY*(28) + rectSize);
+  createCanvas(400, startY*2 + stepY*(4) + rectSize);
   background(220);
   loadJSON("season-current.json", loadData);
     shapeFillDark = color(0, 75, 150);
@@ -104,6 +105,15 @@ function drawStreak(type, s, n, x, thisRow) {
 
   // set fill based on streak type
   if (type == "longest") {
+
+    var extension = 3;
+    var rectY = getYCoordFromRowNum(thisRow) - ((textAscent(n) - 2) / 2) - (rectSize / 2) - extension;
+    var rectH = rectSize + extension * 2
+    var rectX = x + ((rectSize + gapX) * n) - (rectSize / 2);
+    var rectW = 3
+    fill(255, 0, 0)
+    rect(rectX, rectY, rectW, rectH)
+
     fill(shapeFillLight);
     labelColor = labelColorMain;
   } else {

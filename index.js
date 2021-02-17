@@ -217,6 +217,7 @@ function getCurrentStreak(gameList) {
 function getLongestStreak(gameList) {
   var workingStreak = 0;
   var longestStreak = 0;
+  var workingStartGameId;
   for (var i = 0; i < gameList.length; i++) {
     if (gameList[i].result == 'W') {
       workingStreak++;
