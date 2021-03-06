@@ -163,7 +163,7 @@ function drawStreak(type, s, n, x, thisRow) {
 function getGameShortText(team, gamesBeforeLastGame) {
   var theTeam = teams[team].abbrev.toUpperCase()
   var game = teams[team].games[gamesBeforeLastGame]
-  var score = game.runs + "-?"
+  var score = game.runs_for + "-" + game.runs_against
   var id = game.id
   var homeTeam = id.substring(11,14).toUpperCase()
   var awayTeam = id.substring(18,21).toUpperCase()

@@ -1,4 +1,7 @@
 <html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
   <body>
     <div id="txt">see console</div>
   </body>
@@ -20,6 +23,8 @@
         console.log("last update: " + data.file_last_update);
         var teams = data.teams;
         console.log("teams: " + teams.length)
+        var str = JSON.stringify(data, null, 2);
+        $("#txt").html("<pre>"+str+"</pre>");
     }
 
 

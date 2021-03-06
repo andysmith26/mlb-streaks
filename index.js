@@ -126,13 +126,14 @@ function updateMasterData(path) {
  */
 function insert_game_data(gameTeams, teams) {
   for (var i = 0; i < gameTeams.length; i++) {
-    //console.log("*** analyzing game ***");
-    //console.log(gameTeams[i]);
+    console.log("*** analyzing game ***");
+    console.log(gameTeams[i]);
     var logMessage = "";
     var thisTeam = gameTeams[i].abbrev;
     var thisGame = {
       "id": gameTeams[i].id,
-      "runs": gameTeams[i].runs,
+      "runs_for": gameTeams[i].runs_for,
+      "runs_against": gameTeams[i].runs_against,
       "result": gameTeams[i].outcome
     };
     var foundTeam = false;
@@ -175,20 +176,25 @@ function extract_game_data(game) {
   var home_team = {
     "abbrev": game.home_name_abbrev,
     "id": game.id,
-    "runs": parseInt(game.linescore.r.home)
+    "runs_for": parseInt(game.linescore.r.home),
+    "runs_against": parseInt(game.linescore.r.away)
   };
   var away_team = {
     "abbrev": game.away_name_abbrev,
     "id": game.id,
-    "runs": parseInt(game.linescore.r.away)
+    "runs_for": parseInt(game.linescore.r.away),
+    "runs_against": parseInt(game.linescore.r.home)
   };
   if (game.status.status == "Final") {
-    if (home_team.runs > away_team.runs) {
+    if (home_team.runs_for > away_team.runs_for) {
       home_team.outcome = "W";
       away_team.outcome = "L";
-    } else {
+    } else if (away_team.runs_for > home_team.runs_for) {
       home_team.outcome = "L";
       away_team.outcome = "W";
+    } else {
+      home_team.outcome = "T";
+      away_team.outcome = "T";
     }
   }
   output = [home_team, away_team];
