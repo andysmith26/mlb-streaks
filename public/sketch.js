@@ -10,7 +10,7 @@ var shapeFillDark;
 var shapeFillLight;
 var shapeStroke;
 var labelSize = 12; // should be an even int
-var minStreakToDraw = 2;
+var minStreakToDraw = 1;
 var teams = [];
 var labelColorMain;
 var labelColorInverse;
@@ -19,7 +19,7 @@ var mouseRow = -1;
 var mouseCol = -1;
 
 function setup() {
-  createCanvas(400, startY*2 + stepY*(4) + rectSize);
+  createCanvas(400, startY*2 + stepY*(12) + rectSize);
   background(220);
   loadJSON("season-current.json", loadData);
     shapeFillDark = color(0, 75, 150);

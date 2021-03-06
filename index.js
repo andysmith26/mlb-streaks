@@ -5,7 +5,8 @@ var MASTER_DATA = "public/season-current.json";
 var BACKUP_DATA = "public/season_backup.json";
 var teams;
 
-/* sample URL = https://gd2.mlb.com/components/game/mlb/year_2018/month_03/day_31/gid_2018_03_31_slnmlb_nynmlb_1/linescore.json
+/* sample URL =
+https://gd2.mlb.com/components/game/mlb/year_2018/month_03/day_31/gid_2018_03_31_slnmlb_nynmlb_1/linescore.json
 
 OR
 
