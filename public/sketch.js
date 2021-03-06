@@ -10,16 +10,17 @@ var shapeFillDark;
 var shapeFillLight;
 var shapeStroke;
 var labelSize = 12; // should be an even int
-var minStreakToDraw = 1;
+var minStreakToDraw = 2;
 var teams = [];
 var labelColorMain;
 var labelColorInverse;
 var lastUpdated;
 var mouseRow = -1;
 var mouseCol = -1;
+var the_cursor;
 
 function setup() {
-  createCanvas(400, startY*2 + stepY*(12) + rectSize);
+  createCanvas(400, startY*2 + stepY*(6) + rectSize);
   background(220);
   loadJSON("season-current.json", loadData);
     shapeFillDark = color(0, 75, 150);
@@ -33,8 +34,10 @@ function setup() {
 
 function draw() {
   background(220)
+  the_cursor = "default"
   drawData()
   setMouseGridLocation()
+  cursor(the_cursor)
 }
 function loadData(data) {
   lastUpdated = data.file_last_update
@@ -63,16 +66,21 @@ function drawData() {
     if (currentStreak >= minStreakToDraw) {
       textSize(labelSize);
 
-      if (mouseRow == i) {
-        fill(labelColorDark)
-        strokeWeight(1)
-        stroke(200, 200, 0)
-      } else {
-        fill(labelColorMain);
-        noStroke();
-      }
+      // // change team name based on mouse location
+      // if (mouseRow == i) {
+      //   fill(labelColorDark)
+      //   strokeWeight(1)
+      //   stroke(200, 200, 0)
+      // } else {
+      //   fill(labelColorMain);
+      //   noStroke();
+      // }
+      // keep team name constant
+      fill(labelColorMain);
+      noStroke();
+
         textAlign(RIGHT)
-        text(abbrev, nameX, getYCoordFromRowNum(rowsDrawn));
+        text(abbrev, nameX, getYCoordFromRowNum(rowsDrawn) + rectSize/2);
         if (currentStreak === longestStreak) {
             drawStreak("currentAndLongest", 0, currentStreak, nameX + nameBarGap, rowsDrawn);
         }
@@ -111,8 +119,8 @@ function drawStreak(type, s, n, x, thisRow) {
     var rectH = rectSize + extension * 2
     var rectX = x + ((rectSize + gapX) * n) - (rectSize / 2);
     var rectW = 3
-    fill(255, 0, 0)
-    rect(rectX, rectY, rectW, rectH)
+    // fill(255, 0, 0)
+    // rect(rectX, rectY, rectW, rectH)
 
   } else {
 
@@ -122,7 +130,7 @@ function drawStreak(type, s, n, x, thisRow) {
       var xPos = x + ((rectSize + gapX) * thisCol);
       var yPos = getYCoordFromRowNum(thisRow)
       var rectX = xPos - (rectSize / 2);
-      var rectY = yPos - ((textAscent(n) - 2) / 2) - (rectSize / 2);
+      var rectY = yPos
       var rectW = rectSize
       var rectH = rectSize
 
@@ -131,7 +139,8 @@ function drawStreak(type, s, n, x, thisRow) {
         if (type != "longest") {
           strokeWeight(1)
           stroke(220, 220, 0)
-          showTooltip(getGameShortText(thisRow, n - 1 - thisCol), 30, 10)//getYCoordFromRowNum(thisRow))
+          // showTooltip(getGameShortText(thisRow, n - 1 - thisCol), 30, 10)//getYCoordFromRowNum(thisRow))
+          the_cursor = "pointer"
         }
       } else {
         noStroke()
@@ -153,7 +162,8 @@ function drawStreak(type, s, n, x, thisRow) {
       fill(labelColor)
       var txt = getGameShortText(thisRow, n - 1 - thisCol)
       textAlign(CENTER, CENTER)
-      text(txt, xPos, yPos)
+      var textY = yPos + rectSize/2 // + ((textAscent(n) - 2) / 2) - (rectSize / 2);
+      text(txt, xPos, textY)
 
       thisCol++;
     }
@@ -185,12 +195,11 @@ function getYCoordFromRowNum(rowNum) {
 }
 
 function setMouseGridLocation() {
-  let gridYStart = 17
-  let gridYGap = 20
-  let row = floor((mouseY - gridYStart) / gridYGap)
+  // let gridYStart = 17
+  // let gridYGap = 20
+  let row = floor((mouseY - startY + gapY/2) / (rectSize + gapY))
   mouseRow = row
-  let gridXStart = nameX + nameBarGap
-  let gridXGap = 20
-  let col = floor((mouseX - gridXStart + gridXGap) / gridXGap)
+  let gridXStart = nameX + nameBarGap - rectSize/2
+  let col = floor((mouseX - gridXStart + gapX/2) / (rectSize + gapX))
   mouseCol = col
 }
