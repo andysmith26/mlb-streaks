@@ -42,6 +42,7 @@ function draw() {
 function loadData(data) {
   lastUpdated = data.file_last_update
   teams = data.teams
+  console.log(teams[0])
   teams.sort(function (a, b) {
     if (a.current_streak != b.current_streak) {
       return parseFloat(b.current_streak) - parseFloat(a.current_streak);

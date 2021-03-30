@@ -88,6 +88,8 @@ function updateMasterData(path) {
     console.log("  ********");
     console.log();
     var now = new Date();
+    var oneWeekInTheFuture = new Date();
+    oneWeekInTheFuture.setDate(now.getDate() + 7);
     mlbgames.get((err, games) => {
         if (games) {
             console.log("  games found: " + games.length);
@@ -100,6 +102,10 @@ function updateMasterData(path) {
                     teams = insert_game_data(extract_game_data(games[i]), teams);
                     count_of_final_games++;
                 }
+                if (games[i].status.status == "Preview") {
+                  console.log(games[i]);
+                }
+                // handle other unfinished statuses (delay, resched. etc)
             }
             obj.teams = teams;
             obj.file_last_update = now.toJSON();
@@ -111,11 +117,12 @@ function updateMasterData(path) {
             console.log("  error: " + err);
         }
         var todaysPath = dateToPath(now);
-            if (incrementPath(path).localeCompare(todaysPath) <= 0) {
-                updateMasterData(incrementPath(path));
-            } else {
-                updateTeamInfoInMasterData();
-            }
+        var oneWeekInTheFuturePath = dateToPath(oneWeekInTheFuture);
+        if (incrementPath(path).localeCompare(oneWeekInTheFuturePath) <= 0) {
+            updateMasterData(incrementPath(path));
+        } else {
+            updateTeamInfoInMasterData();
+        }
 
     }); //mlbgames.get end
 }
