@@ -54,26 +54,13 @@ function incrementPath(p) {
 
 function catchUpMaster() {
   var obj = jsonfile.readFileSync(MASTER_DATA);
-  updateMasterData(obj.last_path_imported);
+  let now = new Date();
+  let startingDate = new Date();
+  startingDate.setDate(now.getDate() - 3);
+  updateMasterData(dateToPath(startingDate));
 }
 
-function saveDataFile(obj) {
-  jsonfile.writeFileSync(MASTER_DATA, obj, { spaces: 2, EOL: '\r\n' });
-  /*
-    function (err) {
-  if (err) {
-    console.error("  error saving data file:" + err);
-    console.log();
-  } else {
-    console.log("  saved data file: " + MASTER_DATA);
-    console.log();
-    fs.createReadStream(MASTER_DATA).pipe(fs.createWriteStream(BACKUP_DATA));
-    console.log("  saved backup data file: " + BACKUP_DATA);
-    console.log();
-  }
-  */
-}
-
+// update master data for a certain day
 function updateMasterData(path) {
   var obj = jsonfile.readFileSync(MASTER_DATA);
   teams = obj.teams;
@@ -95,16 +82,9 @@ function updateMasterData(path) {
     if (games) {
       console.log("  games found: " + games.length);
       console.log();
-      var count_of_final_games = 0;
       for (var i = 0; i < games.length; i++) {
         console.log("    " + games[i].status.status + ": " + games[i].id);
-        if (games[i].status.status == "Final") { //include status = "Game Over" causes W/L to not be reported
-          //console.log(teams.length);
-          teams = insert_game_data(extract_game_data(games[i]), teams);
-          count_of_final_games++;
-        }
-        if (games[i].status.status == "Preview") {
-          //console.log(games[i]);
+        if (games[i].status.status == "Final" || games[i].status.status == "Preview") { //include status = "Game Over" causes W/L to not be reported
           teams = insert_game_data(extract_game_data(games[i]), teams);
         }
         // handle other unfinished statuses (delay, resched. etc)
@@ -114,7 +94,7 @@ function updateMasterData(path) {
       obj.file_last_update = now.toJSON();
       obj.last_path_imported = path;
       console.log();
-      saveDataFile(obj);
+      jsonfile.writeFileSync(MASTER_DATA, obj, { spaces: 2, EOL: '\r\n' });
     } else {
       console.log("  no games found\n");
       console.log("  error: " + err);
@@ -125,7 +105,6 @@ function updateMasterData(path) {
       updateMasterData(incrementPath(path));
     } else {
       updateTeamInfoInMasterData();
-      createClientData();
     }
 
   }); //mlbgames.get end
@@ -156,9 +135,20 @@ function insert_game_data(gameTeams, teams) {
         //console.log(teams[j]);
         var foundGame = false;
         for (var k = 0; k < teams[j].games.length; k++) {
-          if (thisGame.id == teams[j].games[k].id) {
+          let checkingGame = teams[j].games[k];
+          if (thisGame.id == checkingGame.id) {
             foundGame = true;
-            logMessage = "game already imported.";
+            logMessage = "found game. checking for update.";
+            if (thisGame.runs_for == checkingGame.runs_for &&
+                thisGame.runs_against == checkingGame.runs_against &&
+                thisGame.result == checkingGame.result) {
+              logMessage += "\n all info matches. no update needed."
+            } else {
+              teams[j].games[k].runs_for == thisGame.runs_for;
+              teams[j].games[k].runs_against == thisGame.runs_against;
+              teams[j].games[k].result == thisGame.result;
+              logMessage += "\n new info available. updated."
+            }
             break;
           }
         }
@@ -321,6 +311,7 @@ function updateTeamInfoInMasterData() {
     console.log();
   }
   console.log();
-  saveDataFile(obj);
+  jsonfile.writeFileSync(MASTER_DATA, obj, { spaces: 2, EOL: '\r\n' });
+  createClientData();
 }
 //catchUpMaster();

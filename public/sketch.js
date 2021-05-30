@@ -21,7 +21,7 @@ var the_cursor;
 var mouseOverGame = -1;
 
 function setup() {
-  createCanvas(400, startY*2 + stepY*(6) + rectSize);
+  createCanvas(600, startY*2 + stepY*(10) + rectSize);
   background(220);
   loadJSON("season-current.json", loadData);
     shapeFillDark = color(0, 75, 150);
