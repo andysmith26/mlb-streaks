@@ -18,6 +18,7 @@ var lastUpdated;
 var mouseRow = -1;
 var mouseCol = -1;
 var the_cursor;
+var mouseOverGame = -1;
 
 function setup() {
   createCanvas(400, startY*2 + stepY*(6) + rectSize);
@@ -53,6 +54,9 @@ function loadData(data) {
 }
 
 function showTooltip(str, x, y) {
+  textAlign(LEFT)
+  fill(0)
+  noStroke()
   text(str, x, y)
 }
 
@@ -140,7 +144,7 @@ function drawStreak(type, s, n, x, thisRow) {
         if (type != "longest") {
           strokeWeight(1)
           stroke(220, 220, 0)
-          // showTooltip(getGameShortText(thisRow, n - 1 - thisCol), 30, 10)//getYCoordFromRowNum(thisRow))
+          showTooltip(getGameShortText(thisRow, n - 1 - thisCol), 30, 10)//getYCoordFromRowNum(thisRow))
           the_cursor = "pointer"
         }
       } else {
@@ -168,6 +172,17 @@ function drawStreak(type, s, n, x, thisRow) {
 
       thisCol++;
     }
+    //draw next game
+    var xPos = x + ((rectSize + gapX) * thisCol);
+    var rectX = xPos - (rectSize / 2);
+    push()
+    stroke(255, 0, 0)
+    fill(255, 220, 200)
+    rect(rectX, rectY, rectW, rectH)
+    noStroke()
+    fill(100, 0, 0)
+    text(getNextGame(thisRow), xPos, yPos + rectSize/2)
+    pop()
   }
 }
 
@@ -178,7 +193,7 @@ function getGameShortText(team, gamesBeforeLastGame) {
   var id = game.id
   var homeTeam = id.substring(11,14).toUpperCase()
   var awayTeam = id.substring(18,21).toUpperCase()
-  var opponentString
+  var opponentString;
   if (theTeam === homeTeam) {
     opponentString = "v" + awayTeam
   } else {
@@ -193,6 +208,37 @@ function getGameShortText(team, gamesBeforeLastGame) {
 function getYCoordFromRowNum(rowNum) {
   yCoord = startY + stepY * rowNum
   return yCoord
+}
+
+function getStreak(team) {
+  let output = []
+  let games = teams[team].games;
+  let i = 0;
+  while (i < games.length) {
+    if (games[i].result == "W") {
+      output.push(games[i]);
+    }
+    if (games[i].result == "L") {
+      break;
+    }
+    i++;
+  }
+  return output;
+}
+
+function getNextGame(team) {
+  let output = "";
+  let games = teams[team].games;
+  let i = 0;
+  while (i < games.length) {
+    if (games[i].result != "N") {
+      i--;
+      break;
+    }
+    i++;
+  }
+  output = getGameShortText(team, i);
+  return output;
 }
 
 function setMouseGridLocation() {

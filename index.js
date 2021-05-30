@@ -2,6 +2,7 @@ var jsonfile = require('jsonfile');
 var Mlbgames = require('mlbgames');
 var fs = require('fs');
 var MASTER_DATA = "public/season-current.json";
+var CLIENT_DATA = "public/client-data.json";
 var BACKUP_DATA = "public/season_backup.json";
 var teams;
 
@@ -22,8 +23,8 @@ var server = http.createServer(app);
 var server_port = process.env.PORT || 8080;
 var server_ip_address = process.env.IP || '0.0.0.0';
 
-server.listen(server_port, server_ip_address, function () {
-    console.log( "Listening on " + server_ip_address + ", port " + server_port );
+server.listen(server_port, server_ip_address, function() {
+  console.log("Listening on " + server_ip_address + ", port " + server_port);
 });
 
 app.use(express.static('public'));
@@ -52,79 +53,82 @@ function incrementPath(p) {
 }
 
 function catchUpMaster() {
-    var obj = jsonfile.readFileSync(MASTER_DATA);
-    updateMasterData(obj.last_path_imported);
+  var obj = jsonfile.readFileSync(MASTER_DATA);
+  updateMasterData(obj.last_path_imported);
 }
 
 function saveDataFile(obj) {
-    jsonfile.writeFileSync(MASTER_DATA, obj);
-    /*
-      function (err) {
-    if (err) {
-      console.error("  error saving data file:" + err);
-      console.log();
-    } else {
-      console.log("  saved data file: " + MASTER_DATA);
-      console.log();
-      fs.createReadStream(MASTER_DATA).pipe(fs.createWriteStream(BACKUP_DATA));
-      console.log("  saved backup data file: " + BACKUP_DATA);
-      console.log();
-    }
-    */
+  jsonfile.writeFileSync(MASTER_DATA, obj, { spaces: 2, EOL: '\r\n' });
+  /*
+    function (err) {
+  if (err) {
+    console.error("  error saving data file:" + err);
+    console.log();
+  } else {
+    console.log("  saved data file: " + MASTER_DATA);
+    console.log();
+    fs.createReadStream(MASTER_DATA).pipe(fs.createWriteStream(BACKUP_DATA));
+    console.log("  saved backup data file: " + BACKUP_DATA);
+    console.log();
+  }
+  */
 }
 
 function updateMasterData(path) {
-    var obj = jsonfile.readFileSync(MASTER_DATA);
-    teams = obj.teams;
-    var options = {
-      path: path
-    };
-    var mlbgames = new Mlbgames(options);
-    console.log();
-    console.log("  ********");
-    console.log("  * ");
-    console.log("  * retreiving source file from: " + options.path);
-    console.log("  * ");
-    console.log("  ********");
-    console.log();
-    var now = new Date();
-    var oneWeekInTheFuture = new Date();
-    oneWeekInTheFuture.setDate(now.getDate() + 7);
-    mlbgames.get((err, games) => {
-        if (games) {
-            console.log("  games found: " + games.length);
-            console.log();
-            var count_of_final_games = 0;
-            for (var i = 0; i < games.length; i++) {
-                console.log("    " + games[i].status.status + ": " + games[i].id);
-                if (games[i].status.status == "Final") {  //include status = "Game Over" causes W/L to not be reported
-                    //console.log(teams.length);
-                    teams = insert_game_data(extract_game_data(games[i]), teams);
-                    count_of_final_games++;
-                }
-                if (games[i].status.status == "Preview") {
-                  console.log(games[i]);
-                }
-                // handle other unfinished statuses (delay, resched. etc)
-            }
-            obj.teams = teams;
-            obj.file_last_update = now.toJSON();
-            obj.last_path_imported = path;
-            console.log();
-            saveDataFile(obj);
-        } else {
-            console.log("  no games found\n");
-            console.log("  error: " + err);
+  var obj = jsonfile.readFileSync(MASTER_DATA);
+  teams = obj.teams;
+  var options = {
+    path: path
+  };
+  var mlbgames = new Mlbgames(options);
+  console.log();
+  console.log("  ********");
+  console.log("  * ");
+  console.log("  * retreiving source file from: " + options.path);
+  console.log("  * ");
+  console.log("  ********");
+  console.log();
+  var now = new Date();
+  var oneWeekInTheFuture = new Date();
+  oneWeekInTheFuture.setDate(now.getDate() + 7);
+  mlbgames.get((err, games) => {
+    if (games) {
+      console.log("  games found: " + games.length);
+      console.log();
+      var count_of_final_games = 0;
+      for (var i = 0; i < games.length; i++) {
+        console.log("    " + games[i].status.status + ": " + games[i].id);
+        if (games[i].status.status == "Final") { //include status = "Game Over" causes W/L to not be reported
+          //console.log(teams.length);
+          teams = insert_game_data(extract_game_data(games[i]), teams);
+          count_of_final_games++;
         }
-        var todaysPath = dateToPath(now);
-        var oneWeekInTheFuturePath = dateToPath(oneWeekInTheFuture);
-        if (incrementPath(path).localeCompare(oneWeekInTheFuturePath) <= 0) {
-            updateMasterData(incrementPath(path));
-        } else {
-            updateTeamInfoInMasterData();
+        if (games[i].status.status == "Preview") {
+          //console.log(games[i]);
+          teams = insert_game_data(extract_game_data(games[i]), teams);
         }
+        // handle other unfinished statuses (delay, resched. etc)
+        // In Progress, Pre-Game, Postponed
+      }
+      obj.teams = teams;
+      obj.file_last_update = now.toJSON();
+      obj.last_path_imported = path;
+      console.log();
+      saveDataFile(obj);
+    } else {
+      console.log("  no games found\n");
+      console.log("  error: " + err);
+    }
+    var todaysPath = dateToPath(now);
+    var oneWeekInTheFuturePath = dateToPath(oneWeekInTheFuture);
+    if (incrementPath(path).localeCompare(oneWeekInTheFuturePath) <= 0) {
+      updateMasterData(incrementPath(path));
+    } else {
+      updateTeamInfoInMasterData();
+      createClientData();
+    }
 
-    }); //mlbgames.get end
+  }); //mlbgames.get end
 }
 /**
  * Appends a game to a data structure of games
@@ -182,17 +186,18 @@ function extract_game_data(game) {
   var output;
   var home_team = {
     "abbrev": game.home_name_abbrev,
-    "id": game.id,
-    "runs_for": parseInt(game.linescore.r.home),
-    "runs_against": parseInt(game.linescore.r.away)
+    "id": game.id
   };
   var away_team = {
     "abbrev": game.away_name_abbrev,
-    "id": game.id,
-    "runs_for": parseInt(game.linescore.r.away),
-    "runs_against": parseInt(game.linescore.r.home)
+    "id": game.id
   };
-  if (game.status.status == "Final") {
+  var status = game.status.status;
+  if (status == "Final") {
+    home_team.runs_for = parseInt(game.linescore.r.home)
+    home_team.runs_against = parseInt(game.linescore.r.away)
+    away_team.runs_for = parseInt(game.linescore.r.away)
+    away_team.runs_against = parseInt(game.linescore.r.home)
     if (home_team.runs_for > away_team.runs_for) {
       home_team.outcome = "W";
       away_team.outcome = "L";
@@ -203,6 +208,13 @@ function extract_game_data(game) {
       home_team.outcome = "T";
       away_team.outcome = "T";
     }
+  } else if (status == "Preview" || status == "Pre-Game") {
+    home_team.runs_for = 0;
+    home_team.runs_against = 0;
+    away_team.runs_for = 0;
+    away_team.runs_against = 0;
+    home_team.outcome = "N"; // not final
+    away_team.outcome = "N"; // not final
   }
   output = [home_team, away_team];
   //console.log(output);
@@ -210,7 +222,7 @@ function extract_game_data(game) {
 }
 
 function getSortedGameList(gameList) {
-  var newList = gameList.sort(function (a, b) {
+  var newList = gameList.sort(function(a, b) {
     return (a.id < b.id) ? 1 : ((a.id > b.id) ? -1 : 0);
   });
   return newList;
@@ -219,7 +231,9 @@ function getSortedGameList(gameList) {
 function getCurrentStreak(gameList) {
   var streak = 0;
   for (var i = 0; i < gameList.length; i++) {
-    if (gameList[i].result == 'W') {
+    if (gameList[i].result == 'N') {
+      continue;
+    } else if (gameList[i].result == 'W') {
       streak++;
     } else {
       break;
@@ -245,27 +259,68 @@ function getLongestStreak(gameList) {
   return longestStreak;
 }
 
-function updateTeamInfoInMasterData() {
-    var obj = jsonfile.readFileSync(MASTER_DATA);
-    console.log();
-    console.log("  updating team info");
-    for (var i = 0; i < obj.teams.length; i++) {
-      // get game count
-      var gameCount = obj.teams[i].games.length;
-      var abbrev = obj.teams[i].abbrev;
-      obj.teams[i].game_count = gameCount;
-      console.log("    " + abbrev + " game count:      " + gameCount);
-      // get streak info
-      var gameList = getSortedGameList(obj.teams[i].games);
-      var currentStreak = getCurrentStreak(gameList);
-      var longestStreak = getLongestStreak(gameList);
-      obj.teams[i].current_streak = currentStreak;
-      obj.teams[i].longest_streak = longestStreak;
-      console.log("    " + abbrev + " current streak:  " + currentStreak);
-      console.log("    " + abbrev + " longest streak:  " + longestStreak);
-      console.log();
+function createClientData() {
+  var obj = jsonfile.readFileSync(MASTER_DATA);
+  console.log();
+  console.log("*********");
+  console.log(" creating client data")
+  var teams = []
+  for (var i = 0; i < obj.teams.length; i++) {
+    var gameList = getSortedGameList(obj.teams[i].games);
+    var streakInfo = getStreakInfo(gameList);
+    var team = {
+      "abbrev": obj.teams[i].abbrev,
+      "next_game": streakInfo.next_game,
+      "streak": streakInfo.streak,
     }
+    teams.push(team)
+  }
+  jsonfile.writeFileSync(CLIENT_DATA, teams,{ spaces: 2, EOL: '\r\n' });
+  console.log(" done\n*********");
+  console.log()
+}
+
+function getStreakInfo(games) {
+  let output = {
+    "next_game": null,
+    "streak": []
+  };
+  let i = 0;
+  while (i < games.length) {
+    if (!output.next_game && games[i].result != "N") {
+      output.next_game = games[i-1];
+    }
+    if (games[i].result == "W") {
+      output.streak.push(games[i])
+    } else if (games[i].result == "L") {
+      break;
+    }
+    i++;
+  }
+  return output;
+}
+
+function updateTeamInfoInMasterData() {
+  var obj = jsonfile.readFileSync(MASTER_DATA);
+  console.log();
+  console.log("  updating team info");
+  for (var i = 0; i < obj.teams.length; i++) {
+    // get game count
+    var gameCount = obj.teams[i].games.length;
+    var abbrev = obj.teams[i].abbrev;
+    obj.teams[i].game_count = gameCount;
+    console.log("    " + abbrev + " game count:      " + gameCount);
+    // get streak info
+    var gameList = getSortedGameList(obj.teams[i].games);
+    var currentStreak = getCurrentStreak(gameList);
+    var longestStreak = getLongestStreak(gameList);
+    obj.teams[i].current_streak = currentStreak;
+    obj.teams[i].longest_streak = longestStreak;
+    console.log("    " + abbrev + " current streak:  " + currentStreak);
+    console.log("    " + abbrev + " longest streak:  " + longestStreak);
     console.log();
-    saveDataFile(obj);
+  }
+  console.log();
+  saveDataFile(obj);
 }
 //catchUpMaster();
