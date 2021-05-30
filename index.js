@@ -142,12 +142,12 @@ function insert_game_data(gameTeams, teams) {
             if (thisGame.runs_for == checkingGame.runs_for &&
                 thisGame.runs_against == checkingGame.runs_against &&
                 thisGame.result == checkingGame.result) {
-              logMessage += "\n all info matches. no update needed."
+              logMessage += "\n all info matches. no update needed.";
             } else {
-              teams[j].games[k].runs_for == thisGame.runs_for;
-              teams[j].games[k].runs_against == thisGame.runs_against;
-              teams[j].games[k].result == thisGame.result;
-              logMessage += "\n new info available. updated."
+              teams[j].games[k].runs_for = thisGame.runs_for;
+              teams[j].games[k].runs_against = thisGame.runs_against;
+              teams[j].games[k].result = thisGame.result;
+              logMessage += "\n new info available. updated.";
             }
             break;
           }
@@ -184,10 +184,10 @@ function extract_game_data(game) {
   };
   var status = game.status.status;
   if (status == "Final") {
-    home_team.runs_for = parseInt(game.linescore.r.home)
-    home_team.runs_against = parseInt(game.linescore.r.away)
-    away_team.runs_for = parseInt(game.linescore.r.away)
-    away_team.runs_against = parseInt(game.linescore.r.home)
+    home_team.runs_for = parseInt(game.linescore.r.home);
+    home_team.runs_against = parseInt(game.linescore.r.away);
+    away_team.runs_for = parseInt(game.linescore.r.away);
+    away_team.runs_against = parseInt(game.linescore.r.home);
     if (home_team.runs_for > away_team.runs_for) {
       home_team.outcome = "W";
       away_team.outcome = "L";
@@ -253,8 +253,8 @@ function createClientData() {
   var obj = jsonfile.readFileSync(MASTER_DATA);
   console.log();
   console.log("*********");
-  console.log(" creating client data")
-  var teams = []
+  console.log(" creating client data");
+  var teams = [];
   for (var i = 0; i < obj.teams.length; i++) {
     var gameList = getSortedGameList(obj.teams[i].games);
     var streakInfo = getStreakInfo(gameList);
@@ -262,12 +262,16 @@ function createClientData() {
       "abbrev": obj.teams[i].abbrev,
       "next_game": streakInfo.next_game,
       "streak": streakInfo.streak,
-    }
-    teams.push(team)
+    };
+    teams.push(team);
   }
-  jsonfile.writeFileSync(CLIENT_DATA, teams,{ spaces: 2, EOL: '\r\n' });
+  let data = {
+    "file_last_updated": new Date(),
+    "teams": teams
+  };
+  jsonfile.writeFileSync(CLIENT_DATA, data,{ spaces: 2, EOL: '\r\n' });
   console.log(" done\n*********");
-  console.log()
+  console.log();
 }
 
 function getStreakInfo(games) {
@@ -281,7 +285,7 @@ function getStreakInfo(games) {
       output.next_game = games[i-1];
     }
     if (games[i].result == "W") {
-      output.streak.push(games[i])
+      output.streak.push(games[i]);
     } else if (games[i].result == "L") {
       break;
     }
