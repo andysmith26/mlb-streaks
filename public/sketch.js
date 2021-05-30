@@ -23,7 +23,7 @@ var mouseOverGame = -1;
 function setup() {
   createCanvas(600, startY*2 + stepY*(10) + rectSize);
   background(220);
-  loadJSON("season-current.json", loadData);
+  loadJSON("client-data.json", loadData);
     shapeFillDark = color(0, 75, 150);
     shapeFillLight = color(200, 200, 200);
   shapeStroke = color(100, 100, 100);
@@ -43,14 +43,10 @@ function draw() {
 function loadData(data) {
   lastUpdated = data.file_last_update
   teams = data.teams
-  console.log(teams[0])
   teams.sort(function (a, b) {
-    if (a.current_streak != b.current_streak) {
-      return parseFloat(b.current_streak) - parseFloat(a.current_streak);
-    } else {
-      return parseFloat(b.longest_streak) - parseFloat(a.longest_streak);
-    }
+    return b.streak.length - a.streak.length;
   });
+  console.log(teams)
 }
 
 function showTooltip(str, x, y) {
@@ -66,8 +62,8 @@ function drawData() {
   var teamsUnderMin = 0;
   for (var i = 0; i < teams.length; i++) {
     var abbrev = teams[i].abbrev;
-    var currentStreak = teams[i].current_streak;
-    var longestStreak = teams[i].longest_streak;
+    var currentStreak = teams[i].streak.length;
+    // var longestStreak = 0;
     if (currentStreak >= minStreakToDraw) {
       textSize(labelSize);
 
@@ -83,16 +79,17 @@ function drawData() {
       // keep team name constant
       fill(labelColorMain);
       noStroke();
-
         textAlign(RIGHT)
         text(abbrev, nameX, getYCoordFromRowNum(rowsDrawn) + rectSize/2);
-        if (currentStreak === longestStreak) {
-            drawStreak("currentAndLongest", 0, currentStreak, nameX + nameBarGap, rowsDrawn);
-        }
-        else {
-            drawStreak("current", 0, currentStreak, nameX + nameBarGap, rowsDrawn);
-            drawStreak("longest", currentStreak, longestStreak, nameX + nameBarGap, rowsDrawn);
-        }
+        drawStreak("current", 0, currentStreak, nameX + nameBarGap, rowsDrawn);
+
+        // if (currentStreak === longestStreak) {
+        //     drawStreak("currentAndLongest", 0, currentStreak, nameX + nameBarGap, rowsDrawn);
+        // }
+        // else {
+        //
+        //     drawStreak("longest", currentStreak, longestStreak, nameX + nameBarGap, rowsDrawn);
+        // }
       rowsDrawn++;
     } else {
       teamsUnderMin++;
@@ -139,14 +136,15 @@ function drawStreak(type, s, n, x, thisRow) {
       var rectW = rectSize
       var rectH = rectSize
 
+      let team = teams[thisRow];
+      console.log(team.streak)
+      let gameShortText = getGameShortText(team.abbrev, team.streak[team.streak.length - 1 - thisCol])
       // set stroke based on mouse location
       if (mouseRow == thisRow && mouseCol == thisCol) {
-        if (type != "longest") {
-          strokeWeight(1)
-          stroke(220, 220, 0)
-          showTooltip(getGameShortText(thisRow, n - 1 - thisCol), 30, 10)//getYCoordFromRowNum(thisRow))
+          showTooltip(gameShortText, 400, 400)
           the_cursor = "pointer"
-        }
+          strokeWeight(3)
+          stroke(220, 220, 0)
       } else {
         noStroke()
       }
@@ -165,10 +163,9 @@ function drawStreak(type, s, n, x, thisRow) {
       // write game info inside the box
       noStroke()
       fill(labelColor)
-      var txt = getGameShortText(thisRow, n - 1 - thisCol)
       textAlign(CENTER, CENTER)
       var textY = yPos + rectSize/2 // + ((textAscent(n) - 2) / 2) - (rectSize / 2);
-      text(txt, xPos, textY)
+      text(gameShortText, xPos, textY)
 
       thisCol++;
     }
@@ -177,6 +174,7 @@ function drawStreak(type, s, n, x, thisRow) {
     var rectX = xPos - (rectSize / 2);
     push()
     stroke(255, 0, 0)
+    strokeWeight(1)
     fill(255, 220, 200)
     rect(rectX, rectY, rectW, rectH)
     noStroke()
@@ -186,9 +184,8 @@ function drawStreak(type, s, n, x, thisRow) {
   }
 }
 
-function getGameShortText(team, gamesBeforeLastGame) {
-  var theTeam = teams[team].abbrev.toUpperCase()
-  var game = teams[team].games[gamesBeforeLastGame]
+function getGameShortText(abbrev, game) {
+  var theTeam = abbrev.toUpperCase()
   var score = game.runs_for + "-" + game.runs_against
   var id = game.id
   var homeTeam = id.substring(11,14).toUpperCase()
@@ -226,18 +223,10 @@ function getStreak(team) {
   return output;
 }
 
-function getNextGame(team) {
+function getNextGame(i) {
   let output = "";
-  let games = teams[team].games;
-  let i = 0;
-  while (i < games.length) {
-    if (games[i].result != "N") {
-      i--;
-      break;
-    }
-    i++;
-  }
-  output = getGameShortText(team, i);
+  let team = teams[i];
+  output = getGameShortText(team.abbrev, team.next_game);
   return output;
 }
 
