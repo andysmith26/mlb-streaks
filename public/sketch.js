@@ -40,6 +40,7 @@ function draw() {
   setMouseGridLocation()
   cursor(the_cursor)
 }
+
 function loadData(data) {
   lastUpdated = data.file_last_update
   teams = data.teams
