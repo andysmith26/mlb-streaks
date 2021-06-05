@@ -1,11 +1,41 @@
 {
-  "last_path_imported": "year_2021/month_06/day_06/",
-  "file_last_update": "2021-05-30T18:53:28.450Z",
+  "last_path_imported": "year_2021/month_06/day_12/",
+  "file_last_update": "2021-06-05T13:54:06.489Z",
   "season": 2021,
   "teams": [
     {
       "abbrev": "WSH",
       "games": [
+        {
+          "id": "2021/06/12/sfnmlb-wasmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/sfnmlb-wasmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/sfnmlb-wasmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/wasmlb-tbamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/wasmlb-tbamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/wasmlb-phimlb-1",
           "runs_for": 0,
@@ -20,45 +50,45 @@
         },
         {
           "id": "2021/06/04/wasmlb-phimlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/06/03/wasmlb-atlmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 5,
+          "result": "L"
         },
         {
           "id": "2021/06/02/wasmlb-atlmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 3,
+          "result": "W"
         },
         {
           "id": "2021/06/01/wasmlb-atlmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 11,
+          "runs_against": 6,
+          "result": "W"
         },
         {
           "id": "2021/05/31/wasmlb-atlmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 5,
+          "result": "L"
         },
         {
           "id": "2021/05/30/milmlb-wasmlb-1",
           "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_against": 3,
+          "result": "L"
         },
         {
           "id": "2021/05/29/milmlb-wasmlb-2",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/05/29/milmlb-wasmlb-1",
@@ -451,13 +481,49 @@
           "result": "L"
         }
       ],
-      "game_count": 74,
-      "current_streak": 0,
+      "game_count": 79,
+      "current_streak": 1,
       "longest_streak": 4
     },
     {
       "abbrev": "MIA",
       "games": [
+        {
+          "id": "2021/06/12/atlmlb-miamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/atlmlb-miamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/colmlb-miamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/colmlb-miamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/colmlb-miamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/07/miamlb-bosmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/miamlb-pitmlb-1",
           "runs_for": 0,
@@ -472,27 +538,27 @@
         },
         {
           "id": "2021/06/04/miamlb-pitmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 9,
+          "result": "L"
         },
         {
           "id": "2021/06/03/miamlb-pitmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 5,
+          "result": "L"
         },
         {
           "id": "2021/06/02/miamlb-tormlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/06/01/miamlb-tormlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 5,
+          "result": "L"
         },
         {
           "id": "2021/05/30/miamlb-bosmlb-1",
@@ -915,13 +981,43 @@
           "result": "W"
         }
       ],
-      "game_count": 76,
+      "game_count": 82,
       "current_streak": 0,
       "longest_streak": 4
     },
     {
       "abbrev": "ATL",
       "games": [
+        {
+          "id": "2021/06/12/atlmlb-miamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/atlmlb-miamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/atlmlb-phimlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/atlmlb-phimlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/atlmlb-phimlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/lanmlb-atlmlb-1",
           "runs_for": 0,
@@ -936,33 +1032,33 @@
         },
         {
           "id": "2021/06/04/lanmlb-atlmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 9,
+          "result": "L"
         },
         {
           "id": "2021/06/03/wasmlb-atlmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/06/02/wasmlb-atlmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 5,
+          "result": "L"
         },
         {
           "id": "2021/06/01/wasmlb-atlmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 11,
+          "result": "L"
         },
         {
           "id": "2021/05/31/wasmlb-atlmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 3,
+          "result": "W"
         },
         {
           "id": "2021/05/30/atlmlb-nynmlb-1",
@@ -972,9 +1068,9 @@
         },
         {
           "id": "2021/05/29/atlmlb-nynmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 13,
+          "result": "L"
         },
         {
           "id": "2021/05/26/atlmlb-bosmlb-1",
@@ -1439,13 +1535,37 @@
           "result": "L"
         }
       ],
-      "game_count": 86,
+      "game_count": 91,
       "current_streak": 0,
       "longest_streak": 4
     },
     {
       "abbrev": "NYM",
       "games": [
+        {
+          "id": "2021/06/12/sdnmlb-nynmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/sdnmlb-nynmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/nynmlb-balmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/nynmlb-balmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/nynmlb-sdnmlb-1",
           "runs_for": 0,
@@ -1461,32 +1581,32 @@
         {
           "id": "2021/06/04/nynmlb-sdnmlb-1",
           "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_against": 2,
+          "result": "L"
         },
         {
           "id": "2021/06/03/nynmlb-sdnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 4,
+          "result": "L"
         },
         {
           "id": "2021/06/02/nynmlb-arimlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 7,
+          "runs_against": 6,
+          "result": "W"
         },
         {
           "id": "2021/06/01/nynmlb-arimlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/05/31/nynmlb-arimlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/05/30/atlmlb-nynmlb-1",
@@ -1496,9 +1616,9 @@
         },
         {
           "id": "2021/05/29/atlmlb-nynmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 13,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/05/27/colmlb-nynmlb-2",
@@ -1903,13 +2023,37 @@
           "result": "L"
         }
       ],
-      "game_count": 76,
-      "current_streak": 3,
+      "game_count": 80,
+      "current_streak": 0,
       "longest_streak": 7
     },
     {
       "abbrev": "PHI",
       "games": [
+        {
+          "id": "2021/06/12/nyamlb-phimlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/atlmlb-phimlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/atlmlb-phimlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/atlmlb-phimlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/wasmlb-phimlb-1",
           "runs_for": 0,
@@ -1924,9 +2068,9 @@
         },
         {
           "id": "2021/06/04/wasmlb-phimlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 2,
+          "result": "L"
         },
         {
           "id": "2021/06/02/phimlb-cinmlb-1",
@@ -1936,21 +2080,21 @@
         },
         {
           "id": "2021/06/01/phimlb-cinmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 17,
+          "runs_against": 3,
+          "result": "W"
         },
         {
           "id": "2021/05/31/phimlb-cinmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 11,
+          "result": "L"
         },
         {
           "id": "2021/05/30/phimlb-tbamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/05/29/phimlb-tbamlb-1",
@@ -2427,13 +2571,43 @@
           "result": "L"
         }
       ],
-      "game_count": 86,
+      "game_count": 90,
       "current_streak": 0,
       "longest_streak": 5
     },
     {
       "abbrev": "CHC",
       "games": [
+        {
+          "id": "2021/06/12/slnmlb-chnmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/slnmlb-chnmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/chnmlb-sdnmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/chnmlb-sdnmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/07/chnmlb-sdnmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/chnmlb-sfnmlb-1",
           "runs_for": 0,
@@ -2448,39 +2622,39 @@
         },
         {
           "id": "2021/06/04/chnmlb-sfnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 8,
+          "result": "L"
         },
         {
           "id": "2021/06/03/chnmlb-sfnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 7,
+          "result": "L"
         },
         {
           "id": "2021/06/02/sdnmlb-chnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/06/01/sdnmlb-chnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 3,
+          "result": "W"
         },
         {
           "id": "2021/05/31/sdnmlb-chnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 7,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/05/30/cinmlb-chnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 5,
+          "result": "L"
         },
         {
           "id": "2021/05/29/cinmlb-chnmlb-1",
@@ -2927,13 +3101,37 @@
           "result": "W"
         }
       ],
-      "game_count": 82,
-      "current_streak": 6,
+      "game_count": 87,
+      "current_streak": 0,
       "longest_streak": 6
     },
     {
       "abbrev": "STL",
       "games": [
+        {
+          "id": "2021/06/12/slnmlb-chnmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/slnmlb-chnmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/clemlb-slnmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/clemlb-slnmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/cinmlb-slnmlb-1",
           "runs_for": 0,
@@ -2948,45 +3146,45 @@
         },
         {
           "id": "2021/06/04/cinmlb-slnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/06/03/cinmlb-slnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 4,
+          "result": "L"
         },
         {
           "id": "2021/06/02/slnmlb-lanmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 14,
+          "result": "L"
         },
         {
           "id": "2021/06/01/slnmlb-lanmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/05/31/slnmlb-lanmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 9,
+          "result": "L"
         },
         {
           "id": "2021/05/30/slnmlb-arimlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 9,
+          "result": "L"
         },
         {
           "id": "2021/05/29/slnmlb-arimlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 7,
+          "runs_against": 4,
+          "result": "W"
         },
         {
           "id": "2021/05/28/slnmlb-arimlb-1",
@@ -3397,13 +3595,43 @@
           "result": "W"
         }
       ],
-      "game_count": 77,
-      "current_streak": 3,
+      "game_count": 81,
+      "current_streak": 0,
       "longest_streak": 6
     },
     {
       "abbrev": "MIL",
       "games": [
+        {
+          "id": "2021/06/12/pitmlb-milmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/pitmlb-milmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/milmlb-cinmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/milmlb-cinmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/milmlb-cinmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/arimlb-milmlb-1",
           "runs_for": 0,
@@ -3418,39 +3646,39 @@
         },
         {
           "id": "2021/06/04/arimlb-milmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/06/03/arimlb-milmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 7,
+          "runs_against": 4,
+          "result": "W"
         },
         {
           "id": "2021/06/01/detmlb-milmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 7,
+          "runs_against": 10,
+          "result": "L"
         },
         {
           "id": "2021/05/31/detmlb-milmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/05/30/milmlb-wasmlb-1",
-          "runs_for": 0,
+          "runs_for": 3,
           "runs_against": 0,
-          "result": "N"
+          "result": "W"
         },
         {
           "id": "2021/05/29/milmlb-wasmlb-2",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/05/29/milmlb-wasmlb-1",
@@ -3909,13 +4137,43 @@
           "result": "W"
         }
       ],
-      "game_count": 84,
+      "game_count": 89,
       "current_streak": 2,
-      "longest_streak": 4
+      "longest_streak": 5
     },
     {
       "abbrev": "PIT",
       "games": [
+        {
+          "id": "2021/06/12/pitmlb-milmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/pitmlb-milmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/lanmlb-pitmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/lanmlb-pitmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/lanmlb-pitmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/miamlb-pitmlb-1",
           "runs_for": 0,
@@ -3930,39 +4188,39 @@
         },
         {
           "id": "2021/06/04/miamlb-pitmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 9,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/06/03/miamlb-pitmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 3,
+          "result": "W"
         },
         {
           "id": "2021/06/01/pitmlb-kcamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 10,
+          "result": "L"
         },
         {
           "id": "2021/05/31/pitmlb-kcamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 7,
+          "result": "L"
         },
         {
           "id": "2021/05/30/colmlb-pitmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 4,
+          "result": "L"
         },
         {
           "id": "2021/05/29/colmlb-pitmlb-2",
-          "runs_for": 0,
+          "runs_for": 4,
           "runs_against": 0,
-          "result": "N"
+          "result": "W"
         },
         {
           "id": "2021/05/29/colmlb-pitmlb-1",
@@ -4415,13 +4673,43 @@
           "result": "W"
         }
       ],
-      "game_count": 83,
-      "current_streak": 1,
+      "game_count": 88,
+      "current_streak": 2,
       "longest_streak": 4
     },
     {
       "abbrev": "CIN",
       "games": [
+        {
+          "id": "2021/06/12/colmlb-cinmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/colmlb-cinmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/milmlb-cinmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/milmlb-cinmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/milmlb-cinmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/cinmlb-slnmlb-1",
           "runs_for": 0,
@@ -4436,15 +4724,15 @@
         },
         {
           "id": "2021/06/04/cinmlb-slnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 4,
+          "result": "W"
         },
         {
           "id": "2021/06/03/cinmlb-slnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/06/02/phimlb-cinmlb-1",
@@ -4454,21 +4742,21 @@
         },
         {
           "id": "2021/06/01/phimlb-cinmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 17,
+          "result": "L"
         },
         {
           "id": "2021/05/31/phimlb-cinmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 11,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/05/30/cinmlb-chnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/05/29/cinmlb-chnmlb-1",
@@ -4915,13 +5203,43 @@
           "result": "L"
         }
       ],
-      "game_count": 82,
-      "current_streak": 0,
+      "game_count": 87,
+      "current_streak": 2,
       "longest_streak": 2
     },
     {
       "abbrev": "LAD",
       "games": [
+        {
+          "id": "2021/06/12/texmlb-lanmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/texmlb-lanmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/lanmlb-pitmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/lanmlb-pitmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/lanmlb-pitmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/lanmlb-atlmlb-1",
           "runs_for": 0,
@@ -4936,39 +5254,39 @@
         },
         {
           "id": "2021/06/04/lanmlb-atlmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 9,
+          "runs_against": 5,
+          "result": "W"
         },
         {
           "id": "2021/06/02/slnmlb-lanmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 14,
+          "runs_against": 3,
+          "result": "W"
         },
         {
           "id": "2021/06/01/slnmlb-lanmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 3,
+          "result": "L"
         },
         {
           "id": "2021/05/31/slnmlb-lanmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 9,
+          "runs_against": 4,
+          "result": "W"
         },
         {
           "id": "2021/05/30/sfnmlb-lanmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 5,
+          "result": "L"
         },
         {
           "id": "2021/05/29/sfnmlb-lanmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 11,
+          "result": "L"
         },
         {
           "id": "2021/05/28/sfnmlb-lanmlb-1",
@@ -5409,13 +5727,43 @@
           "result": "W"
         }
       ],
-      "game_count": 81,
-      "current_streak": 0,
+      "game_count": 86,
+      "current_streak": 2,
       "longest_streak": 8
     },
     {
       "abbrev": "COL",
       "games": [
+        {
+          "id": "2021/06/12/colmlb-cinmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/colmlb-cinmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/colmlb-miamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/colmlb-miamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/colmlb-miamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/oakmlb-colmlb-1",
           "runs_for": 0,
@@ -5430,39 +5778,39 @@
         },
         {
           "id": "2021/06/04/oakmlb-colmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 9,
+          "result": "L"
         },
         {
           "id": "2021/06/03/texmlb-colmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 11,
+          "runs_against": 6,
+          "result": "W"
         },
         {
           "id": "2021/06/02/texmlb-colmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 3,
+          "result": "W"
         },
         {
           "id": "2021/06/01/texmlb-colmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/05/30/colmlb-pitmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 3,
+          "result": "W"
         },
         {
           "id": "2021/05/29/colmlb-pitmlb-2",
           "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_against": 4,
+          "result": "L"
         },
         {
           "id": "2021/05/29/colmlb-pitmlb-1",
@@ -5945,13 +6293,37 @@
           "result": "W"
         }
       ],
-      "game_count": 88,
+      "game_count": 93,
       "current_streak": 0,
       "longest_streak": 4
     },
     {
       "abbrev": "ARI",
       "games": [
+        {
+          "id": "2021/06/12/anamlb-arimlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/anamlb-arimlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/arimlb-oakmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/arimlb-oakmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/arimlb-milmlb-1",
           "runs_for": 0,
@@ -5966,45 +6338,45 @@
         },
         {
           "id": "2021/06/04/arimlb-milmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 5,
+          "result": "L"
         },
         {
           "id": "2021/06/03/arimlb-milmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 7,
+          "result": "L"
         },
         {
           "id": "2021/06/02/nynmlb-arimlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 7,
+          "result": "L"
         },
         {
           "id": "2021/06/01/nynmlb-arimlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 5,
+          "result": "W"
         },
         {
           "id": "2021/05/31/nynmlb-arimlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/05/30/slnmlb-arimlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 9,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/05/29/slnmlb-arimlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 7,
+          "result": "L"
         },
         {
           "id": "2021/05/28/slnmlb-arimlb-1",
@@ -6463,13 +6835,43 @@
           "result": "L"
         }
       ],
-      "game_count": 85,
+      "game_count": 89,
       "current_streak": 0,
       "longest_streak": 4
     },
     {
       "abbrev": "SD",
       "games": [
+        {
+          "id": "2021/06/12/sdnmlb-nynmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/sdnmlb-nynmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/chnmlb-sdnmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/chnmlb-sdnmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/07/chnmlb-sdnmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/nynmlb-sdnmlb-1",
           "runs_for": 0,
@@ -6484,39 +6886,39 @@
         },
         {
           "id": "2021/06/04/nynmlb-sdnmlb-1",
-          "runs_for": 0,
+          "runs_for": 2,
           "runs_against": 0,
-          "result": "N"
+          "result": "W"
         },
         {
           "id": "2021/06/03/nynmlb-sdnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 3,
+          "result": "W"
         },
         {
           "id": "2021/06/02/sdnmlb-chnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/06/01/sdnmlb-chnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 4,
+          "result": "L"
         },
         {
           "id": "2021/05/31/sdnmlb-chnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 7,
+          "result": "L"
         },
         {
           "id": "2021/05/30/sdnmlb-houmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 7,
+          "result": "L"
         },
         {
           "id": "2021/05/29/sdnmlb-houmlb-1",
@@ -6981,13 +7383,43 @@
           "result": "L"
         }
       ],
-      "game_count": 85,
+      "game_count": 90,
       "current_streak": 2,
       "longest_streak": 9
     },
     {
       "abbrev": "SF",
       "games": [
+        {
+          "id": "2021/06/12/sfnmlb-wasmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/sfnmlb-wasmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/sfnmlb-wasmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/sfnmlb-texmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/sfnmlb-texmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/chnmlb-sfnmlb-1",
           "runs_for": 0,
@@ -7002,39 +7434,39 @@
         },
         {
           "id": "2021/06/04/chnmlb-sfnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 8,
+          "runs_against": 5,
+          "result": "W"
         },
         {
           "id": "2021/06/03/chnmlb-sfnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 7,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/06/01/anamlb-sfnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 8,
+          "result": "L"
         },
         {
           "id": "2021/05/31/anamlb-sfnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/05/30/sfnmlb-lanmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 4,
+          "result": "W"
         },
         {
           "id": "2021/05/29/sfnmlb-lanmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 11,
+          "runs_against": 6,
+          "result": "W"
         },
         {
           "id": "2021/05/28/sfnmlb-lanmlb-1",
@@ -7475,13 +7907,43 @@
           "result": "L"
         }
       ],
-      "game_count": 81,
-      "current_streak": 1,
+      "game_count": 86,
+      "current_streak": 2,
       "longest_streak": 5
     },
     {
       "abbrev": "HOU",
       "games": [
+        {
+          "id": "2021/06/12/houmlb-minmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/houmlb-minmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/houmlb-bosmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/houmlb-bosmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/houmlb-bosmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/houmlb-tormlb-1",
           "runs_for": 0,
@@ -7496,39 +7958,39 @@
         },
         {
           "id": "2021/06/04/houmlb-tormlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 13,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/06/03/bosmlb-houmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 5,
+          "result": "L"
         },
         {
           "id": "2021/06/02/bosmlb-houmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/06/01/bosmlb-houmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/05/31/bosmlb-houmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 11,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/05/30/sdnmlb-houmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 7,
+          "runs_against": 4,
+          "result": "W"
         },
         {
           "id": "2021/05/29/sdnmlb-houmlb-1",
@@ -7945,13 +8407,43 @@
           "result": "L"
         }
       ],
-      "game_count": 77,
-      "current_streak": 0,
+      "game_count": 82,
+      "current_streak": 1,
       "longest_streak": 6
     },
     {
       "abbrev": "LAA",
       "games": [
+        {
+          "id": "2021/06/12/anamlb-arimlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/anamlb-arimlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/kcamlb-anamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/kcamlb-anamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/07/kcamlb-anamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/seamlb-anamlb-1",
           "runs_for": 0,
@@ -7966,33 +8458,33 @@
         },
         {
           "id": "2021/06/04/seamlb-anamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/06/03/seamlb-anamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/06/01/anamlb-sfnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 8,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/05/31/anamlb-sfnmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/05/30/anamlb-oakmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/05/29/anamlb-oakmlb-1",
@@ -8469,13 +8961,43 @@
           "result": "W"
         }
       ],
-      "game_count": 86,
+      "game_count": 91,
       "current_streak": 1,
       "longest_streak": 3
     },
     {
       "abbrev": "SEA",
       "games": [
+        {
+          "id": "2021/06/12/seamlb-clemlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/seamlb-clemlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/seamlb-detmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/seamlb-detmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/seamlb-detmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/seamlb-anamlb-1",
           "runs_for": 0,
@@ -8490,45 +9012,45 @@
         },
         {
           "id": "2021/06/04/seamlb-anamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 3,
+          "result": "L"
         },
         {
           "id": "2021/06/03/seamlb-anamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/06/02/oakmlb-seamlb-1",
           "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/06/01/oakmlb-seamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 12,
+          "result": "L"
         },
         {
           "id": "2021/05/31/oakmlb-seamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 5,
+          "result": "W"
         },
         {
           "id": "2021/05/30/texmlb-seamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/05/29/texmlb-seamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/05/28/texmlb-seamlb-1",
@@ -8957,13 +9479,37 @@
           "result": "W"
         }
       ],
-      "game_count": 80,
-      "current_streak": 2,
-      "longest_streak": 3
+      "game_count": 85,
+      "current_streak": 0,
+      "longest_streak": 5
     },
     {
       "abbrev": "TEX",
       "games": [
+        {
+          "id": "2021/06/12/texmlb-lanmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/texmlb-lanmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/sfnmlb-texmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/sfnmlb-texmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/tbamlb-texmlb-1",
           "runs_for": 0,
@@ -8978,39 +9524,39 @@
         },
         {
           "id": "2021/06/04/tbamlb-texmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 4,
+          "result": "W"
         },
         {
           "id": "2021/06/03/texmlb-colmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 11,
+          "result": "L"
         },
         {
           "id": "2021/06/02/texmlb-colmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/06/01/texmlb-colmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 3,
+          "result": "L"
         },
         {
           "id": "2021/05/30/texmlb-seamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 4,
+          "result": "L"
         },
         {
           "id": "2021/05/29/texmlb-seamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 3,
+          "result": "L"
         },
         {
           "id": "2021/05/28/texmlb-seamlb-1",
@@ -9487,13 +10033,43 @@
           "result": "L"
         }
       ],
-      "game_count": 87,
-      "current_streak": 0,
+      "game_count": 91,
+      "current_streak": 1,
       "longest_streak": 5
     },
     {
       "abbrev": "OAK",
       "games": [
+        {
+          "id": "2021/06/12/kcamlb-oakmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/kcamlb-oakmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/kcamlb-oakmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/arimlb-oakmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/arimlb-oakmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/oakmlb-colmlb-1",
           "runs_for": 0,
@@ -9508,33 +10084,33 @@
         },
         {
           "id": "2021/06/04/oakmlb-colmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 9,
+          "runs_against": 5,
+          "result": "W"
         },
         {
           "id": "2021/06/02/oakmlb-seamlb-1",
-          "runs_for": 0,
+          "runs_for": 6,
           "runs_against": 0,
-          "result": "N"
+          "result": "W"
         },
         {
           "id": "2021/06/01/oakmlb-seamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 12,
+          "runs_against": 6,
+          "result": "W"
         },
         {
           "id": "2021/05/31/oakmlb-seamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/05/30/anamlb-oakmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 4,
+          "result": "L"
         },
         {
           "id": "2021/05/29/anamlb-oakmlb-1",
@@ -10011,13 +10587,43 @@
           "result": "L"
         }
       ],
-      "game_count": 86,
-      "current_streak": 0,
+      "game_count": 91,
+      "current_streak": 3,
       "longest_streak": 7
     },
     {
       "abbrev": "CWS",
       "games": [
+        {
+          "id": "2021/06/12/chamlb-detmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/chamlb-detmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/tormlb-chamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/tormlb-chamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/tormlb-chamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/detmlb-chamlb-1",
           "runs_for": 0,
@@ -10032,15 +10638,15 @@
         },
         {
           "id": "2021/06/04/detmlb-chamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 9,
+          "runs_against": 8,
+          "result": "W"
         },
         {
           "id": "2021/06/03/detmlb-chamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/06/02/chamlb-clemlb-1",
@@ -10050,33 +10656,33 @@
         },
         {
           "id": "2021/06/01/chamlb-clemlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/05/31/chamlb-clemlb-2",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 3,
+          "result": "L"
         },
         {
           "id": "2021/05/31/chamlb-clemlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 8,
+          "runs_against": 6,
+          "result": "W"
         },
         {
           "id": "2021/05/30/balmlb-chamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/05/29/balmlb-chamlb-2",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/05/29/balmlb-chamlb-1",
@@ -10529,13 +11135,37 @@
           "result": "L"
         }
       ],
-      "game_count": 85,
+      "game_count": 90,
       "current_streak": 2,
       "longest_streak": 6
     },
     {
       "abbrev": "CLE",
       "games": [
+        {
+          "id": "2021/06/12/seamlb-clemlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/seamlb-clemlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/clemlb-slnmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/clemlb-slnmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/clemlb-balmlb-1",
           "runs_for": 0,
@@ -10550,9 +11180,9 @@
         },
         {
           "id": "2021/06/04/clemlb-balmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 3,
+          "result": "L"
         },
         {
           "id": "2021/06/02/chamlb-clemlb-1",
@@ -10562,33 +11192,33 @@
         },
         {
           "id": "2021/06/01/chamlb-clemlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 5,
+          "result": "W"
         },
         {
           "id": "2021/05/31/chamlb-clemlb-2",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/05/31/chamlb-clemlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 8,
+          "result": "L"
         },
         {
           "id": "2021/05/30/tormlb-clemlb-2",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 5,
+          "result": "W"
         },
         {
           "id": "2021/05/30/tormlb-clemlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 4,
+          "result": "L"
         },
         {
           "id": "2021/05/27/clemlb-detmlb-1",
@@ -11041,13 +11671,43 @@
           "result": "W"
         }
       ],
-      "game_count": 84,
-      "current_streak": 1,
+      "game_count": 88,
+      "current_streak": 0,
       "longest_streak": 5
     },
     {
       "abbrev": "DET",
       "games": [
+        {
+          "id": "2021/06/12/chamlb-detmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/chamlb-detmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/seamlb-detmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/seamlb-detmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/seamlb-detmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/detmlb-chamlb-1",
           "runs_for": 0,
@@ -11062,33 +11722,33 @@
         },
         {
           "id": "2021/06/04/detmlb-chamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 8,
+          "runs_against": 9,
+          "result": "L"
         },
         {
           "id": "2021/06/03/detmlb-chamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 4,
+          "result": "L"
         },
         {
           "id": "2021/06/01/detmlb-milmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 10,
+          "runs_against": 7,
+          "result": "W"
         },
         {
           "id": "2021/05/31/detmlb-milmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 3,
+          "result": "L"
         },
         {
           "id": "2021/05/30/nyamlb-detmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/05/29/nyamlb-detmlb-1",
@@ -11553,13 +12213,49 @@
           "result": "W"
         }
       ],
-      "game_count": 84,
-      "current_streak": 2,
+      "game_count": 89,
+      "current_streak": 0,
       "longest_streak": 4
     },
     {
       "abbrev": "KC",
       "games": [
+        {
+          "id": "2021/06/12/kcamlb-oakmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/kcamlb-oakmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/kcamlb-oakmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/kcamlb-anamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/kcamlb-anamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/07/kcamlb-anamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/minmlb-kcamlb-1",
           "runs_for": 0,
@@ -11574,33 +12270,33 @@
         },
         {
           "id": "2021/06/04/minmlb-kcamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 14,
+          "runs_against": 5,
+          "result": "W"
         },
         {
           "id": "2021/06/03/minmlb-kcamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 5,
+          "result": "W"
         },
         {
           "id": "2021/06/01/pitmlb-kcamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 10,
+          "runs_against": 5,
+          "result": "W"
         },
         {
           "id": "2021/05/31/pitmlb-kcamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 7,
+          "runs_against": 3,
+          "result": "W"
         },
         {
           "id": "2021/05/30/kcamlb-minmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 3,
+          "result": "W"
         },
         {
           "id": "2021/05/29/kcamlb-minmlb-1",
@@ -12059,13 +12755,43 @@
           "result": "W"
         }
       ],
-      "game_count": 83,
-      "current_streak": 0,
+      "game_count": 89,
+      "current_streak": 5,
       "longest_streak": 5
     },
     {
       "abbrev": "MIN",
       "games": [
+        {
+          "id": "2021/06/12/houmlb-minmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/houmlb-minmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/nyamlb-minmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/nyamlb-minmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/nyamlb-minmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/minmlb-kcamlb-1",
           "runs_for": 0,
@@ -12080,39 +12806,39 @@
         },
         {
           "id": "2021/06/04/minmlb-kcamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 14,
+          "result": "L"
         },
         {
           "id": "2021/06/03/minmlb-kcamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/06/02/minmlb-balmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/06/01/minmlb-balmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 7,
+          "result": "L"
         },
         {
           "id": "2021/05/31/minmlb-balmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/05/30/kcamlb-minmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/05/29/kcamlb-minmlb-1",
@@ -12577,13 +13303,37 @@
           "result": "W"
         }
       ],
-      "game_count": 85,
-      "current_streak": 1,
+      "game_count": 90,
+      "current_streak": 0,
       "longest_streak": 4
     },
     {
       "abbrev": "BAL",
       "games": [
+        {
+          "id": "2021/06/12/balmlb-tbamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/balmlb-tbamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/nynmlb-balmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/nynmlb-balmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/clemlb-balmlb-1",
           "runs_for": 0,
@@ -12598,39 +13348,39 @@
         },
         {
           "id": "2021/06/04/clemlb-balmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/06/02/minmlb-balmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 3,
+          "result": "W"
         },
         {
           "id": "2021/06/01/minmlb-balmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 7,
+          "runs_against": 4,
+          "result": "W"
         },
         {
           "id": "2021/05/31/minmlb-balmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 3,
+          "result": "L"
         },
         {
           "id": "2021/05/30/balmlb-chamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 3,
+          "result": "L"
         },
         {
           "id": "2021/05/29/balmlb-chamlb-2",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 3,
+          "result": "L"
         },
         {
           "id": "2021/05/29/balmlb-chamlb-1",
@@ -13095,13 +13845,49 @@
           "result": "L"
         }
       ],
-      "game_count": 85,
-      "current_streak": 0,
+      "game_count": 89,
+      "current_streak": 3,
       "longest_streak": 3
     },
     {
       "abbrev": "BOS",
       "games": [
+        {
+          "id": "2021/06/12/tormlb-bosmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/tormlb-bosmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/houmlb-bosmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/houmlb-bosmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/houmlb-bosmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/07/miamlb-bosmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/bosmlb-nyamlb-1",
           "runs_for": 0,
@@ -13116,33 +13902,33 @@
         },
         {
           "id": "2021/06/04/bosmlb-nyamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/06/03/bosmlb-houmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/06/02/bosmlb-houmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 2,
+          "result": "L"
         },
         {
           "id": "2021/06/01/bosmlb-houmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 5,
+          "result": "L"
         },
         {
           "id": "2021/05/31/bosmlb-houmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 11,
+          "result": "L"
         },
         {
           "id": "2021/05/30/miamlb-bosmlb-1",
@@ -13613,13 +14399,37 @@
           "result": "L"
         }
       ],
-      "game_count": 85,
+      "game_count": 91,
       "current_streak": 2,
       "longest_streak": 4
     },
     {
       "abbrev": "NYY",
       "games": [
+        {
+          "id": "2021/06/12/nyamlb-phimlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/nyamlb-minmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/nyamlb-minmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/nyamlb-minmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/bosmlb-nyamlb-1",
           "runs_for": 0,
@@ -13634,39 +14444,39 @@
         },
         {
           "id": "2021/06/04/bosmlb-nyamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 5,
+          "result": "L"
         },
         {
           "id": "2021/06/03/tbamlb-nyamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 9,
+          "result": "L"
         },
         {
           "id": "2021/06/02/tbamlb-nyamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 3,
+          "result": "W"
         },
         {
           "id": "2021/06/01/tbamlb-nyamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 3,
+          "result": "W"
         },
         {
           "id": "2021/05/31/tbamlb-nyamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 3,
+          "result": "L"
         },
         {
           "id": "2021/05/30/nyamlb-detmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 2,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/05/29/nyamlb-detmlb-1",
@@ -14131,13 +14941,37 @@
           "result": "L"
         }
       ],
-      "game_count": 85,
+      "game_count": 89,
       "current_streak": 0,
       "longest_streak": 8
     },
     {
       "abbrev": "TB",
       "games": [
+        {
+          "id": "2021/06/12/balmlb-tbamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/balmlb-tbamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/wasmlb-tbamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/wasmlb-tbamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/tbamlb-texmlb-1",
           "runs_for": 0,
@@ -14152,39 +14986,39 @@
         },
         {
           "id": "2021/06/04/tbamlb-texmlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 5,
+          "result": "L"
         },
         {
           "id": "2021/06/03/tbamlb-nyamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 9,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/06/02/tbamlb-nyamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 4,
+          "result": "L"
         },
         {
           "id": "2021/06/01/tbamlb-nyamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 5,
+          "result": "L"
         },
         {
           "id": "2021/05/31/tbamlb-nyamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 3,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/05/30/phimlb-tbamlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 2,
+          "result": "W"
         },
         {
           "id": "2021/05/29/phimlb-tbamlb-1",
@@ -14661,13 +15495,43 @@
           "result": "W"
         }
       ],
-      "game_count": 87,
-      "current_streak": 3,
+      "game_count": 91,
+      "current_streak": 0,
       "longest_streak": 11
     },
     {
       "abbrev": "TOR",
       "games": [
+        {
+          "id": "2021/06/12/tormlb-bosmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/11/tormlb-bosmlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/10/tormlb-chamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/09/tormlb-chamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
+        {
+          "id": "2021/06/08/tormlb-chamlb-1",
+          "runs_for": 0,
+          "runs_against": 0,
+          "result": "N"
+        },
         {
           "id": "2021/06/06/houmlb-tormlb-1",
           "runs_for": 0,
@@ -14682,33 +15546,33 @@
         },
         {
           "id": "2021/06/04/houmlb-tormlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 1,
+          "runs_against": 13,
+          "result": "L"
         },
         {
           "id": "2021/06/02/miamlb-tormlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 6,
+          "runs_against": 5,
+          "result": "W"
         },
         {
           "id": "2021/06/01/miamlb-tormlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/05/30/tormlb-clemlb-2",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 5,
+          "runs_against": 6,
+          "result": "L"
         },
         {
           "id": "2021/05/30/tormlb-clemlb-1",
-          "runs_for": 0,
-          "runs_against": 0,
-          "result": "N"
+          "runs_for": 4,
+          "runs_against": 1,
+          "result": "W"
         },
         {
           "id": "2021/05/27/tormlb-nyamlb-2",
@@ -15167,7 +16031,7 @@
           "result": "W"
         }
       ],
-      "game_count": 83,
+      "game_count": 88,
       "current_streak": 0,
       "longest_streak": 4
     }

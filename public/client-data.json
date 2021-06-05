@@ -1,20 +1,27 @@
 {
-  "file_last_updated": "2021-05-30T18:53:28.864Z",
+  "file_last_updated": "2021-06-05T13:54:06.732Z",
   "teams": [
     {
       "abbrev": "WSH",
       "next_game": {
-        "id": "2021/05/29/milmlb-wasmlb-2",
+        "id": "2021/06/05/wasmlb-phimlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
-      "streak": []
+      "streak": [
+        {
+          "id": "2021/06/04/wasmlb-phimlb-1",
+          "runs_for": 2,
+          "runs_against": 1,
+          "result": "W"
+        }
+      ]
     },
     {
       "abbrev": "MIA",
       "next_game": {
-        "id": "2021/05/30/miamlb-bosmlb-1",
+        "id": "2021/06/05/miamlb-pitmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
@@ -24,7 +31,7 @@
     {
       "abbrev": "ATL",
       "next_game": {
-        "id": "2021/05/29/atlmlb-nynmlb-1",
+        "id": "2021/06/05/lanmlb-atlmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
@@ -34,36 +41,17 @@
     {
       "abbrev": "NYM",
       "next_game": {
-        "id": "2021/05/29/atlmlb-nynmlb-1",
+        "id": "2021/06/05/nynmlb-sdnmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
-      "streak": [
-        {
-          "id": "2021/05/27/colmlb-nynmlb-2",
-          "runs_for": 4,
-          "runs_against": 2,
-          "result": "W"
-        },
-        {
-          "id": "2021/05/27/colmlb-nynmlb-1",
-          "runs_for": 1,
-          "runs_against": 0,
-          "result": "W"
-        },
-        {
-          "id": "2021/05/25/colmlb-nynmlb-1",
-          "runs_for": 3,
-          "runs_against": 1,
-          "result": "W"
-        }
-      ]
+      "streak": []
     },
     {
       "abbrev": "PHI",
       "next_game": {
-        "id": "2021/05/30/phimlb-tbamlb-1",
+        "id": "2021/06/05/wasmlb-phimlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
@@ -73,98 +61,42 @@
     {
       "abbrev": "CHC",
       "next_game": {
-        "id": "2021/05/30/cinmlb-chnmlb-1",
+        "id": "2021/06/05/chnmlb-sfnmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
-      "streak": [
-        {
-          "id": "2021/05/29/cinmlb-chnmlb-1",
-          "runs_for": 10,
-          "runs_against": 2,
-          "result": "W"
-        },
-        {
-          "id": "2021/05/28/cinmlb-chnmlb-1",
-          "runs_for": 1,
-          "runs_against": 0,
-          "result": "W"
-        },
-        {
-          "id": "2021/05/27/chnmlb-pitmlb-1",
-          "runs_for": 5,
-          "runs_against": 3,
-          "result": "W"
-        },
-        {
-          "id": "2021/05/26/chnmlb-pitmlb-1",
-          "runs_for": 4,
-          "runs_against": 1,
-          "result": "W"
-        },
-        {
-          "id": "2021/05/25/chnmlb-pitmlb-1",
-          "runs_for": 4,
-          "runs_against": 3,
-          "result": "W"
-        },
-        {
-          "id": "2021/05/23/chnmlb-slnmlb-1",
-          "runs_for": 2,
-          "runs_against": 1,
-          "result": "W"
-        }
-      ]
+      "streak": []
     },
     {
       "abbrev": "STL",
       "next_game": {
-        "id": "2021/05/29/slnmlb-arimlb-1",
+        "id": "2021/06/05/cinmlb-slnmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
-      "streak": [
-        {
-          "id": "2021/05/28/slnmlb-arimlb-1",
-          "runs_for": 8,
-          "runs_against": 6,
-          "result": "W"
-        },
-        {
-          "id": "2021/05/27/slnmlb-arimlb-1",
-          "runs_for": 5,
-          "runs_against": 4,
-          "result": "W"
-        },
-        {
-          "id": "2021/05/26/slnmlb-chamlb-1",
-          "runs_for": 4,
-          "runs_against": 0,
-          "result": "W"
-        }
-      ]
+      "streak": []
     },
     {
       "abbrev": "MIL",
       "next_game": {
-        "id": "2021/05/29/milmlb-wasmlb-2",
+        "id": "2021/06/05/arimlb-milmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
       "streak": [
         {
-          "id": "2021/05/29/milmlb-wasmlb-1",
-          "runs_for": 4,
+          "id": "2021/06/04/arimlb-milmlb-1",
+          "runs_for": 5,
           "runs_against": 1,
           "result": "W"
         },
         {
-          "id": "2021/05/27/sdnmlb-milmlb-1",
-          "runs_for": 6,
-          "runs_against": 5,
+          "id": "2021/06/03/arimlb-milmlb-1",
+          "runs_for": 7,
+          "runs_against": 4,
           "result": "W"
         }
       ]
@@ -172,16 +104,22 @@
     {
       "abbrev": "PIT",
       "next_game": {
-        "id": "2021/05/29/colmlb-pitmlb-2",
+        "id": "2021/06/05/miamlb-pitmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
       "streak": [
         {
-          "id": "2021/05/29/colmlb-pitmlb-1",
-          "runs_for": 7,
-          "runs_against": 0,
+          "id": "2021/06/04/miamlb-pitmlb-1",
+          "runs_for": 9,
+          "runs_against": 2,
+          "result": "W"
+        },
+        {
+          "id": "2021/06/03/miamlb-pitmlb-1",
+          "runs_for": 5,
+          "runs_against": 3,
           "result": "W"
         }
       ]
@@ -189,27 +127,53 @@
     {
       "abbrev": "CIN",
       "next_game": {
-        "id": "2021/05/30/cinmlb-chnmlb-1",
+        "id": "2021/06/05/cinmlb-slnmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
-      "streak": []
+      "streak": [
+        {
+          "id": "2021/06/04/cinmlb-slnmlb-1",
+          "runs_for": 6,
+          "runs_against": 4,
+          "result": "W"
+        },
+        {
+          "id": "2021/06/03/cinmlb-slnmlb-1",
+          "runs_for": 4,
+          "runs_against": 2,
+          "result": "W"
+        }
+      ]
     },
     {
       "abbrev": "LAD",
       "next_game": {
-        "id": "2021/05/29/sfnmlb-lanmlb-1",
+        "id": "2021/06/05/lanmlb-atlmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
-      "streak": []
+      "streak": [
+        {
+          "id": "2021/06/04/lanmlb-atlmlb-1",
+          "runs_for": 9,
+          "runs_against": 5,
+          "result": "W"
+        },
+        {
+          "id": "2021/06/02/slnmlb-lanmlb-1",
+          "runs_for": 14,
+          "runs_against": 3,
+          "result": "W"
+        }
+      ]
     },
     {
       "abbrev": "COL",
       "next_game": {
-        "id": "2021/05/29/colmlb-pitmlb-2",
+        "id": "2021/06/05/oakmlb-colmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
@@ -219,7 +183,7 @@
     {
       "abbrev": "ARI",
       "next_game": {
-        "id": "2021/05/29/slnmlb-arimlb-1",
+        "id": "2021/06/05/arimlb-milmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
@@ -229,21 +193,21 @@
     {
       "abbrev": "SD",
       "next_game": {
-        "id": "2021/05/30/sdnmlb-houmlb-1",
+        "id": "2021/06/05/nynmlb-sdnmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
       "streak": [
         {
-          "id": "2021/05/29/sdnmlb-houmlb-1",
-          "runs_for": 11,
-          "runs_against": 8,
+          "id": "2021/06/04/nynmlb-sdnmlb-1",
+          "runs_for": 2,
+          "runs_against": 0,
           "result": "W"
         },
         {
-          "id": "2021/05/28/sdnmlb-houmlb-1",
-          "runs_for": 10,
+          "id": "2021/06/03/nynmlb-sdnmlb-1",
+          "runs_for": 4,
           "runs_against": 3,
           "result": "W"
         }
@@ -252,16 +216,22 @@
     {
       "abbrev": "SF",
       "next_game": {
-        "id": "2021/05/29/sfnmlb-lanmlb-1",
+        "id": "2021/06/05/chnmlb-sfnmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
       "streak": [
         {
-          "id": "2021/05/28/sfnmlb-lanmlb-1",
+          "id": "2021/06/04/chnmlb-sfnmlb-1",
           "runs_for": 8,
           "runs_against": 5,
+          "result": "W"
+        },
+        {
+          "id": "2021/06/03/chnmlb-sfnmlb-1",
+          "runs_for": 7,
+          "runs_against": 2,
           "result": "W"
         }
       ]
@@ -269,26 +239,33 @@
     {
       "abbrev": "HOU",
       "next_game": {
-        "id": "2021/05/30/sdnmlb-houmlb-1",
-        "runs_for": 0,
-        "runs_against": 0,
-        "result": "N"
-      },
-      "streak": []
-    },
-    {
-      "abbrev": "LAA",
-      "next_game": {
-        "id": "2021/05/30/anamlb-oakmlb-1",
+        "id": "2021/06/05/houmlb-tormlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
       "streak": [
         {
-          "id": "2021/05/29/anamlb-oakmlb-1",
-          "runs_for": 4,
-          "runs_against": 0,
+          "id": "2021/06/04/houmlb-tormlb-1",
+          "runs_for": 13,
+          "runs_against": 1,
+          "result": "W"
+        }
+      ]
+    },
+    {
+      "abbrev": "LAA",
+      "next_game": {
+        "id": "2021/06/05/seamlb-anamlb-1",
+        "runs_for": 0,
+        "runs_against": 0,
+        "result": "N"
+      },
+      "streak": [
+        {
+          "id": "2021/06/04/seamlb-anamlb-1",
+          "runs_for": 3,
+          "runs_against": 2,
           "result": "W"
         }
       ]
@@ -296,64 +273,77 @@
     {
       "abbrev": "SEA",
       "next_game": {
-        "id": "2021/05/29/texmlb-seamlb-1",
+        "id": "2021/06/05/seamlb-anamlb-1",
+        "runs_for": 0,
+        "runs_against": 0,
+        "result": "N"
+      },
+      "streak": []
+    },
+    {
+      "abbrev": "TEX",
+      "next_game": {
+        "id": "2021/06/05/tbamlb-texmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
       "streak": [
         {
-          "id": "2021/05/28/texmlb-seamlb-1",
-          "runs_for": 3,
-          "runs_against": 2,
-          "result": "W"
-        },
-        {
-          "id": "2021/05/27/texmlb-seamlb-1",
+          "id": "2021/06/04/tbamlb-texmlb-1",
           "runs_for": 5,
-          "runs_against": 0,
+          "runs_against": 4,
           "result": "W"
         }
       ]
     },
     {
-      "abbrev": "TEX",
-      "next_game": {
-        "id": "2021/05/29/texmlb-seamlb-1",
-        "runs_for": 0,
-        "runs_against": 0,
-        "result": "N"
-      },
-      "streak": []
-    },
-    {
       "abbrev": "OAK",
       "next_game": {
-        "id": "2021/05/30/anamlb-oakmlb-1",
-        "runs_for": 0,
-        "runs_against": 0,
-        "result": "N"
-      },
-      "streak": []
-    },
-    {
-      "abbrev": "CWS",
-      "next_game": {
-        "id": "2021/05/29/balmlb-chamlb-2",
+        "id": "2021/06/05/oakmlb-colmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
       "streak": [
         {
-          "id": "2021/05/29/balmlb-chamlb-1",
-          "runs_for": 7,
-          "runs_against": 4,
+          "id": "2021/06/04/oakmlb-colmlb-1",
+          "runs_for": 9,
+          "runs_against": 5,
           "result": "W"
         },
         {
-          "id": "2021/05/27/balmlb-chamlb-1",
-          "runs_for": 5,
+          "id": "2021/06/02/oakmlb-seamlb-1",
+          "runs_for": 6,
+          "runs_against": 0,
+          "result": "W"
+        },
+        {
+          "id": "2021/06/01/oakmlb-seamlb-1",
+          "runs_for": 12,
+          "runs_against": 6,
+          "result": "W"
+        }
+      ]
+    },
+    {
+      "abbrev": "CWS",
+      "next_game": {
+        "id": "2021/06/05/detmlb-chamlb-1",
+        "runs_for": 0,
+        "runs_against": 0,
+        "result": "N"
+      },
+      "streak": [
+        {
+          "id": "2021/06/04/detmlb-chamlb-1",
+          "runs_for": 9,
+          "runs_against": 8,
+          "result": "W"
+        },
+        {
+          "id": "2021/06/03/detmlb-chamlb-1",
+          "runs_for": 4,
           "runs_against": 1,
           "result": "W"
         }
@@ -362,74 +352,68 @@
     {
       "abbrev": "CLE",
       "next_game": {
-        "id": "2021/05/30/tormlb-clemlb-1",
+        "id": "2021/06/05/clemlb-balmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
-      "streak": [
-        {
-          "id": "2021/05/27/clemlb-detmlb-1",
-          "runs_for": 5,
-          "runs_against": 2,
-          "result": "W"
-        }
-      ]
+      "streak": []
     },
     {
       "abbrev": "DET",
       "next_game": {
-        "id": "2021/05/30/nyamlb-detmlb-1",
+        "id": "2021/06/05/detmlb-chamlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
-      "streak": [
-        {
-          "id": "2021/05/29/nyamlb-detmlb-1",
-          "runs_for": 6,
-          "runs_against": 1,
-          "result": "W"
-        },
-        {
-          "id": "2021/05/28/nyamlb-detmlb-1",
-          "runs_for": 3,
-          "runs_against": 2,
-          "result": "W"
-        }
-      ]
+      "streak": []
     },
     {
       "abbrev": "KC",
       "next_game": {
-        "id": "2021/05/30/kcamlb-minmlb-1",
-        "runs_for": 0,
-        "runs_against": 0,
-        "result": "N"
-      },
-      "streak": []
-    },
-    {
-      "abbrev": "MIN",
-      "next_game": {
-        "id": "2021/05/30/kcamlb-minmlb-1",
+        "id": "2021/06/05/minmlb-kcamlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
       "streak": [
         {
-          "id": "2021/05/29/kcamlb-minmlb-1",
+          "id": "2021/06/04/minmlb-kcamlb-1",
+          "runs_for": 14,
+          "runs_against": 5,
+          "result": "W"
+        },
+        {
+          "id": "2021/06/03/minmlb-kcamlb-1",
           "runs_for": 6,
           "runs_against": 5,
+          "result": "W"
+        },
+        {
+          "id": "2021/06/01/pitmlb-kcamlb-1",
+          "runs_for": 10,
+          "runs_against": 5,
+          "result": "W"
+        },
+        {
+          "id": "2021/05/31/pitmlb-kcamlb-1",
+          "runs_for": 7,
+          "runs_against": 3,
+          "result": "W"
+        },
+        {
+          "id": "2021/05/30/kcamlb-minmlb-1",
+          "runs_for": 6,
+          "runs_against": 3,
           "result": "W"
         }
       ]
     },
     {
-      "abbrev": "BAL",
+      "abbrev": "MIN",
       "next_game": {
-        "id": "2021/05/29/balmlb-chamlb-2",
+        "id": "2021/06/05/minmlb-kcamlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
@@ -437,24 +421,53 @@
       "streak": []
     },
     {
-      "abbrev": "BOS",
+      "abbrev": "BAL",
       "next_game": {
-        "id": "2021/05/30/miamlb-bosmlb-1",
+        "id": "2021/06/05/clemlb-balmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
       "streak": [
         {
-          "id": "2021/05/29/miamlb-bosmlb-1",
+          "id": "2021/06/04/clemlb-balmlb-1",
           "runs_for": 3,
           "runs_against": 1,
           "result": "W"
         },
         {
-          "id": "2021/05/26/atlmlb-bosmlb-1",
-          "runs_for": 9,
-          "runs_against": 5,
+          "id": "2021/06/02/minmlb-balmlb-1",
+          "runs_for": 6,
+          "runs_against": 3,
+          "result": "W"
+        },
+        {
+          "id": "2021/06/01/minmlb-balmlb-1",
+          "runs_for": 7,
+          "runs_against": 4,
+          "result": "W"
+        }
+      ]
+    },
+    {
+      "abbrev": "BOS",
+      "next_game": {
+        "id": "2021/06/05/bosmlb-nyamlb-1",
+        "runs_for": 0,
+        "runs_against": 0,
+        "result": "N"
+      },
+      "streak": [
+        {
+          "id": "2021/06/04/bosmlb-nyamlb-1",
+          "runs_for": 5,
+          "runs_against": 2,
+          "result": "W"
+        },
+        {
+          "id": "2021/06/03/bosmlb-houmlb-1",
+          "runs_for": 5,
+          "runs_against": 1,
           "result": "W"
         }
       ]
@@ -462,7 +475,7 @@
     {
       "abbrev": "NYY",
       "next_game": {
-        "id": "2021/05/30/nyamlb-detmlb-1",
+        "id": "2021/06/05/bosmlb-nyamlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
@@ -472,36 +485,17 @@
     {
       "abbrev": "TB",
       "next_game": {
-        "id": "2021/05/30/phimlb-tbamlb-1",
+        "id": "2021/06/05/tbamlb-texmlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
       },
-      "streak": [
-        {
-          "id": "2021/05/29/phimlb-tbamlb-1",
-          "runs_for": 5,
-          "runs_against": 3,
-          "result": "W"
-        },
-        {
-          "id": "2021/05/27/kcamlb-tbamlb-1",
-          "runs_for": 7,
-          "runs_against": 2,
-          "result": "W"
-        },
-        {
-          "id": "2021/05/26/kcamlb-tbamlb-1",
-          "runs_for": 2,
-          "runs_against": 1,
-          "result": "W"
-        }
-      ]
+      "streak": []
     },
     {
       "abbrev": "TOR",
       "next_game": {
-        "id": "2021/05/30/tormlb-clemlb-1",
+        "id": "2021/06/05/houmlb-tormlb-1",
         "runs_for": 0,
         "runs_against": 0,
         "result": "N"
