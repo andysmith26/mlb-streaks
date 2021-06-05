@@ -8,9 +8,7 @@ var teams;
 
 /* sample URL =
 https://gd2.mlb.com/components/game/mlb/year_2018/month_03/day_31/gid_2018_03_31_slnmlb_nynmlb_1/linescore.json
-
 OR
-
 https://gd2.mlb.com/components/game/mlb/year_2018/month_03/day_31
 NOTE NO TRAILING SLASH
 */
