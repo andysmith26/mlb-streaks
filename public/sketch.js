@@ -19,12 +19,13 @@ var mouseRow = -1;
 var mouseCol = -1;
 var the_cursor;
 var mouseOverGame = -1;
+let cnv;
 
 function setup() {
-  createCanvas(600, startY*2 + stepY*(10) + rectSize);
-  background(220);
+  cnv = createCanvas(600, startY*2 + stepY*(10) + rectSize);
+  document.querySelector("#sketch").appendChild(canvas);
   loadJSON("client-data.json", loadData);
-    shapeFillDark = color(0, 75, 150);
+    shapeFillDark = color(100, 200, 100);
     shapeFillLight = color(200, 200, 200);
   shapeStroke = color(100, 100, 100);
   labelColorMain = color(70, 70, 70);
@@ -34,7 +35,7 @@ function setup() {
 }
 
 function draw() {
-  background(220)
+  background(255)
   the_cursor = "default"
   drawData()
   setMouseGridLocation()
@@ -105,7 +106,13 @@ function drawData() {
   //textStyle(ITALIC);
   //noStroke();
   //text("no current streak", nameX + nameBarGap, currentY);
-    fill(labelColorMain);
+
+  // displayLastUpdated();
+
+}
+
+function displayLastUpdated() {
+  fill(labelColorMain);
     textSize(labelSize - 3);
     textAlign(RIGHT);
     text("last updated " + lastUpdated, width-10, height-10);
@@ -142,15 +149,15 @@ function drawStreak(type, s, n, x, thisRow) {
       let gameShortText = getGameShortText(team.abbrev, team.streak[team.streak.length - 1 - thisCol])
       // set stroke based on mouse location
       if (mouseRow == thisRow && mouseCol == thisCol) {
-          showTooltip(gameShortText, 400, 400)
+          // showTooltip(gameShortText, 400, 400)
           the_cursor = "pointer"
           strokeWeight(3)
-          stroke(220, 220, 0)
+          stroke(50, 100, 50)
       } else {
         noStroke()
       }
       fill(shapeFillDark);
-      labelColor = labelColorInverse;
+      labelColor = labelColorDark;
       rect(rectX, rectY, rectH, rectW);
       //    rect(xPos + (textWidth(n) / 2) - (rectSize / 2), yPos - ((textAscent(n) - 2) / 2) - (rectSize / 2), rectSize, rectSize);
 
@@ -174,12 +181,12 @@ function drawStreak(type, s, n, x, thisRow) {
     var xPos = x + ((rectSize + gapX) * thisCol);
     var rectX = xPos - (rectSize / 2);
     push()
-    stroke(255, 0, 0)
+    stroke(255, 255, 0)
     strokeWeight(1)
-    fill(255, 220, 200)
+    fill(255, 255, 200)
     rect(rectX, rectY, rectW, rectH)
     noStroke()
-    fill(100, 0, 0)
+    fill(100, 100, 0)
     text(getNextGame(thisRow), xPos, yPos + rectSize/2)
     pop()
   }
