@@ -1,5 +1,5 @@
 {
-  "file_last_updated": "2022-04-09T16:54:52.729Z",
+  "file_last_updated": "2022-04-09T20:06:34.384Z",
   "teams": [
     {
       "abbrev": "WSH",
@@ -9,20 +9,13 @@
         "runs_against": 0,
         "result": "N",
         "pk": "662588",
-        "free": false
+        "free": false,
+        "thumbnail": "http://mediadownloads.mlb.com/mlbam/preview/nynwas_662588_th_7_preview.jpg"
       },
       "streak": []
     },
     {
       "abbrev": "MIA",
-      "next_game": {
-        "id": "2022/04/09/miamlb-sfnmlb-1",
-        "runs_for": 0,
-        "runs_against": 0,
-        "result": "N",
-        "pk": "662123",
-        "free": false
-      },
       "streak": []
     },
     {
@@ -33,7 +26,8 @@
         "runs_against": 0,
         "result": "N",
         "pk": "661575",
-        "free": false
+        "free": false,
+        "thumbnail": "http://mediadownloads.mlb.com/mlbam/preview/cinatl_661575_th_7_preview.jpg"
       },
       "streak": [
         {
@@ -54,7 +48,8 @@
         "runs_against": 0,
         "result": "N",
         "pk": "662588",
-        "free": false
+        "free": false,
+        "thumbnail": "http://mediadownloads.mlb.com/mlbam/preview/nynwas_662588_th_7_preview.jpg"
       },
       "streak": [
         {
@@ -146,7 +141,8 @@
         "runs_against": 0,
         "result": "N",
         "pk": "661575",
-        "free": false
+        "free": false,
+        "thumbnail": "http://mediadownloads.mlb.com/mlbam/preview/cinatl_661575_th_7_preview.jpg"
       },
       "streak": []
     },
@@ -158,7 +154,8 @@
         "runs_against": 0,
         "result": "N",
         "pk": "662931",
-        "free": false
+        "free": false,
+        "thumbnail": "http://mediadownloads.mlb.com/mlbam/preview/lancol_662931_th_7_preview.jpg"
       },
       "streak": [
         {
@@ -179,7 +176,8 @@
         "runs_against": 0,
         "result": "N",
         "pk": "662931",
-        "free": false
+        "free": false,
+        "thumbnail": "http://mediadownloads.mlb.com/mlbam/preview/lancol_662931_th_7_preview.jpg"
       },
       "streak": []
     },
@@ -191,7 +189,8 @@
         "runs_against": 0,
         "result": "N",
         "pk": "663404",
-        "free": false
+        "free": false,
+        "thumbnail": "http://mediadownloads.mlb.com/mlbam/preview/sdnari_663404_th_7_preview.jpg"
       },
       "streak": []
     },
@@ -203,7 +202,8 @@
         "runs_against": 0,
         "result": "N",
         "pk": "663404",
-        "free": false
+        "free": false,
+        "thumbnail": "http://mediadownloads.mlb.com/mlbam/preview/sdnari_663404_th_7_preview.jpg"
       },
       "streak": [
         {
@@ -218,14 +218,6 @@
     },
     {
       "abbrev": "SF",
-      "next_game": {
-        "id": "2022/04/09/miamlb-sfnmlb-1",
-        "runs_for": 0,
-        "runs_against": 0,
-        "result": "N",
-        "pk": "662123",
-        "free": false
-      },
       "streak": [
         {
           "id": "2022/04/08/miamlb-sfnmlb-1",
@@ -245,7 +237,8 @@
         "runs_against": 0,
         "result": "N",
         "pk": "661040",
-        "free": true
+        "free": true,
+        "thumbnail": "http://mediadownloads.mlb.com/mlbam/preview/houana_661040_th_7_preview.jpg"
       },
       "streak": [
         {
@@ -274,7 +267,8 @@
         "runs_against": 0,
         "result": "N",
         "pk": "661040",
-        "free": true
+        "free": true,
+        "thumbnail": "http://mediadownloads.mlb.com/mlbam/preview/houana_661040_th_7_preview.jpg"
       },
       "streak": []
     },
@@ -361,14 +355,22 @@
     {
       "abbrev": "TB",
       "next_game": {
-        "id": "2022/04/08/balmlb-tbamlb-1",
-        "runs_for": 2,
-        "runs_against": 1,
+        "id": "2022/04/09/balmlb-tbamlb-1",
+        "runs_for": 5,
+        "runs_against": 3,
         "result": "W",
-        "pk": "661918",
+        "pk": "661917",
         "free": false
       },
       "streak": [
+        {
+          "id": "2022/04/09/balmlb-tbamlb-1",
+          "runs_for": 5,
+          "runs_against": 3,
+          "result": "W",
+          "pk": "661917",
+          "free": false
+        },
         {
           "id": "2022/04/08/balmlb-tbamlb-1",
           "runs_for": 2,
