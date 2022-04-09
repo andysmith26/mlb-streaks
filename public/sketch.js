@@ -25,13 +25,13 @@ function setup() {
   cnv = createCanvas(600, startY*2 + stepY*(10) + rectSize);
   document.querySelector("#sketch").appendChild(canvas);
   loadJSON("client-data.json", loadData);
-    shapeFillDark = color(100, 200, 100);
-    shapeFillLight = color(200, 200, 200);
+  shapeFillDark = color(180, 250, 180);
+  shapeFillLight = color(200, 200, 200);
   shapeStroke = color(100, 100, 100);
   labelColorMain = color(70, 70, 70);
   labelColorDark = color(20, 20, 20)
-    labelColorInverse = color(200, 200, 200);
-    console.log("starting from heroku v2");
+  labelColorInverse = color(200, 200, 200);
+  console.log("starting from heroku v2");
 }
 
 function draw() {
@@ -152,7 +152,7 @@ function drawStreak(type, s, n, x, thisRow) {
           // showTooltip(gameShortText, 400, 400)
           the_cursor = "pointer"
           strokeWeight(3)
-          stroke(50, 100, 50)
+          stroke(150, 200, 150)
       } else {
         noStroke()
       }
@@ -186,7 +186,7 @@ function drawStreak(type, s, n, x, thisRow) {
     fill(255, 255, 200)
     rect(rectX, rectY, rectW, rectH)
     noStroke()
-    fill(100, 100, 0)
+    fill(50, 50, 0)
     text(getNextGame(thisRow), xPos, yPos + rectSize/2)
     pop()
   }

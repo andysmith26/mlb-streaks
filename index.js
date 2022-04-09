@@ -113,7 +113,7 @@ function updateMasterData(path) {
  * @param {Object} teams
  */
 function insert_game_data(gameTeams, teams) {
-  for (var i = 0; i < gameTeams.length; i++) {
+  for (var i = 0; i < 2; i++) {
     console.log("*** analyzing game ***");
     console.log(gameTeams[i]);
     var logMessage = "";
@@ -122,7 +122,10 @@ function insert_game_data(gameTeams, teams) {
       "id": gameTeams[i].id,
       "runs_for": gameTeams[i].runs_for,
       "runs_against": gameTeams[i].runs_against,
-      "result": gameTeams[i].outcome
+      "result": gameTeams[i].outcome,
+      "pk": gameTeams[2].pk,
+      "free": gameTeams[2].free,
+      "thumbnail": gameTeams[2].thumbnail
     };
     var foundTeam = false;
     for (var j = 0; j < teams.length; j++) {
@@ -171,7 +174,14 @@ function insert_game_data(gameTeams, teams) {
  * @returns {Array} // length-two array with home team, away team
  */
 function extract_game_data(game) {
+  console.log(game.game_pk);
+  console.log(game.game_media.media.free);
   var output;
+  var game_info = {
+    "pk": game.game_pk,
+    "free": (game.game_media.media.free === "YES"? true : false),
+    "thumbnail": game.game_media.media.thumbnail
+  }
   var home_team = {
     "abbrev": game.home_name_abbrev,
     "id": game.id
@@ -204,7 +214,7 @@ function extract_game_data(game) {
     home_team.outcome = "N"; // not final
     away_team.outcome = "N"; // not final
   }
-  output = [home_team, away_team];
+  output = [home_team, away_team, game_info];
   //console.log(output);
   return output;
 }
