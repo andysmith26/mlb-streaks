@@ -1,5 +1,5 @@
 {
-  "file_last_updated": "2022-05-29T23:17:39.970Z",
+  "file_last_updated": "2022-05-29T23:12:04.780Z",
   "teams": [
     {
       "abbrev": "WSH",
@@ -50,12 +50,13 @@
     {
       "abbrev": "NYM",
       "next_game": {
-        "id": "2022/05/28/phimlb-nynmlb-1",
-        "runs_for": 8,
-        "runs_against": 2,
-        "result": "W",
-        "pk": "662556",
-        "free": false
+        "id": "2022/05/29/phimlb-nynmlb-1",
+        "runs_for": 0,
+        "runs_against": 0,
+        "result": "N",
+        "pk": "662555",
+        "free": false,
+        "thumbnail": "http://mediadownloads.mlb.com/mlbam/preview/phinyn_662555_th_7_preview.jpg"
       },
       "streak": [
         {
@@ -73,27 +74,20 @@
           "result": "W",
           "pk": "662543",
           "free": false
-        },
-        {
-          "id": "2022/04/08/nynmlb-wasmlb-1",
-          "runs_for": 7,
-          "runs_against": 3,
-          "result": "W",
-          "pk": "662559",
-          "free": false
-        },
-        {
-          "id": "2022/04/07/nynmlb-wasmlb-1",
-          "runs_for": 5,
-          "runs_against": 1,
-          "result": "W",
-          "pk": "662571",
-          "free": false
         }
       ]
     },
     {
       "abbrev": "PHI",
+      "next_game": {
+        "id": "2022/05/29/phimlb-nynmlb-1",
+        "runs_for": 0,
+        "runs_against": 0,
+        "result": "N",
+        "pk": "662555",
+        "free": false,
+        "thumbnail": "http://mediadownloads.mlb.com/mlbam/preview/phinyn_662555_th_7_preview.jpg"
+      },
       "streak": []
     },
     {
@@ -175,14 +169,6 @@
           "result": "W",
           "pk": "663338",
           "free": false
-        },
-        {
-          "id": "2022/04/08/lanmlb-colmlb-1",
-          "runs_for": 5,
-          "runs_against": 3,
-          "result": "W",
-          "pk": "662933",
-          "free": false
         }
       ]
     },
@@ -238,24 +224,7 @@
     },
     {
       "abbrev": "HOU",
-      "next_game": {
-        "id": "2022/05/29/houmlb-seamlb-1",
-        "runs_for": 2,
-        "runs_against": 1,
-        "result": "W",
-        "pk": "662130",
-        "free": false
-      },
-      "streak": [
-        {
-          "id": "2022/05/29/houmlb-seamlb-1",
-          "runs_for": 2,
-          "runs_against": 1,
-          "result": "W",
-          "pk": "662130",
-          "free": false
-        }
-      ]
+      "streak": []
     },
     {
       "abbrev": "LAA",
@@ -263,7 +232,32 @@
     },
     {
       "abbrev": "SEA",
-      "streak": []
+      "next_game": {
+        "id": "2022/05/28/houmlb-seamlb-1",
+        "runs_for": 6,
+        "runs_against": 0,
+        "result": "W",
+        "pk": "662131",
+        "free": false
+      },
+      "streak": [
+        {
+          "id": "2022/05/28/houmlb-seamlb-1",
+          "runs_for": 6,
+          "runs_against": 0,
+          "result": "W",
+          "pk": "662131",
+          "free": false
+        },
+        {
+          "id": "2022/05/27/houmlb-seamlb-1",
+          "runs_for": 6,
+          "runs_against": 1,
+          "result": "W",
+          "pk": "662132",
+          "free": false
+        }
+      ]
     },
     {
       "abbrev": "TEX",
@@ -468,14 +462,6 @@
           "runs_against": 3,
           "result": "W",
           "pk": "663445",
-          "free": false
-        },
-        {
-          "id": "2022/04/08/texmlb-tormlb-1",
-          "runs_for": 10,
-          "runs_against": 8,
-          "result": "W",
-          "pk": "661782",
           "free": false
         }
       ]
