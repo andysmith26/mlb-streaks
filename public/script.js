@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
             data.teams.sort(function (a, b) {
                 return b.streak.length - a.streak.length;
             });
-            console.log(data);
+            // console.log(data);
             drawTeams(data);
         });
 });
@@ -37,43 +37,47 @@ function drawTeams(data) {
 //   </div>
 
 function drawTeam(team) {
+    // console.log(team.streak);
+    team.streak.sort(function (a, b) {
+        return a.id.localeCompare(b.id);
+    });
     const row = document.createElement("div");
-    row.classList.add("row", "align-items-right");
-
-    // build element for team name
-    const teamName = document.createElement("div");
-    teamName.classList.add("display-6", "col-2");
-    teamName.textContent = team.abbrev;
-    row.append(teamName);
-
-    // build element for next game
-    const card = document.createElement("a");
-    card.classList.add("nextGame", "col-1", "btn");
-    if (team.next_game.free) {
-        card.classList.add("freeGameOfTheDay");
-    }
-    card.href = BASE_URL_GAME + URL_PREVIEW + team.next_game.pk
-    row.appendChild(card);
-    const cardText = document.createElement("span");
-    cardText.classList.add("gameInfo");
-    cardText.innerHTML = getGameShortText(team.abbrev, team.next_game);
-    console.log(team);
-    card.appendChild(cardText);
+    row.classList.add("d-flex", "justify-content-end");
 
     // build element for previous games
     for (game of team.streak) {
         const streakGame = document.createElement("a");
         streakGame.classList.add("doneGame", "col-1", "btn");
         streakGame.href = BASE_URL_GAME + URL_FEED + game.pk;
-        console.log(game.pk)
+        // console.log(game.pk)
         row.appendChild(streakGame);
 
-        const cardText = document.createElement("span");
-        cardText.classList.add("gameInfo");
+        const cardText = document.createElement("div");
+        cardText.classList.add("align-middle");
         cardText.innerHTML = getGameShortText(team.abbrev, game);
-        console.log(team);
+        // console.log(team);
         streakGame.appendChild(cardText);
     }
+
+        // build element for next game
+        const card = document.createElement("a");
+        card.classList.add("nextGame", "col-1", "btn", "align-middle");
+        if (team.next_game.free) {
+            card.classList.add("freeGameOfTheDay");
+        }
+        card.href = BASE_URL_GAME + URL_PREVIEW + team.next_game.pk
+        row.appendChild(card);
+        const cardText = document.createElement("div");
+        cardText.classList.add("align-middle");
+        cardText.innerHTML = getGameShortText(team.abbrev, team.next_game);
+        // console.log(team);
+        card.appendChild(cardText);
+
+    // build element for team name
+    const teamName = document.createElement("div");
+    teamName.classList.add("display-6", "col-2");
+    teamName.textContent = team.abbrev;
+    row.append(teamName);
 
     return row;
 
@@ -94,6 +98,8 @@ function getGameShortText(abbrev, game) {
     var mm = id.substring(5, 7)
     var dd = id.substring(8, 10)
     var date = mm + "/" + dd
-    return score + "<br>" + opponentString + "<br>" + date
-  }
+    return "<div class='row scoreText'>" + score + "</div>" +
+    "<div class='row detailText'>" + opponentString + "</div>" +
+    "<div class='row detailText'>" + date + "</div>";
+}
 
