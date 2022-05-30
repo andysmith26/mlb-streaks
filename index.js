@@ -1,7 +1,7 @@
 var jsonfile = require('jsonfile');
 var Mlbgames = require('mlbgames');
 var fs = require('fs');
-var MASTER_DATA = "public/season-current.json";
+var FULL_DATA = "public/season-current.json";
 var CLIENT_DATA = "public/client-data.json";
 var BACKUP_DATA = "public/season_backup.json";
 var teams;
@@ -28,8 +28,8 @@ server.listen(server_port, server_ip_address, function() {
 app.use(express.static('public'));
 console.log("server is running");
 
-setTimeout(catchUpMaster, 1000); // wait a second before doing initial run
-setInterval(catchUpMaster, 10 * 60 * 1000); // then update every ten minutes
+setTimeout(catchUpFullData, 1000); // wait a second before doing initial run
+setInterval(catchUpFullData, 10 * 60 * 1000); // then update every ten minutes
 
 function fixNum(n) {
   if (n < 10) {
@@ -50,17 +50,17 @@ function incrementPath(p) {
   return dateToPath(d);
 }
 
-function catchUpMaster() {
-  var obj = jsonfile.readFileSync(MASTER_DATA);
+function catchUpFullData() {
+  var obj = jsonfile.readFileSync(FULL_DATA);
   let now = new Date();
   let startingDate = new Date();
-  startingDate.setDate(now.getDate() - 3);
-  updateMasterData(dateToPath(startingDate));
+  startingDate.setDate(now.getDate() - 100);
+  updateFullData(dateToPath(startingDate));
 }
 
-// update master data for a certain day
-function updateMasterData(path) {
-  var obj = jsonfile.readFileSync(MASTER_DATA);
+// update full data for a certain day
+function updateFullData(path) {
+  var obj = jsonfile.readFileSync(FULL_DATA);
   teams = obj.teams;
   var options = {
     path: path
@@ -92,7 +92,7 @@ function updateMasterData(path) {
       obj.file_last_update = now.toJSON();
       obj.last_path_imported = path;
       console.log();
-      jsonfile.writeFileSync(MASTER_DATA, obj, { spaces: 2, EOL: '\r\n' });
+      jsonfile.writeFileSync(FULL_DATA, obj, { spaces: 2, EOL: '\r\n' });
     } else {
       console.log("  no games found\n");
       console.log("  error: " + err);
@@ -100,9 +100,9 @@ function updateMasterData(path) {
     var todaysPath = dateToPath(now);
     var oneWeekInTheFuturePath = dateToPath(oneWeekInTheFuture);
     if (incrementPath(path).localeCompare(oneWeekInTheFuturePath) <= 0) {
-      updateMasterData(incrementPath(path));
+      updateFullData(incrementPath(path));
     } else {
-      updateTeamInfoInMasterData();
+      updateTeamInfoInFullData();
     }
 
   }); //mlbgames.get end
@@ -258,7 +258,7 @@ function getLongestStreak(gameList) {
 }
 
 function createClientData() {
-  var obj = jsonfile.readFileSync(MASTER_DATA);
+  var obj = jsonfile.readFileSync(FULL_DATA);
   console.log();
   console.log("*********");
   console.log(" creating client data");
@@ -283,6 +283,7 @@ function createClientData() {
 }
 
 function getStreakInfo(games) {
+  // console.log(games);
   let output = {
     "next_game": null,
     "streak": []
@@ -302,8 +303,8 @@ function getStreakInfo(games) {
   return output;
 }
 
-function updateTeamInfoInMasterData() {
-  var obj = jsonfile.readFileSync(MASTER_DATA);
+function updateTeamInfoInFullData() {
+  var obj = jsonfile.readFileSync(FULL_DATA);
   console.log();
   console.log("  updating team info");
   for (var i = 0; i < obj.teams.length; i++) {
@@ -323,7 +324,6 @@ function updateTeamInfoInMasterData() {
     console.log();
   }
   console.log();
-  jsonfile.writeFileSync(MASTER_DATA, obj, { spaces: 2, EOL: '\r\n' });
+  jsonfile.writeFileSync(FULL_DATA, obj, { spaces: 2, EOL: '\r\n' });
   createClientData();
 }
-//catchUpMaster();
